@@ -1,0 +1,382 @@
+{
+  "q_index": 133,
+  "clean_prompt": "/root/data/XAI-1.7B-ACDC/pair/prompt-clean-q133.txt",
+  "corrupt_prompt": "/root/data/XAI-1.7B-ACDC/pair/prompt-corrupted-q133.txt",
+  "target_token_id": 151657,
+  "target_token_str": "<tool_call>",
+  "distractor_token_id": 8420,
+  "distractor_token_str": "Here",
+  "clean_obj": 4.25,
+  "corrupt_obj": -0.375,
+  "gap": 4.625,
+  "detailed_obj": 4.625,
+  "detailed_ratio_vs_gap": 1.0810810810810811,
+  "rough_obj": 3.75,
+  "rough_ratio_vs_gap": 0.8918918918918919,
+  "clean_with_detailed_corrupted": -0.875,
+  "necessity_drop": 5.125,
+  "necessity_ratio_vs_gap": 1.1081081081081081,
+  "clean_with_rough_corrupted": -0.25,
+  "rough_necessity_drop": 4.5,
+  "rough_necessity_ratio_vs_gap": 0.972972972972973,
+  "probe_head": "L21H1",
+  "probe_corrupt_with_head": 2.75,
+  "probe_clean_with_head_corrupt": 1.625,
+  "detailed_nodes": [
+    "MLP4",
+    "L10H2",
+    "L13H11",
+    "MLP16",
+    "L16H13",
+    "L17H2",
+    "L17H8",
+    "MLP20",
+    "L20H5",
+    "L21H1",
+    "L21H12",
+    "MLP22",
+    "L23H6",
+    "L24H6",
+    "MLP25",
+    "MLP27"
+  ],
+  "detailed_edges": [
+    [
+      "Input Embed",
+      "MLP4"
+    ],
+    [
+      "Input Embed",
+      "L10H2"
+    ],
+    [
+      "MLP4",
+      "L10H2"
+    ],
+    [
+      "MLP4",
+      "L13H11"
+    ],
+    [
+      "L10H2",
+      "L13H11"
+    ],
+    [
+      "L13H11",
+      "MLP16"
+    ],
+    [
+      "L10H2",
+      "MLP16"
+    ],
+    [
+      "MLP4",
+      "L16H13"
+    ],
+    [
+      "L13H11",
+      "L16H13"
+    ],
+    [
+      "L16H13",
+      "L17H2"
+    ],
+    [
+      "MLP16",
+      "L17H2"
+    ],
+    [
+      "L16H13",
+      "L17H8"
+    ],
+    [
+      "MLP16",
+      "L17H8"
+    ],
+    [
+      "L17H8",
+      "MLP20"
+    ],
+    [
+      "L16H13",
+      "MLP20"
+    ],
+    [
+      "L17H8",
+      "L20H5"
+    ],
+    [
+      "L16H13",
+      "L20H5"
+    ],
+    [
+      "L17H8",
+      "L21H1"
+    ],
+    [
+      "L20H5",
+      "L21H1"
+    ],
+    [
+      "L17H8",
+      "L21H12"
+    ],
+    [
+      "L20H5",
+      "L21H12"
+    ],
+    [
+      "L21H1",
+      "MLP22"
+    ],
+    [
+      "L21H12",
+      "MLP22"
+    ],
+    [
+      "L21H1",
+      "L23H6"
+    ],
+    [
+      "L21H12",
+      "L23H6"
+    ],
+    [
+      "L21H1",
+      "L24H6"
+    ],
+    [
+      "L23H6",
+      "L24H6"
+    ],
+    [
+      "L21H1",
+      "MLP25"
+    ],
+    [
+      "L24H6",
+      "MLP25"
+    ],
+    [
+      "L21H1",
+      "MLP27"
+    ],
+    [
+      "L23H6",
+      "MLP27"
+    ],
+    [
+      "MLP27",
+      "Residual Output: <tool_call>"
+    ],
+    [
+      "MLP25",
+      "Residual Output: <tool_call>"
+    ],
+    [
+      "L24H6",
+      "Residual Output: <tool_call>"
+    ],
+    [
+      "L17H2",
+      "L21H1"
+    ],
+    [
+      "MLP20",
+      "L21H1"
+    ],
+    [
+      "MLP22",
+      "L23H6"
+    ]
+  ],
+  "rough_nodes": [
+    "MLP4",
+    "L16H13",
+    "L17H8",
+    "L21H1",
+    "L21H12",
+    "MLP22",
+    "MLP25",
+    "MLP27"
+  ],
+  "rough_edges": [
+    [
+      "Input Embed",
+      "MLP4"
+    ],
+    [
+      "Input Embed",
+      "L16H13"
+    ],
+    [
+      "MLP4",
+      "L16H13"
+    ],
+    [
+      "L16H13",
+      "L17H8"
+    ],
+    [
+      "MLP4",
+      "L17H8"
+    ],
+    [
+      "L17H8",
+      "L21H1"
+    ],
+    [
+      "L16H13",
+      "L21H1"
+    ],
+    [
+      "L17H8",
+      "L21H12"
+    ],
+    [
+      "L16H13",
+      "L21H12"
+    ],
+    [
+      "L21H1",
+      "MLP22"
+    ],
+    [
+      "L21H12",
+      "MLP22"
+    ],
+    [
+      "L21H1",
+      "MLP25"
+    ],
+    [
+      "L21H12",
+      "MLP25"
+    ],
+    [
+      "L21H1",
+      "MLP27"
+    ],
+    [
+      "L21H12",
+      "MLP27"
+    ],
+    [
+      "MLP27",
+      "Residual Output: <tool_call>"
+    ],
+    [
+      "MLP25",
+      "Residual Output: <tool_call>"
+    ],
+    [
+      "MLP22",
+      "Residual Output: <tool_call>"
+    ]
+  ],
+  "top_node_scores": [
+    {
+      "name": "L21H1",
+      "score": 3.7437498569488525,
+      "ct": 3.125,
+      "ap": 4.5
+    },
+    {
+      "name": "L17H8",
+      "score": 2.1617188453674316,
+      "ct": 2.0,
+      "ap": 2.359375
+    },
+    {
+      "name": "L21H12",
+      "score": 2.1140623092651367,
+      "ct": 1.875,
+      "ap": 2.40625
+    },
+    {
+      "name": "L16H13",
+      "score": 1.927734375,
+      "ct": 1.875,
+      "ap": 1.9921875
+    },
+    {
+      "name": "L23H6",
+      "score": 1.821874976158142,
+      "ct": 1.625,
+      "ap": 2.0625
+    },
+    {
+      "name": "L24H6",
+      "score": 1.466406226158142,
+      "ct": 1.375,
+      "ap": 1.578125
+    },
+    {
+      "name": "L17H2",
+      "score": 1.4187500476837158,
+      "ct": 1.25,
+      "ap": 1.625
+    },
+    {
+      "name": "MLP27",
+      "score": 1.375,
+      "ct": 1.375,
+      "ap": 0.0
+    },
+    {
+      "name": "L20H5",
+      "score": 1.1687500476837158,
+      "ct": 1.0,
+      "ap": 1.375
+    },
+    {
+      "name": "MLP22",
+      "score": 1.125,
+      "ct": 1.125,
+      "ap": 0.0
+    },
+    {
+      "name": "MLP25",
+      "score": 1.0,
+      "ct": 1.0,
+      "ap": 0.0
+    },
+    {
+      "name": "MLP20",
+      "score": 0.875,
+      "ct": 0.875,
+      "ap": 0.0
+    },
+    {
+      "name": "MLP16",
+      "score": 0.375,
+      "ct": 0.375,
+      "ap": 0.0
+    },
+    {
+      "name": "L10H2",
+      "score": 0.3374999761581421,
+      "ct": 0.0,
+      "ap": 0.75
+    },
+    {
+      "name": "MLP4",
+      "score": 0.25,
+      "ct": 0.25,
+      "ap": 0.0
+    },
+    {
+      "name": "L13H11",
+      "score": 0.248046875,
+      "ct": 0.125,
+      "ap": 0.3984375
+    }
+  ],
+  "artifacts": {
+    "ap_head_heatmap": "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164/q133/ap_head_heatmap.png",
+    "ct_head_heatmap": "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164/q133/ct_head_heatmap.png",
+    "probe": "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164/q133/L21H1_probe.png",
+    "final_circuit_detailed": "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164/q133/final_circuit_detailed.png",
+    "final_circuit": "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164/q133/final_circuit.png"
+  }
+}

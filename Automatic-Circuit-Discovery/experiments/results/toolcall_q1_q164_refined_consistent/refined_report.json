@@ -1,0 +1,39 @@
+{
+  "n_samples": 164,
+  "backbone_nodes": [
+    "MLP11",
+    "L17H8",
+    "MLP20",
+    "L20H5",
+    "L21H1",
+    "L21H12",
+    "MLP22",
+    "L23H6",
+    "L24H6",
+    "MLP27"
+  ],
+  "max_local": 4,
+  "gap_min_for_metrics": 0.5,
+  "orig_metrics": {
+    "suff_median": 0.98,
+    "nec_median": 0.9836065573770492,
+    "suff_mean": 0.9966744423295077,
+    "nec_mean": 1.0089130801819788
+  },
+  "refined_metrics": {
+    "suff_median": 0.9534883720930233,
+    "nec_median": 0.9710144927536232,
+    "suff_mean": 0.9656056104370321,
+    "nec_mean": 0.9896721208203305
+  },
+  "consistency": {
+    "orig_pairwise_jaccard_mean": 0.3164735614905869,
+    "orig_pairwise_jaccard_median": 0.391304347826087,
+    "refined_pairwise_jaccard_mean": 0.8650638038893798,
+    "refined_pairwise_jaccard_median": 0.8333333333333334
+  },
+  "artifacts": {
+    "table_csv": "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_refined_consistent/refined_summary_table.csv",
+    "global_union_png": "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_refined_consistent/final_circuit_refined_global_union.png"
+  }
+}

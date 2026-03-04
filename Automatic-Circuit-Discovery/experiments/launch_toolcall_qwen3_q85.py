@@ -283,6 +283,50 @@ def compute_ap_head_gain(
     return ap
 
 
+def compute_ap_head_gain_lowmem(
+    model: HookedTransformer,
+    corrupt_tokens: torch.Tensor,
+    clean_cache_cpu: Dict[str, torch.Tensor],
+    target_token: int,
+    distractor_token: int,
+) -> torch.Tensor:
+    """
+    Low-memory fallback for AP.
+    Computes gradient*delta per layer by running backward once per layer.
+    """
+    n_layers = model.cfg.n_layers
+    n_heads = model.cfg.n_heads
+    ap = torch.zeros(n_layers, n_heads, dtype=torch.float32)
+
+    for layer in tqdm(range(n_layers), desc="AP lowmem", leave=False):
+        name = f"blocks.{layer}.attn.hook_z"
+        z_store: Dict[str, torch.Tensor] = {}
+
+        def z_hook(z: torch.Tensor, hook):  # noqa: ANN001
+            z.retain_grad()
+            z_store[hook.name] = z
+            return z
+
+        model.reset_hooks()
+        try:
+            model.add_hook(lambda n, target=name: n == target, z_hook)
+            model.zero_grad(set_to_none=True)
+            logits = model(corrupt_tokens)
+            obj = objective_from_logits(logits, target_token, distractor_token)
+            obj.backward()
+
+            z = z_store[name]
+            grad = z.grad
+            delta = clean_cache_cpu[name].to(z.device) - z.detach()
+            ap[layer] = (grad[:, -1, :, :] * delta[:, -1, :, :]).sum(dim=(0, 2)).float().cpu()
+        finally:
+            model.reset_hooks()
+            gc.collect()
+            torch.cuda.empty_cache()
+
+    return ap
+
+
 # -----------------------------
 # Node/edge selection
 # -----------------------------

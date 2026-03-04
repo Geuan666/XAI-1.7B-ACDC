@@ -1,0 +1,176 @@
+{
+  "q_index": 18,
+  "backbone_nodes": [
+    "MLP11",
+    "L17H8",
+    "MLP20",
+    "L20H5",
+    "L21H1",
+    "L21H12",
+    "MLP22",
+    "L23H6",
+    "L24H6",
+    "MLP27"
+  ],
+  "orig_nodes": [
+    "L10H12",
+    "MLP11",
+    "L13H11",
+    "L17H8",
+    "MLP19",
+    "L19H8",
+    "L20H14",
+    "L20H5",
+    "L21H1",
+    "L21H12",
+    "MLP22",
+    "L23H6",
+    "L24H6",
+    "MLP25",
+    "MLP26",
+    "MLP27"
+  ],
+  "refined_nodes": [
+    "MLP11",
+    "L17H8",
+    "MLP20",
+    "L20H14",
+    "L20H5",
+    "L21H1",
+    "L21H12",
+    "MLP22",
+    "L23H6",
+    "L24H6",
+    "MLP25",
+    "MLP27"
+  ],
+  "refined_edges": [
+    [
+      "Input Embed",
+      "MLP11"
+    ],
+    [
+      "Input Embed",
+      "L17H8"
+    ],
+    [
+      "MLP11",
+      "L17H8"
+    ],
+    [
+      "L17H8",
+      "MLP20"
+    ],
+    [
+      "MLP11",
+      "MLP20"
+    ],
+    [
+      "L17H8",
+      "L20H14"
+    ],
+    [
+      "MLP11",
+      "L20H14"
+    ],
+    [
+      "L17H8",
+      "L20H5"
+    ],
+    [
+      "MLP11",
+      "L20H5"
+    ],
+    [
+      "L20H5",
+      "L21H1"
+    ],
+    [
+      "L20H14",
+      "L21H1"
+    ],
+    [
+      "L20H5",
+      "L21H12"
+    ],
+    [
+      "L20H14",
+      "L21H12"
+    ],
+    [
+      "L21H12",
+      "MLP22"
+    ],
+    [
+      "L21H1",
+      "MLP22"
+    ],
+    [
+      "L21H12",
+      "L23H6"
+    ],
+    [
+      "L21H1",
+      "L23H6"
+    ],
+    [
+      "L21H12",
+      "L24H6"
+    ],
+    [
+      "L21H1",
+      "L24H6"
+    ],
+    [
+      "L21H12",
+      "MLP25"
+    ],
+    [
+      "L24H6",
+      "MLP25"
+    ],
+    [
+      "L21H12",
+      "MLP27"
+    ],
+    [
+      "L21H1",
+      "MLP27"
+    ],
+    [
+      "MLP27",
+      "Residual Output: <tool_call>"
+    ],
+    [
+      "MLP25",
+      "Residual Output: <tool_call>"
+    ],
+    [
+      "L24H6",
+      "Residual Output: <tool_call>"
+    ],
+    [
+      "MLP20",
+      "L21H12"
+    ],
+    [
+      "MLP22",
+      "L23H6"
+    ],
+    [
+      "L23H6",
+      "MLP27"
+    ]
+  ],
+  "k_local": 2,
+  "local_nodes": [
+    "L20H14",
+    "MLP25"
+  ],
+  "refined_suff_ratio_vs_gap": 1.0,
+  "refined_necessity_ratio_vs_gap": 1.0238095238095237,
+  "orig_suff_ratio_vs_gap": 1.0952380952380953,
+  "orig_necessity_ratio_vs_gap": 1.0714285714285714,
+  "gap": 5.25,
+  "ap_mode": "full"
+}

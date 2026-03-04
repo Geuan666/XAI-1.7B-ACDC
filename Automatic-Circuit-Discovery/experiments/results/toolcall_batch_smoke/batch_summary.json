@@ -1,0 +1,32 @@
+[
+  {
+    "q_index": 1,
+    "status": "ok",
+    "clean_obj": 2.5,
+    "corrupt_obj": -2.25,
+    "gap": 4.75,
+    "detailed_ratio_vs_gap": 1.0526315789473684,
+    "necessity_ratio_vs_gap": 1.0789473684210527,
+    "rough_ratio_vs_gap": 1.0263157894736843,
+    "rough_necessity_ratio_vs_gap": 1.0789473684210527,
+    "probe_head": "L21H12",
+    "target_token_str": "<tool_call>",
+    "distractor_token_str": "Here",
+    "error": ""
+  },
+  {
+    "q_index": 2,
+    "status": "ok",
+    "clean_obj": 5.625,
+    "corrupt_obj": -1.75,
+    "gap": 7.375,
+    "detailed_ratio_vs_gap": 1.0169491525423728,
+    "necessity_ratio_vs_gap": 1.0338983050847457,
+    "rough_ratio_vs_gap": 0.9322033898305084,
+    "rough_necessity_ratio_vs_gap": 0.9322033898305084,
+    "probe_head": "L21H1",
+    "target_token_str": "<tool_call>",
+    "distractor_token_str": "Here",
+    "error": ""
+  }
+]

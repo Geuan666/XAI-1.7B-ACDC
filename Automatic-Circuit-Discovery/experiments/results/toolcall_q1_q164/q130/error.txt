@@ -1,0 +1,38 @@
+Traceback (most recent call last):
+  File "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/launch_toolcall_qwen3_batch.py", line 374, in main
+    summary = run_one_q(
+  File "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/launch_toolcall_qwen3_batch.py", line 175, in run_one_q
+    detailed_obj = evaluate_on_base_with_source(
+  File "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/launch_toolcall_qwen3_q85.py", line 185, in evaluate_on_base_with_source
+    logits = model.run_with_hooks(base_tokens, fwd_hooks=hooks)
+  File "/opt/miniconda/lib/python3.10/site-packages/transformer_lens/hook_points.py", line 447, in run_with_hooks
+    return hooked_model.forward(*model_args, **model_kwargs)
+  File "/opt/miniconda/lib/python3.10/site-packages/transformer_lens/HookedTransformer.py", line 620, in forward
+    residual = block(
+  File "/opt/miniconda/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/miniconda/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/miniconda/lib/python3.10/site-packages/transformer_lens/components/transformer_block.py", line 160, in forward
+    self.attn(
+  File "/opt/miniconda/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/miniconda/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/miniconda/lib/python3.10/site-packages/transformer_lens/components/abstract_attention.py", line 278, in forward
+    z = self.calculate_z_scores(v, pattern)  # [batch, pos, head_index, d_head]
+  File "/opt/miniconda/lib/python3.10/site-packages/transformer_lens/components/grouped_query_attention.py", line 186, in calculate_z_scores
+    return super().calculate_z_scores(v, pattern)
+  File "/opt/miniconda/lib/python3.10/site-packages/transformer_lens/components/abstract_attention.py", line 475, in calculate_z_scores
+    z = self.hook_z(
+  File "/opt/miniconda/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/miniconda/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+  File "/opt/miniconda/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+  File "/opt/miniconda/lib/python3.10/site-packages/transformer_lens/hook_points.py", line 100, in full_hook
+    return hook(module_output, hook=self)
+  File "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/launch_toolcall_qwen3_q85.py", line 306, in z_hook
+    z.retain_grad()
+RuntimeError: can't retain_grad on Tensor that has requires_grad=False

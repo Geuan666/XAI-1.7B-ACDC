@@ -1,0 +1,190 @@
+{
+  "q_index": 95,
+  "backbone_nodes": [
+    "MLP11",
+    "L17H8",
+    "MLP20",
+    "L20H5",
+    "L21H1",
+    "L21H12",
+    "MLP22",
+    "L23H6",
+    "L24H6",
+    "MLP27"
+  ],
+  "orig_nodes": [
+    "L3H0",
+    "MLP4",
+    "MLP6",
+    "L6H0",
+    "MLP7",
+    "L10H6",
+    "L13H11",
+    "L17H8",
+    "MLP18",
+    "L18H15",
+    "L21H1",
+    "L21H12",
+    "MLP22",
+    "L23H6",
+    "L24H6",
+    "MLP27"
+  ],
+  "refined_nodes": [
+    "MLP7",
+    "MLP11",
+    "L17H8",
+    "MLP18",
+    "L18H15",
+    "MLP20",
+    "L20H5",
+    "L21H1",
+    "L21H12",
+    "MLP22",
+    "L23H6",
+    "L24H6",
+    "MLP27"
+  ],
+  "refined_edges": [
+    [
+      "Input Embed",
+      "MLP7"
+    ],
+    [
+      "Input Embed",
+      "MLP11"
+    ],
+    [
+      "MLP7",
+      "MLP11"
+    ],
+    [
+      "MLP7",
+      "L17H8"
+    ],
+    [
+      "MLP11",
+      "L17H8"
+    ],
+    [
+      "L17H8",
+      "MLP18"
+    ],
+    [
+      "MLP7",
+      "MLP18"
+    ],
+    [
+      "L17H8",
+      "L18H15"
+    ],
+    [
+      "MLP7",
+      "L18H15"
+    ],
+    [
+      "L17H8",
+      "MLP20"
+    ],
+    [
+      "L18H15",
+      "MLP20"
+    ],
+    [
+      "L17H8",
+      "L20H5"
+    ],
+    [
+      "L18H15",
+      "L20H5"
+    ],
+    [
+      "L17H8",
+      "L21H1"
+    ],
+    [
+      "L18H15",
+      "L21H1"
+    ],
+    [
+      "L17H8",
+      "L21H12"
+    ],
+    [
+      "L18H15",
+      "L21H12"
+    ],
+    [
+      "L21H1",
+      "MLP22"
+    ],
+    [
+      "L21H12",
+      "MLP22"
+    ],
+    [
+      "L21H1",
+      "L23H6"
+    ],
+    [
+      "L21H12",
+      "L23H6"
+    ],
+    [
+      "L21H1",
+      "L24H6"
+    ],
+    [
+      "L21H12",
+      "L24H6"
+    ],
+    [
+      "L24H6",
+      "MLP27"
+    ],
+    [
+      "L21H1",
+      "MLP27"
+    ],
+    [
+      "MLP27",
+      "Residual Output: <tool_call>"
+    ],
+    [
+      "L24H6",
+      "Residual Output: <tool_call>"
+    ],
+    [
+      "L23H6",
+      "Residual Output: <tool_call>"
+    ],
+    [
+      "MLP18",
+      "L21H1"
+    ],
+    [
+      "MLP20",
+      "L21H1"
+    ],
+    [
+      "L20H5",
+      "L21H1"
+    ],
+    [
+      "MLP22",
+      "L24H6"
+    ]
+  ],
+  "k_local": 3,
+  "local_nodes": [
+    "L18H15",
+    "MLP7",
+    "MLP18"
+  ],
+  "refined_suff_ratio_vs_gap": 0.9384615384615385,
+  "refined_necessity_ratio_vs_gap": 0.9384615384615385,
+  "orig_suff_ratio_vs_gap": 0.8769230769230769,
+  "orig_necessity_ratio_vs_gap": 0.8461538461538461,
+  "gap": 8.125,
+  "ap_mode": "full"
+}
