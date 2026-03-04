@@ -1,0 +1,10 @@
+.venv-acdc/
+.base-extra/
+.tmpbuild/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
