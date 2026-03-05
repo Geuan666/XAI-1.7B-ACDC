@@ -1,0 +1,147 @@
+{
+  "q_index": 135,
+  "backbone_nodes": [
+    "MLP11",
+    "L17H8",
+    "MLP20",
+    "L20H5",
+    "L21H1",
+    "L21H12",
+    "MLP22",
+    "L23H6",
+    "L24H6",
+    "MLP27"
+  ],
+  "orig_nodes": [
+    "MLP4",
+    "L5H6",
+    "L6H8",
+    "MLP7",
+    "MLP9",
+    "L10H6",
+    "L11H6",
+    "L17H8",
+    "MLP20",
+    "L20H5",
+    "L21H1",
+    "L21H12",
+    "MLP22",
+    "L23H6",
+    "L24H6",
+    "MLP27"
+  ],
+  "refined_nodes": [
+    "MLP11",
+    "L17H8",
+    "MLP20",
+    "L20H5",
+    "L21H1",
+    "L21H12",
+    "MLP22",
+    "L23H6",
+    "L24H6",
+    "MLP27"
+  ],
+  "refined_edges": [
+    [
+      "Input Embed",
+      "MLP11"
+    ],
+    [
+      "Input Embed",
+      "L17H8"
+    ],
+    [
+      "MLP11",
+      "L17H8"
+    ],
+    [
+      "L17H8",
+      "MLP20"
+    ],
+    [
+      "MLP11",
+      "MLP20"
+    ],
+    [
+      "L17H8",
+      "L20H5"
+    ],
+    [
+      "MLP11",
+      "L20H5"
+    ],
+    [
+      "L20H5",
+      "L21H1"
+    ],
+    [
+      "MLP20",
+      "L21H1"
+    ],
+    [
+      "L20H5",
+      "L21H12"
+    ],
+    [
+      "MLP20",
+      "L21H12"
+    ],
+    [
+      "L21H12",
+      "MLP22"
+    ],
+    [
+      "L21H1",
+      "MLP22"
+    ],
+    [
+      "L21H12",
+      "L23H6"
+    ],
+    [
+      "L21H1",
+      "L23H6"
+    ],
+    [
+      "L21H12",
+      "L24H6"
+    ],
+    [
+      "L23H6",
+      "L24H6"
+    ],
+    [
+      "L24H6",
+      "MLP27"
+    ],
+    [
+      "L21H12",
+      "MLP27"
+    ],
+    [
+      "MLP27",
+      "Residual Output: <tool_call>"
+    ],
+    [
+      "L24H6",
+      "Residual Output: <tool_call>"
+    ],
+    [
+      "L23H6",
+      "Residual Output: <tool_call>"
+    ],
+    [
+      "MLP22",
+      "L24H6"
+    ]
+  ],
+  "k_local": 0,
+  "local_nodes": [],
+  "refined_suff_ratio_vs_gap": 1.1914893617021276,
+  "refined_necessity_ratio_vs_gap": 1.2553191489361701,
+  "orig_suff_ratio_vs_gap": 1.148936170212766,
+  "orig_necessity_ratio_vs_gap": 1.1702127659574468,
+  "gap": 5.875,
+  "ap_mode": "full"
+}

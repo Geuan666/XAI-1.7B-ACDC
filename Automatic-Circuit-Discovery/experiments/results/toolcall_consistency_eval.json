@@ -1,0 +1,181 @@
+{
+  "base_root": "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164",
+  "gap_min": 0.5,
+  "bootstrap": 500,
+  "seed": 123,
+  "base": {
+    "n_samples": 139,
+    "suff": {
+      "median": 0.98,
+      "mean": 0.9966744423295077,
+      "bootstrap_median": {
+        "mean": 0.9785368249040273,
+        "lo": 0.9666666666666667,
+        "hi": 0.9859154929577465
+      }
+    },
+    "nec": {
+      "median": 0.9836065573770492,
+      "mean": 1.0089130801819788,
+      "bootstrap_median": {
+        "mean": 0.9876888393517163,
+        "lo": 0.9726027397260274,
+        "hi": 1.0
+      }
+    },
+    "consistency": {
+      "pairwise_jaccard_mean": 0.402102904412107,
+      "pairwise_jaccard_median": 0.391304347826087,
+      "bootstrap_jaccard_mean": {
+        "mean": 0.40576907117758126,
+        "lo": 0.3935292221816654,
+        "hi": 0.41720025047230874
+      }
+    },
+    "node_count": {
+      "median": 16.0,
+      "mean": 16.0
+    },
+    "k_local": null
+  },
+  "variants": {
+    "k0": {
+      "root": "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_refined_consistent_k0",
+      "summary": {
+        "n_samples": 139,
+        "suff": {
+          "median": 0.9074074074074074,
+          "mean": 0.9254760960621374,
+          "bootstrap_median": {
+            "mean": 0.9079598137685324,
+            "lo": 0.8983050847457628,
+            "hi": 0.9154929577464789
+          }
+        },
+        "nec": {
+          "median": 0.9240506329113924,
+          "mean": 0.9449734995746145,
+          "bootstrap_median": {
+            "mean": 0.9237875956231069,
+            "lo": 0.9130434782608695,
+            "hi": 0.9322033898305084
+          }
+        },
+        "consistency": {
+          "pairwise_jaccard_mean": 1.0,
+          "pairwise_jaccard_median": 1.0,
+          "bootstrap_jaccard_mean": {
+            "mean": 1.0,
+            "lo": 1.0,
+            "hi": 1.0
+          }
+        },
+        "node_count": {
+          "median": 10.0,
+          "mean": 10.0
+        },
+        "k_local": {
+          "mean": 0.0,
+          "hist": {
+            "0": 139
+          }
+        }
+      }
+    },
+    "k4": {
+      "root": "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_refined_consistent",
+      "summary": {
+        "n_samples": 139,
+        "suff": {
+          "median": 0.9534883720930233,
+          "mean": 0.9656056104370321,
+          "bootstrap_median": {
+            "mean": 0.9516518979669618,
+            "lo": 0.9420289855072463,
+            "hi": 0.9620253164556962
+          }
+        },
+        "nec": {
+          "median": 0.9710144927536232,
+          "mean": 0.9896721208203305,
+          "bootstrap_median": {
+            "mean": 0.9700771730189918,
+            "lo": 0.9574468085106383,
+            "hi": 0.9818181818181818
+          }
+        },
+        "consistency": {
+          "pairwise_jaccard_mean": 0.8456268729277433,
+          "pairwise_jaccard_median": 0.8333333333333334,
+          "bootstrap_jaccard_mean": {
+            "mean": 0.8469898274355826,
+            "lo": 0.8289532096534066,
+            "hi": 0.8666320811222282
+          }
+        },
+        "node_count": {
+          "median": 11.0,
+          "mean": 11.115107913669064
+        },
+        "k_local": {
+          "mean": 1.1151079136690647,
+          "hist": {
+            "2": 39,
+            "0": 50,
+            "3": 12,
+            "1": 37,
+            "4": 1
+          }
+        }
+      }
+    }
+  },
+  "deltas_vs_base": {
+    "k0": {
+      "n_shared": 139,
+      "delta_suff_median": -0.07259259259259254,
+      "delta_nec_median": -0.05955592446565672,
+      "delta_jaccard_mean": 0.5978970955878931,
+      "bootstrap": {
+        "delta_suff_median": {
+          "mean": -0.07086451237168205,
+          "lo": -0.08245614035087712,
+          "hi": -0.05910473707083874
+        },
+        "delta_nec_median": {
+          "mean": -0.06416652532894526,
+          "lo": -0.08108108108108103,
+          "hi": -0.05260273972602736
+        },
+        "delta_jaccard_mean": {
+          "mean": 0.5936951126922203,
+          "lo": 0.582798877729227,
+          "hi": 0.6066763655714777
+        }
+      }
+    },
+    "k4": {
+      "n_shared": 139,
+      "delta_suff_median": -0.026511627906976698,
+      "delta_nec_median": -0.012592064623425991,
+      "delta_jaccard_mean": 0.4435239685156363,
+      "bootstrap": {
+        "delta_suff_median": {
+          "mean": -0.02735834577428482,
+          "lo": -0.03747010364071224,
+          "hi": -0.015364354697102733
+        },
+        "delta_nec_median": {
+          "mean": -0.017639469462728524,
+          "lo": -0.033333333333333326,
+          "hi": -0.004545454545454519
+        },
+        "delta_jaccard_mean": {
+          "mean": 0.4409439235212497,
+          "lo": 0.4220828107385914,
+          "hi": 0.46035997354612723
+        }
+      }
+    }
+  }
+}

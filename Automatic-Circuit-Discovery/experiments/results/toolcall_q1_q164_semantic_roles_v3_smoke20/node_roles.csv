@@ -1,0 +1,11 @@
+node,role,full_ratio_median,target_logit_delta_median
+MLP11,Aux MLP,0.15894736842105261,0.5
+L17H8,Instruction Gate / Target+Suppressor,0.3730994152046784,0.875
+MLP20,Aux MLP,0.08335648791330924,0.25
+L20H5,Query Reader / Distractor Suppressor,0.2666762507188039,0.5
+L21H1,Format Router / Target+Suppressor,0.40212765957446805,0.875
+L21H12,Format Router / Target+Suppressor,0.419971870604782,0.875
+MLP22,Support Writer MLP,0.1867548435171386,0.5
+L23H6,Format Router / Distractor Suppressor,0.27003205128205127,0.625
+L24H6,Tool-Tag Reader / Distractor Suppressor,0.2585858585858586,0.1875
+MLP27,Primary Writer MLP,0.35555555555555557,1.0625

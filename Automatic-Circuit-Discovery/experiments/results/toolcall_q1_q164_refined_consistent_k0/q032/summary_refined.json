@@ -1,0 +1,151 @@
+{
+  "q_index": 32,
+  "backbone_nodes": [
+    "MLP11",
+    "L17H8",
+    "MLP20",
+    "L20H5",
+    "L21H1",
+    "L21H12",
+    "MLP22",
+    "L23H6",
+    "L24H6",
+    "MLP27"
+  ],
+  "orig_nodes": [
+    "L1H6",
+    "L5H7",
+    "MLP6",
+    "L8H3",
+    "MLP11",
+    "MLP13",
+    "L13H11",
+    "L17H8",
+    "MLP19",
+    "L20H5",
+    "L21H1",
+    "L21H12",
+    "MLP22",
+    "L23H6",
+    "L24H6",
+    "MLP27"
+  ],
+  "refined_nodes": [
+    "MLP11",
+    "L17H8",
+    "MLP20",
+    "L20H5",
+    "L21H1",
+    "L21H12",
+    "MLP22",
+    "L23H6",
+    "L24H6",
+    "MLP27"
+  ],
+  "refined_edges": [
+    [
+      "Input Embed",
+      "MLP11"
+    ],
+    [
+      "Input Embed",
+      "L17H8"
+    ],
+    [
+      "MLP11",
+      "L17H8"
+    ],
+    [
+      "L17H8",
+      "MLP20"
+    ],
+    [
+      "MLP11",
+      "MLP20"
+    ],
+    [
+      "L17H8",
+      "L20H5"
+    ],
+    [
+      "MLP11",
+      "L20H5"
+    ],
+    [
+      "L20H5",
+      "L21H1"
+    ],
+    [
+      "L17H8",
+      "L21H1"
+    ],
+    [
+      "L20H5",
+      "L21H12"
+    ],
+    [
+      "L17H8",
+      "L21H12"
+    ],
+    [
+      "L21H1",
+      "MLP22"
+    ],
+    [
+      "L21H12",
+      "MLP22"
+    ],
+    [
+      "L21H1",
+      "L23H6"
+    ],
+    [
+      "L21H12",
+      "L23H6"
+    ],
+    [
+      "L21H1",
+      "L24H6"
+    ],
+    [
+      "L21H12",
+      "L24H6"
+    ],
+    [
+      "L21H1",
+      "MLP27"
+    ],
+    [
+      "L21H12",
+      "MLP27"
+    ],
+    [
+      "MLP27",
+      "Residual Output: <tool_call>"
+    ],
+    [
+      "L24H6",
+      "Residual Output: <tool_call>"
+    ],
+    [
+      "L23H6",
+      "Residual Output: <tool_call>"
+    ],
+    [
+      "MLP20",
+      "L21H1"
+    ],
+    [
+      "MLP22",
+      "L23H6"
+    ]
+  ],
+  "k_local": 0,
+  "local_nodes": [],
+  "refined_suff_ratio_vs_gap": 0.8732394366197183,
+  "refined_necessity_ratio_vs_gap": 0.8732394366197183,
+  "orig_suff_ratio_vs_gap": 0.9154929577464789,
+  "orig_necessity_ratio_vs_gap": 0.9014084507042254,
+  "gap": 8.875,
+  "ap_mode": "full"
+}

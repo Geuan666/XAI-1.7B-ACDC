@@ -1,0 +1,494 @@
+{
+  "n_samples": 20,
+  "n_analyzed_samples": 20,
+  "analyzed_q_indices": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "gap_min": 0.5,
+  "recompute_baseline": true,
+  "skipped_oom_q_indices": [],
+  "core_nodes": [
+    "MLP11",
+    "L17H8",
+    "MLP20",
+    "L20H5",
+    "L21H1",
+    "L21H12",
+    "MLP22",
+    "L23H6",
+    "L24H6",
+    "MLP27"
+  ],
+  "head_nodes": [
+    "L17H8",
+    "L20H5",
+    "L21H1",
+    "L21H12",
+    "L23H6",
+    "L24H6"
+  ],
+  "mlp_nodes": [
+    "MLP11",
+    "MLP20",
+    "MLP22",
+    "MLP27"
+  ],
+  "node_summary": {
+    "MLP11": {
+      "full_ratio_median": 0.15894736842105261,
+      "full_ratio_mean": 0.13552990576542273,
+      "top1_ratio_median": NaN,
+      "top3_ratio_median": NaN,
+      "contrast_ratio_median": NaN,
+      "tool_call_tags_ratio_median": NaN,
+      "tools_block_ratio_median": NaN,
+      "user_block_ratio_median": NaN,
+      "attn_contrast_clean_mean": NaN,
+      "attn_tool_call_tags_clean_mean": NaN,
+      "attn_tools_block_clean_mean": NaN,
+      "attn_user_block_clean_mean": NaN,
+      "attn_contrast_delta_mean": NaN,
+      "attn_tool_call_tags_delta_mean": NaN,
+      "target_logit_delta_median": 0.5,
+      "distractor_logit_delta_median": -0.5,
+      "top_positive_tokens": [
+        "而后",
+        "曰",
+        "且",
+        "有何",
+        "说过",
+        "-thread",
+        "manship",
+        "周岁"
+      ],
+      "top_positive_token_counts": {
+        "而后": 6,
+        "曰": 4,
+        "且": 4,
+        "有何": 4,
+        "说过": 3,
+        "-thread": 3,
+        "manship": 3,
+        "周岁": 3
+      },
+      "role": "Aux MLP"
+    },
+    "L17H8": {
+      "full_ratio_median": 0.3730994152046784,
+      "full_ratio_mean": 0.36603764026957214,
+      "top1_ratio_median": 0.05266805266805267,
+      "top3_ratio_median": 0.1182053494391717,
+      "contrast_ratio_median": 0.06451054998270495,
+      "tool_call_tags_ratio_median": 0.06186224489795918,
+      "tools_block_ratio_median": 0.06439602868174296,
+      "user_block_ratio_median": 0.026875901875901876,
+      "attn_contrast_clean_mean": 0.0024211830925196407,
+      "attn_tool_call_tags_clean_mean": 0.005464834196027368,
+      "attn_tools_block_clean_mean": 0.0,
+      "attn_user_block_clean_mean": 0.19251376911997795,
+      "attn_contrast_delta_mean": -0.008209827542304992,
+      "attn_tool_call_tags_delta_mean": 0.002665003348374739,
+      "target_logit_delta_median": 0.875,
+      "distractor_logit_delta_median": -1.5,
+      "top_positive_tokens": [
+        " either",
+        "<tool_call>",
+        ".AnchorStyles",
+        "减持",
+        " ●",
+        "周岁",
+        "所说",
+        "-dismiss"
+      ],
+      "top_positive_token_counts": {
+        " either": 15,
+        "<tool_call>": 10,
+        ".AnchorStyles": 9,
+        "减持": 7,
+        " ●": 6,
+        "周岁": 5,
+        "所说": 4,
+        "-dismiss": 4
+      },
+      "top1_category_counts": {
+        "other": 20
+      },
+      "top1_token_counts": {
+        "<|im_start|>": 20
+      },
+      "role": "Instruction Gate / Target+Suppressor"
+    },
+    "MLP20": {
+      "full_ratio_median": 0.08335648791330924,
+      "full_ratio_mean": 0.07618223716446812,
+      "top1_ratio_median": NaN,
+      "top3_ratio_median": NaN,
+      "contrast_ratio_median": NaN,
+      "tool_call_tags_ratio_median": NaN,
+      "tools_block_ratio_median": NaN,
+      "user_block_ratio_median": NaN,
+      "attn_contrast_clean_mean": NaN,
+      "attn_tool_call_tags_clean_mean": NaN,
+      "attn_tools_block_clean_mean": NaN,
+      "attn_user_block_clean_mean": NaN,
+      "attn_contrast_delta_mean": NaN,
+      "attn_tool_call_tags_delta_mean": NaN,
+      "target_logit_delta_median": 0.25,
+      "distractor_logit_delta_median": -0.25,
+      "top_positive_tokens": [
+        "ampled",
+        "(open",
+        " isOpen",
+        "=str",
+        " def",
+        " treści",
+        "def",
+        "开门"
+      ],
+      "top_positive_token_counts": {
+        "ampled": 14,
+        "(open": 10,
+        " isOpen": 7,
+        "=str": 5,
+        " def": 4,
+        " treści": 4,
+        "def": 3,
+        "开门": 3
+      },
+      "role": "Aux MLP"
+    },
+    "L20H5": {
+      "full_ratio_median": 0.2666762507188039,
+      "full_ratio_mean": 0.2776740498907272,
+      "top1_ratio_median": 0.0996279454319967,
+      "top3_ratio_median": 0.1975609756097561,
+      "contrast_ratio_median": 0.02282051282051282,
+      "tool_call_tags_ratio_median": 0.025807525807525808,
+      "tools_block_ratio_median": 0.018089960886571055,
+      "user_block_ratio_median": 0.17888888888888888,
+      "attn_contrast_clean_mean": 0.00017713820561766626,
+      "attn_tool_call_tags_clean_mean": 0.015768102603033185,
+      "attn_tools_block_clean_mean": 0.0,
+      "attn_user_block_clean_mean": 0.3179005280137062,
+      "attn_contrast_delta_mean": -8.311751735163852e-05,
+      "attn_tool_call_tags_delta_mean": 0.006282008206471801,
+      "target_logit_delta_median": 0.5,
+      "distractor_logit_delta_median": -1.125,
+      "top_positive_tokens": [
+        " charged",
+        " orally",
+        " crucial",
+        " oral",
+        " Republican",
+        " striped",
+        " ++)\\n",
+        " uptake"
+      ],
+      "top_positive_token_counts": {
+        " charged": 18,
+        " orally": 9,
+        " crucial": 7,
+        " oral": 6,
+        " Republican": 5,
+        " striped": 5,
+        " ++)\\n": 4,
+        " uptake": 3
+      },
+      "top1_category_counts": {
+        "user_block": 5,
+        "other": 15
+      },
+      "top1_token_counts": {
+        "></": 15,
+        ".py": 5
+      },
+      "role": "Query Reader / Distractor Suppressor"
+    },
+    "L21H1": {
+      "full_ratio_median": 0.40212765957446805,
+      "full_ratio_mean": 0.3933268313023059,
+      "top1_ratio_median": -0.08133392031697116,
+      "top3_ratio_median": 0.2934002869440459,
+      "contrast_ratio_median": -0.08054054054054055,
+      "tool_call_tags_ratio_median": 0.01667129758266185,
+      "tools_block_ratio_median": -0.07879101007491604,
+      "user_block_ratio_median": -0.03434684684684684,
+      "attn_contrast_clean_mean": 0.0013713932363316416,
+      "attn_tool_call_tags_clean_mean": 0.05455942377448082,
+      "attn_tools_block_clean_mean": 0.0,
+      "attn_user_block_clean_mean": 0.1922483451664448,
+      "attn_contrast_delta_mean": 0.0010513346445804928,
+      "attn_tool_call_tags_delta_mean": 0.03260709643363953,
+      "target_logit_delta_median": 0.875,
+      "distractor_logit_delta_median": -1.5,
+      "top_positive_tokens": [
+        " ●",
+        " drilled",
+        " carried",
+        "<tool_call>",
+        "减持",
+        " oral",
+        "川",
+        " polled"
+      ],
+      "top_positive_token_counts": {
+        " ●": 13,
+        " drilled": 9,
+        " carried": 7,
+        "<tool_call>": 6,
+        "减持": 4,
+        " oral": 4,
+        "川": 4,
+        " polled": 4
+      },
+      "top1_category_counts": {
+        "other": 20
+      },
+      "top1_token_counts": {
+        "<|im_start|>": 20
+      },
+      "role": "Format Router / Target+Suppressor"
+    },
+    "L21H12": {
+      "full_ratio_median": 0.419971870604782,
+      "full_ratio_mean": 0.41357931480902155,
+      "top1_ratio_median": 0.3875,
+      "top3_ratio_median": 0.3739406779661017,
+      "contrast_ratio_median": -0.0822072072072072,
+      "tool_call_tags_ratio_median": -0.04210992907801418,
+      "tools_block_ratio_median": -0.08054054054054055,
+      "user_block_ratio_median": -0.054093567251461985,
+      "attn_contrast_clean_mean": 0.00310541169019416,
+      "attn_tool_call_tags_clean_mean": 0.02334390776231885,
+      "attn_tools_block_clean_mean": 0.0,
+      "attn_user_block_clean_mean": 0.06256225295364856,
+      "attn_contrast_delta_mean": 0.002849815228546504,
+      "attn_tool_call_tags_delta_mean": 0.008760138228535653,
+      "target_logit_delta_median": 0.875,
+      "distractor_logit_delta_median": -1.75,
+      "top_positive_tokens": [
+        "闪电",
+        " Carl",
+        " ●",
+        ".Cursor",
+        "川",
+        " τ",
+        "巡航",
+        "<tool_call>"
+      ],
+      "top_positive_token_counts": {
+        "闪电": 14,
+        " Carl": 14,
+        " ●": 12,
+        ".Cursor": 7,
+        "川": 7,
+        " τ": 6,
+        "巡航": 5,
+        "<tool_call>": 4
+      },
+      "top1_category_counts": {
+        "other": 20
+      },
+      "top1_token_counts": {
+        "\\n": 20
+      },
+      "role": "Format Router / Target+Suppressor"
+    },
+    "MLP22": {
+      "full_ratio_median": 0.1867548435171386,
+      "full_ratio_mean": 0.18487649162457467,
+      "top1_ratio_median": NaN,
+      "top3_ratio_median": NaN,
+      "contrast_ratio_median": NaN,
+      "tool_call_tags_ratio_median": NaN,
+      "tools_block_ratio_median": NaN,
+      "user_block_ratio_median": NaN,
+      "attn_contrast_clean_mean": NaN,
+      "attn_tool_call_tags_clean_mean": NaN,
+      "attn_tools_block_clean_mean": NaN,
+      "attn_user_block_clean_mean": NaN,
+      "attn_contrast_delta_mean": NaN,
+      "attn_tool_call_tags_delta_mean": NaN,
+      "target_logit_delta_median": 0.5,
+      "distractor_logit_delta_median": -0.5625,
+      "top_positive_tokens": [
+        "产后",
+        "对孩子",
+        "mıştır",
+        ">I",
+        "情",
+        "轾",
+        "'),('",
+        ".Preference"
+      ],
+      "top_positive_token_counts": {
+        "产后": 14,
+        "对孩子": 8,
+        "mıştır": 7,
+        ">I": 7,
+        "情": 6,
+        "轾": 6,
+        "'),('": 6,
+        ".Preference": 5
+      },
+      "role": "Support Writer MLP"
+    },
+    "L23H6": {
+      "full_ratio_median": 0.27003205128205127,
+      "full_ratio_mean": 0.26996199161985485,
+      "top1_ratio_median": 0.11873840445269017,
+      "top3_ratio_median": 0.2764423076923077,
+      "contrast_ratio_median": -0.023306233062330622,
+      "tool_call_tags_ratio_median": -0.03399460708782742,
+      "tools_block_ratio_median": -0.026547116736990152,
+      "user_block_ratio_median": -0.05405405405405406,
+      "attn_contrast_clean_mean": 0.0006254387786611915,
+      "attn_tool_call_tags_clean_mean": 0.004798515990842134,
+      "attn_tools_block_clean_mean": 0.0,
+      "attn_user_block_clean_mean": 0.08694056067615748,
+      "attn_contrast_delta_mean": 0.0001669733494054526,
+      "attn_tool_call_tags_delta_mean": 0.00030024045845493673,
+      "target_logit_delta_median": 0.625,
+      "distractor_logit_delta_median": -1.0,
+      "top_positive_tokens": [
+        ".AnchorStyles",
+        " I",
+        "<tool_call>",
+        "\\TestCase",
+        " Kerry",
+        "_CURSOR",
+        "川",
+        "MouseClicked"
+      ],
+      "top_positive_token_counts": {
+        ".AnchorStyles": 12,
+        " I": 6,
+        "<tool_call>": 6,
+        "\\TestCase": 5,
+        " Kerry": 5,
+        "_CURSOR": 5,
+        "川": 4,
+        "MouseClicked": 4
+      },
+      "top1_category_counts": {
+        "other": 20
+      },
+      "top1_token_counts": {
+        "<|im_start|>": 10,
+        "\\n\\n": 10
+      },
+      "role": "Format Router / Distractor Suppressor"
+    },
+    "L24H6": {
+      "full_ratio_median": 0.2585858585858586,
+      "full_ratio_mean": 0.29739005189051054,
+      "top1_ratio_median": 0.38625730994152047,
+      "top3_ratio_median": 0.4017543859649123,
+      "contrast_ratio_median": -0.027402402402402402,
+      "tool_call_tags_ratio_median": 0.4105263157894737,
+      "tools_block_ratio_median": -0.022222222222222223,
+      "user_block_ratio_median": -0.0822072072072072,
+      "attn_contrast_clean_mean": 2.2050982579457923e-05,
+      "attn_tool_call_tags_clean_mean": 0.9158486723899841,
+      "attn_tools_block_clean_mean": 0.0,
+      "attn_user_block_clean_mean": 0.01961874929256737,
+      "attn_contrast_delta_mean": -0.00020826785280405601,
+      "attn_tool_call_tags_delta_mean": 0.2045120194554329,
+      "target_logit_delta_median": 0.1875,
+      "distractor_logit_delta_median": -1.4375,
+      "top_positive_tokens": [
+        " �",
+        " Linux",
+        "间",
+        " Doors",
+        " ”\\n\\n",
+        ".Arrays",
+        " SW",
+        " track"
+      ],
+      "top_positive_token_counts": {
+        " �": 29,
+        " Linux": 10,
+        "间": 9,
+        " Doors": 7,
+        " ”\\n\\n": 7,
+        ".Arrays": 7,
+        " SW": 6,
+        " track": 6
+      },
+      "top1_category_counts": {
+        "tool_call_tags": 20
+      },
+      "top1_token_counts": {
+        "<tool_call>": 20
+      },
+      "role": "Tool-Tag Reader / Distractor Suppressor"
+    },
+    "MLP27": {
+      "full_ratio_median": 0.35555555555555557,
+      "full_ratio_mean": 0.35426876719222855,
+      "top1_ratio_median": NaN,
+      "top3_ratio_median": NaN,
+      "contrast_ratio_median": NaN,
+      "tool_call_tags_ratio_median": NaN,
+      "tools_block_ratio_median": NaN,
+      "user_block_ratio_median": NaN,
+      "attn_contrast_clean_mean": NaN,
+      "attn_tool_call_tags_clean_mean": NaN,
+      "attn_tools_block_clean_mean": NaN,
+      "attn_user_block_clean_mean": NaN,
+      "attn_contrast_delta_mean": NaN,
+      "attn_tool_call_tags_delta_mean": NaN,
+      "target_logit_delta_median": 1.0625,
+      "distractor_logit_delta_median": -1.125,
+      "top_positive_tokens": [
+        ".Master",
+        "错过",
+        "Ĩ",
+        "快三",
+        ".every",
+        "或者其他",
+        "(I",
+        "=[\""
+      ],
+      "top_positive_token_counts": {
+        ".Master": 11,
+        "错过": 10,
+        "Ĩ": 10,
+        "快三": 10,
+        ".every": 9,
+        "或者其他": 8,
+        "(I": 6,
+        "=[\"": 5
+      },
+      "role": "Primary Writer MLP"
+    }
+  },
+  "artifacts": {
+    "semantic_node_metrics_csv": "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_semantic_roles_v3_smoke20/semantic_node_metrics.csv",
+    "semantic_read_causal_heatmap": "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_semantic_roles_v3_smoke20/semantic_read_causal_heatmap.png",
+    "semantic_attention_delta_heatmap": "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_semantic_roles_v3_smoke20/semantic_attention_delta_heatmap.png",
+    "semantic_write_target_delta": "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_semantic_roles_v3_smoke20/semantic_write_target_delta.png",
+    "final_circuit_semantic": "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_semantic_roles_v3_smoke20/final_circuit_semantic.png",
+    "node_roles_csv": "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_semantic_roles_v3_smoke20/node_roles.csv"
+  }
+}
