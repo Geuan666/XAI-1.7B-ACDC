@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import argparse
 import gc
+import inspect
 import json
 import os
 import re
@@ -28,6 +29,7 @@ from transformers import logging as hf_logging
 from transformers.models.qwen3.configuration_qwen3 import Qwen3Config
 
 from transformer_lens import HookedTransformer
+import transformer_lens.loading_from_pretrained as tl_loading
 
 
 # -----------------------------
@@ -36,16 +38,24 @@ from transformer_lens import HookedTransformer
 
 
 def patch_qwen3_rope_theta() -> None:
-    """TransformerLens expects `cfg.rope_theta`; Qwen3 stores it under rope_scaling."""
-    if hasattr(Qwen3Config, "rope_theta"):
+    """Backfill `rope_theta` only for older Qwen3 configs that don't expose it."""
+    if "rope_theta" in inspect.signature(Qwen3Config.__init__).parameters:
         return
-    Qwen3Config.rope_theta = property(  # type: ignore[attr-defined]
-        lambda self: (
+
+    def _get_rope_theta(self) -> float:
+        stored = getattr(self, "_acdc_rope_theta", None)
+        if stored is not None:
+            return stored
+        return (
             (getattr(self, "rope_scaling", None) or {}).get("rope_theta")
             or (getattr(self, "rope_parameters", None) or {}).get("rope_theta")
             or 1_000_000
         )
-    )
+
+    def _set_rope_theta(self, value: float) -> None:
+        self._acdc_rope_theta = value
+
+    Qwen3Config.rope_theta = property(_get_rope_theta, _set_rope_theta)  # type: ignore[attr-defined]
 
 
 def load_hooked_qwen3(model_path: str, device: str, dtype: torch.dtype) -> Tuple[HookedTransformer, AutoTokenizer]:
@@ -69,17 +79,48 @@ def load_hooked_qwen3(model_path: str, device: str, dtype: torch.dtype) -> Tuple
         tokenizer.bos_token = "<|endoftext|>"
     tokenizer.add_bos_token = True
 
-    model = HookedTransformer.from_pretrained(
-        "Qwen/Qwen3-1.7B",
-        hf_model=hf_model,
-        tokenizer=tokenizer,
-        device=device,
-        dtype=dtype,
-        fold_ln=False,
-        center_writing_weights=False,
-        center_unembed=False,
-        trust_remote_code=True,
-    )
+    if Path(model_path).exists():
+        cfg = tl_loading.get_pretrained_model_config(
+            model_path,
+            hf_cfg=hf_model.config.to_dict(),
+            fold_ln=False,
+            device=device,
+            n_devices=1,
+            dtype=dtype,
+            trust_remote_code=True,
+        )
+        state_dict = tl_loading.get_pretrained_state_dict(
+            model_path,
+            cfg,
+            hf_model=hf_model,
+            dtype=dtype,
+            trust_remote_code=True,
+        )
+        model = HookedTransformer(
+            cfg,
+            tokenizer,
+            move_to_device=False,
+            default_padding_side="right",
+        )
+        model.load_and_process_state_dict(
+            state_dict,
+            fold_ln=False,
+            center_writing_weights=False,
+            center_unembed=False,
+        )
+        model.move_model_modules_to_device()
+    else:
+        model = HookedTransformer.from_pretrained(
+            "Qwen/Qwen3-1.7B",
+            hf_model=hf_model,
+            tokenizer=tokenizer,
+            device=device,
+            dtype=dtype,
+            fold_ln=False,
+            center_writing_weights=False,
+            center_unembed=False,
+            trust_remote_code=True,
+        )
     model.set_use_attn_result(True)
     model.set_use_split_qkv_input(True)
     model.set_use_hook_mlp_in(True)
@@ -257,6 +298,9 @@ def compute_ap_head_gain(
     z_store: Dict[str, torch.Tensor] = {}
 
     def z_hook(z: torch.Tensor, hook):  # noqa: ANN001
+        # Some callers leave global grad disabled; make the hooked tensor explicit.
+        if not z.requires_grad:
+            z = z.detach().requires_grad_(True)
         z.retain_grad()
         z_store[hook.name] = z
         return z
@@ -264,10 +308,11 @@ def compute_ap_head_gain(
     model.reset_hooks()
     model.add_hook(lambda n: n.endswith("attn.hook_z"), z_hook)
 
-    model.zero_grad(set_to_none=True)
-    logits = model(corrupt_tokens)
-    obj = objective_from_logits(logits, target_token, distractor_token)
-    obj.backward()
+    with torch.enable_grad():
+        model.zero_grad(set_to_none=True)
+        logits = model(corrupt_tokens)
+        obj = objective_from_logits(logits, target_token, distractor_token)
+        obj.backward()
 
     ap = torch.zeros(n_layers, n_heads, dtype=torch.float32)
     for layer in range(n_layers):
@@ -303,6 +348,8 @@ def compute_ap_head_gain_lowmem(
         z_store: Dict[str, torch.Tensor] = {}
 
         def z_hook(z: torch.Tensor, hook):  # noqa: ANN001
+            if not z.requires_grad:
+                z = z.detach().requires_grad_(True)
             z.retain_grad()
             z_store[hook.name] = z
             return z
@@ -310,10 +357,11 @@ def compute_ap_head_gain_lowmem(
         model.reset_hooks()
         try:
             model.add_hook(lambda n, target=name: n == target, z_hook)
-            model.zero_grad(set_to_none=True)
-            logits = model(corrupt_tokens)
-            obj = objective_from_logits(logits, target_token, distractor_token)
-            obj.backward()
+            with torch.enable_grad():
+                model.zero_grad(set_to_none=True)
+                logits = model(corrupt_tokens)
+                obj = objective_from_logits(logits, target_token, distractor_token)
+                obj.backward()
 
             z = z_store[name]
             grad = z.grad
