@@ -1,0 +1,7 @@
+{
+  "n_pairs": 42,
+  "pearson_jaccard_vs_suff_within_ratio": -0.06969240497342068,
+  "spearman_jaccard_vs_suff_within_ratio": -0.08234186860792103,
+  "pearson_jaccard_vs_delta_within_ratio": -0.06318579810515255,
+  "spearman_jaccard_vs_delta_within_ratio": -0.08058991395668869
+}

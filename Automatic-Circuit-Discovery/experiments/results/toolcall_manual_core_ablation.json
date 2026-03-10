@@ -1,0 +1,37 @@
+{
+  "old_10": {
+    "n_nodes": 10,
+    "suff_median": 0.9074074074074074,
+    "nec_median": 0.9240506329113924,
+    "min_median": 0.9019607843137255,
+    "harmonic_median": 0.9149403640929065
+  },
+  "new_12": {
+    "n_nodes": 12,
+    "suff_median": 0.9661016949152542,
+    "nec_median": 0.9746835443037974,
+    "min_median": 0.9594594594594594,
+    "harmonic_median": 0.9680851063829787
+  },
+  "new_drop_mlp19": {
+    "n_nodes": 11,
+    "suff_median": 0.9305555555555556,
+    "nec_median": 0.9538461538461539,
+    "min_median": 0.9272727272727272,
+    "harmonic_median": 0.942551674982181
+  },
+  "new_drop_mlp25": {
+    "n_nodes": 11,
+    "suff_median": 0.9464285714285714,
+    "nec_median": 0.9444444444444444,
+    "min_median": 0.9333333333333333,
+    "harmonic_median": 0.9443137254901961
+  },
+  "new_drop_both19_25": {
+    "n_nodes": 10,
+    "suff_median": 0.9074074074074074,
+    "nec_median": 0.9240506329113924,
+    "min_median": 0.9019607843137255,
+    "harmonic_median": 0.9149403640929065
+  }
+}

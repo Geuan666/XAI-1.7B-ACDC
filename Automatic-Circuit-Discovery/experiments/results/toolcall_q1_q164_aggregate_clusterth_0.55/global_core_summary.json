@@ -1,0 +1,1176 @@
+{
+  "input_root": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164",
+  "n_samples": 164,
+  "total_weight": 129.60842460202588,
+  "weight_params": {
+    "gap_min": 0.5,
+    "ap_discount": 0.7
+  },
+  "core_thresholds": {
+    "node": 0.5,
+    "edge": 0.35
+  },
+  "relaxed_thresholds": {
+    "node": 0.25,
+    "edge": 0.15
+  },
+  "core_nodes": [
+    "MLP11",
+    "L17H8",
+    "MLP20",
+    "L20H5",
+    "L21H1",
+    "L21H12",
+    "MLP22",
+    "L23H6",
+    "L24H6",
+    "MLP27"
+  ],
+  "core_edges": [
+    [
+      "L21H1",
+      "L24H6"
+    ],
+    [
+      "L17H8",
+      "L20H5"
+    ],
+    [
+      "L17H8",
+      "L21H1"
+    ],
+    [
+      "MLP27",
+      "Residual Output: <tool_call>"
+    ],
+    [
+      "L23H6",
+      "L24H6"
+    ],
+    [
+      "L17H8",
+      "L21H12"
+    ],
+    [
+      "MLP11",
+      "L17H8"
+    ],
+    [
+      "L21H12",
+      "MLP27"
+    ],
+    [
+      "L20H5",
+      "L21H1"
+    ],
+    [
+      "L21H12",
+      "L23H6"
+    ],
+    [
+      "L20H5",
+      "L21H12"
+    ],
+    [
+      "L21H12",
+      "L24H6"
+    ],
+    [
+      "L21H1",
+      "MLP27"
+    ],
+    [
+      "L24H6",
+      "Residual Output: <tool_call>"
+    ],
+    [
+      "L21H1",
+      "L23H6"
+    ],
+    [
+      "L21H1",
+      "MLP22"
+    ],
+    [
+      "L21H12",
+      "MLP22"
+    ],
+    [
+      "L17H8",
+      "MLP20"
+    ],
+    [
+      "L24H6",
+      "MLP27"
+    ],
+    [
+      "MLP22",
+      "L24H6"
+    ],
+    [
+      "MLP20",
+      "L21H1"
+    ],
+    [
+      "L23H6",
+      "Residual Output: <tool_call>"
+    ],
+    [
+      "Input Embed",
+      "MLP11"
+    ]
+  ],
+  "relaxed_nodes": [
+    "MLP3",
+    "MLP4",
+    "L6H0",
+    "MLP8",
+    "L10H2",
+    "MLP11",
+    "L13H11",
+    "L17H8",
+    "MLP19",
+    "MLP20",
+    "L20H5",
+    "L21H1",
+    "L21H12",
+    "MLP22",
+    "L23H6",
+    "L24H6",
+    "MLP25",
+    "MLP27"
+  ],
+  "relaxed_edges": [
+    [
+      "L21H1",
+      "L24H6"
+    ],
+    [
+      "L17H8",
+      "L20H5"
+    ],
+    [
+      "L17H8",
+      "L21H1"
+    ],
+    [
+      "MLP27",
+      "Residual Output: <tool_call>"
+    ],
+    [
+      "L23H6",
+      "L24H6"
+    ],
+    [
+      "MLP8",
+      "L17H8"
+    ],
+    [
+      "L17H8",
+      "L21H12"
+    ],
+    [
+      "MLP11",
+      "L17H8"
+    ],
+    [
+      "MLP19",
+      "L20H5"
+    ],
+    [
+      "L21H12",
+      "MLP27"
+    ],
+    [
+      "L20H5",
+      "L21H1"
+    ],
+    [
+      "Input Embed",
+      "MLP4"
+    ],
+    [
+      "MLP11",
+      "L13H11"
+    ],
+    [
+      "L21H12",
+      "MLP25"
+    ],
+    [
+      "L21H12",
+      "L23H6"
+    ],
+    [
+      "L20H5",
+      "L21H12"
+    ],
+    [
+      "L21H12",
+      "L24H6"
+    ],
+    [
+      "MLP25",
+      "Residual Output: <tool_call>"
+    ],
+    [
+      "L17H8",
+      "MLP19"
+    ],
+    [
+      "L21H1",
+      "MLP27"
+    ],
+    [
+      "L24H6",
+      "Residual Output: <tool_call>"
+    ],
+    [
+      "L6H0",
+      "MLP11"
+    ],
+    [
+      "L21H1",
+      "MLP25"
+    ],
+    [
+      "L21H1",
+      "L23H6"
+    ],
+    [
+      "L21H1",
+      "MLP22"
+    ],
+    [
+      "L24H6",
+      "MLP25"
+    ],
+    [
+      "MLP22",
+      "L23H6"
+    ],
+    [
+      "L21H12",
+      "MLP22"
+    ],
+    [
+      "L17H8",
+      "MLP20"
+    ],
+    [
+      "L24H6",
+      "MLP27"
+    ],
+    [
+      "MLP20",
+      "L21H12"
+    ],
+    [
+      "MLP22",
+      "L24H6"
+    ],
+    [
+      "L10H2",
+      "MLP11"
+    ],
+    [
+      "MLP20",
+      "L21H1"
+    ],
+    [
+      "L23H6",
+      "Residual Output: <tool_call>"
+    ],
+    [
+      "MLP4",
+      "L17H8"
+    ],
+    [
+      "Input Embed",
+      "MLP3"
+    ],
+    [
+      "MLP4",
+      "L6H0"
+    ],
+    [
+      "L6H0",
+      "MLP8"
+    ],
+    [
+      "MLP8",
+      "L10H2"
+    ],
+    [
+      "MLP3",
+      "L17H8"
+    ],
+    [
+      "L13H11",
+      "L17H8"
+    ]
+  ],
+  "n_clusters": 75,
+  "cluster_sizes": {
+    "0": 10,
+    "1": 8,
+    "2": 12,
+    "3": 1,
+    "4": 2,
+    "5": 2,
+    "6": 1,
+    "7": 2,
+    "8": 1,
+    "9": 1,
+    "10": 11,
+    "11": 1,
+    "12": 26,
+    "13": 1,
+    "14": 2,
+    "15": 2,
+    "16": 1,
+    "17": 1,
+    "18": 1,
+    "19": 2,
+    "20": 1,
+    "21": 3,
+    "22": 2,
+    "23": 1,
+    "24": 2,
+    "25": 1,
+    "26": 1,
+    "27": 3,
+    "28": 3,
+    "29": 3,
+    "30": 2,
+    "31": 1,
+    "32": 1,
+    "33": 3,
+    "34": 2,
+    "35": 1,
+    "36": 1,
+    "37": 2,
+    "38": 1,
+    "39": 1,
+    "40": 1,
+    "41": 1,
+    "42": 1,
+    "43": 2,
+    "44": 1,
+    "45": 2,
+    "46": 1,
+    "47": 1,
+    "48": 1,
+    "49": 2,
+    "50": 2,
+    "51": 1,
+    "52": 1,
+    "53": 3,
+    "54": 1,
+    "55": 1,
+    "56": 1,
+    "57": 1,
+    "58": 1,
+    "59": 1,
+    "60": 1,
+    "61": 1,
+    "62": 1,
+    "63": 1,
+    "64": 1,
+    "65": 1,
+    "66": 1,
+    "67": 1,
+    "68": 1,
+    "69": 1,
+    "70": 1,
+    "71": 1,
+    "72": 1,
+    "73": 1,
+    "74": 1
+  },
+  "cluster_summaries": [
+    {
+      "cluster_id": 12,
+      "size": 26,
+      "total_weight": 1.0,
+      "nodes": [
+        "MLP0",
+        "L5H10",
+        "MLP8",
+        "L10H2",
+        "L11H11",
+        "L17H8",
+        "MLP19",
+        "L20H5",
+        "L21H1",
+        "L21H12",
+        "L23H6",
+        "L24H6",
+        "MLP25",
+        "MLP27"
+      ],
+      "edges": [
+        [
+          "MLP0",
+          "L5H10"
+        ],
+        [
+          "MLP8",
+          "L11H11"
+        ],
+        [
+          "L17H8",
+          "L20H5"
+        ],
+        [
+          "MLP0",
+          "L10H2"
+        ],
+        [
+          "MLP27",
+          "Residual Output: <tool_call>"
+        ],
+        [
+          "L23H6",
+          "MLP25"
+        ],
+        [
+          "L23H6",
+          "L24H6"
+        ],
+        [
+          "MLP8",
+          "L17H8"
+        ],
+        [
+          "MLP19",
+          "L20H5"
+        ],
+        [
+          "L21H12",
+          "MLP27"
+        ],
+        [
+          "L5H10",
+          "MLP8"
+        ],
+        [
+          "L20H5",
+          "L21H1"
+        ],
+        [
+          "MLP19",
+          "L21H1"
+        ],
+        [
+          "L21H12",
+          "MLP25"
+        ],
+        [
+          "L21H12",
+          "L23H6"
+        ],
+        [
+          "L20H5",
+          "L21H12"
+        ],
+        [
+          "Input Embed",
+          "MLP0"
+        ],
+        [
+          "MLP19",
+          "L21H12"
+        ],
+        [
+          "L21H12",
+          "L24H6"
+        ],
+        [
+          "MLP25",
+          "Residual Output: <tool_call>"
+        ],
+        [
+          "MLP8",
+          "L10H2"
+        ],
+        [
+          "L17H8",
+          "MLP19"
+        ],
+        [
+          "L21H1",
+          "MLP27"
+        ],
+        [
+          "L11H11",
+          "MLP19"
+        ],
+        [
+          "L24H6",
+          "Residual Output: <tool_call>"
+        ],
+        [
+          "L21H1",
+          "L23H6"
+        ],
+        [
+          "L10H2",
+          "L21H12"
+        ]
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "size": 12,
+      "total_weight": 11.183009382366766,
+      "nodes": [
+        "L10H2",
+        "L13H11",
+        "L17H8",
+        "MLP19",
+        "MLP20",
+        "L20H14",
+        "L20H5",
+        "L21H1",
+        "L21H12",
+        "MLP22",
+        "L23H6",
+        "L24H6",
+        "MLP25",
+        "MLP27"
+      ],
+      "edges": [
+        [
+          "L17H8",
+          "MLP20"
+        ],
+        [
+          "L24H6",
+          "MLP27"
+        ],
+        [
+          "L17H8",
+          "L20H5"
+        ],
+        [
+          "L13H11",
+          "L17H8"
+        ],
+        [
+          "Input Embed",
+          "L10H2"
+        ],
+        [
+          "L17H8",
+          "L21H1"
+        ],
+        [
+          "MLP27",
+          "Residual Output: <tool_call>"
+        ],
+        [
+          "L21H1",
+          "MLP22"
+        ],
+        [
+          "L24H6",
+          "MLP25"
+        ],
+        [
+          "L23H6",
+          "L24H6"
+        ],
+        [
+          "L20H14",
+          "L21H12"
+        ],
+        [
+          "L17H8",
+          "L21H12"
+        ],
+        [
+          "L21H12",
+          "MLP27"
+        ],
+        [
+          "L10H2",
+          "L13H11"
+        ],
+        [
+          "L20H5",
+          "L21H1"
+        ],
+        [
+          "L17H8",
+          "L20H14"
+        ],
+        [
+          "L21H12",
+          "MLP25"
+        ],
+        [
+          "L21H12",
+          "L23H6"
+        ],
+        [
+          "L20H5",
+          "L21H12"
+        ],
+        [
+          "MLP19",
+          "L21H12"
+        ],
+        [
+          "L21H12",
+          "L24H6"
+        ],
+        [
+          "MLP25",
+          "Residual Output: <tool_call>"
+        ],
+        [
+          "MLP20",
+          "L21H12"
+        ],
+        [
+          "MLP22",
+          "L24H6"
+        ],
+        [
+          "L17H8",
+          "MLP19"
+        ],
+        [
+          "L21H12",
+          "MLP22"
+        ],
+        [
+          "L24H6",
+          "Residual Output: <tool_call>"
+        ],
+        [
+          "L21H1",
+          "L23H6"
+        ],
+        [
+          "L21H1",
+          "L24H6"
+        ],
+        [
+          "L23H6",
+          "MLP27"
+        ],
+        [
+          "L20H14",
+          "L21H1"
+        ],
+        [
+          "MLP22",
+          "L23H6"
+        ],
+        [
+          "L21H1",
+          "MLP27"
+        ],
+        [
+          "L21H1",
+          "MLP25"
+        ],
+        [
+          "L13H11",
+          "MLP19"
+        ],
+        [
+          "MLP20",
+          "L21H1"
+        ],
+        [
+          "MLP19",
+          "L20H5"
+        ]
+      ]
+    },
+    {
+      "cluster_id": 10,
+      "size": 11,
+      "total_weight": 10.479227311884319,
+      "nodes": [
+        "MLP3",
+        "L6H0",
+        "MLP11",
+        "L13H11",
+        "L17H8",
+        "MLP19",
+        "MLP20",
+        "L20H5",
+        "L21H1",
+        "L21H12",
+        "MLP22",
+        "L23H6",
+        "L24H6",
+        "MLP27"
+      ],
+      "edges": [
+        [
+          "L21H1",
+          "L24H6"
+        ],
+        [
+          "L17H8",
+          "MLP20"
+        ],
+        [
+          "L24H6",
+          "MLP27"
+        ],
+        [
+          "L17H8",
+          "L20H5"
+        ],
+        [
+          "L17H8",
+          "L21H1"
+        ],
+        [
+          "MLP27",
+          "Residual Output: <tool_call>"
+        ],
+        [
+          "L21H1",
+          "MLP22"
+        ],
+        [
+          "L17H8",
+          "L21H12"
+        ],
+        [
+          "MLP11",
+          "L17H8"
+        ],
+        [
+          "MLP19",
+          "MLP20"
+        ],
+        [
+          "MLP19",
+          "L20H5"
+        ],
+        [
+          "L20H5",
+          "L21H1"
+        ],
+        [
+          "MLP22",
+          "MLP27"
+        ],
+        [
+          "L21H12",
+          "L23H6"
+        ],
+        [
+          "MLP20",
+          "L21H1"
+        ],
+        [
+          "L20H5",
+          "L21H12"
+        ],
+        [
+          "L17H8",
+          "MLP19"
+        ],
+        [
+          "L21H1",
+          "MLP27"
+        ],
+        [
+          "L21H12",
+          "MLP22"
+        ],
+        [
+          "L23H6",
+          "Residual Output: <tool_call>"
+        ],
+        [
+          "L24H6",
+          "Residual Output: <tool_call>"
+        ],
+        [
+          "L6H0",
+          "MLP11"
+        ],
+        [
+          "L21H1",
+          "L23H6"
+        ],
+        [
+          "MLP3",
+          "L6H0"
+        ],
+        [
+          "Input Embed",
+          "MLP3"
+        ],
+        [
+          "MLP3",
+          "L17H8"
+        ],
+        [
+          "L21H12",
+          "L24H6"
+        ],
+        [
+          "MLP22",
+          "L24H6"
+        ],
+        [
+          "L21H12",
+          "MLP27"
+        ],
+        [
+          "MLP11",
+          "L13H11"
+        ],
+        [
+          "MLP20",
+          "L21H12"
+        ],
+        [
+          "L13H11",
+          "MLP19"
+        ],
+        [
+          "L13H11",
+          "L17H8"
+        ]
+      ]
+    },
+    {
+      "cluster_id": 0,
+      "size": 10,
+      "total_weight": 9.865472542284602,
+      "nodes": [
+        "MLP4",
+        "L6H0",
+        "MLP11",
+        "L13H11",
+        "L17H8",
+        "MLP19",
+        "L20H5",
+        "L21H1",
+        "L21H12",
+        "MLP22",
+        "L23H6",
+        "L24H6",
+        "MLP25",
+        "MLP27"
+      ],
+      "edges": [
+        [
+          "MLP4",
+          "L6H0"
+        ],
+        [
+          "L21H1",
+          "L24H6"
+        ],
+        [
+          "L17H8",
+          "L20H5"
+        ],
+        [
+          "L17H8",
+          "L21H1"
+        ],
+        [
+          "MLP27",
+          "Residual Output: <tool_call>"
+        ],
+        [
+          "L23H6",
+          "L24H6"
+        ],
+        [
+          "L17H8",
+          "L21H12"
+        ],
+        [
+          "MLP11",
+          "L17H8"
+        ],
+        [
+          "L13H11",
+          "MLP19"
+        ],
+        [
+          "MLP19",
+          "L20H5"
+        ],
+        [
+          "L21H12",
+          "MLP27"
+        ],
+        [
+          "L20H5",
+          "L21H1"
+        ],
+        [
+          "Input Embed",
+          "MLP4"
+        ],
+        [
+          "MLP11",
+          "L13H11"
+        ],
+        [
+          "L21H12",
+          "MLP25"
+        ],
+        [
+          "L21H12",
+          "L23H6"
+        ],
+        [
+          "L20H5",
+          "L21H12"
+        ],
+        [
+          "L21H12",
+          "L24H6"
+        ],
+        [
+          "MLP25",
+          "Residual Output: <tool_call>"
+        ],
+        [
+          "L17H8",
+          "MLP19"
+        ],
+        [
+          "L21H1",
+          "MLP27"
+        ],
+        [
+          "L24H6",
+          "Residual Output: <tool_call>"
+        ],
+        [
+          "L6H0",
+          "MLP11"
+        ],
+        [
+          "L21H1",
+          "MLP25"
+        ],
+        [
+          "L21H1",
+          "L23H6"
+        ],
+        [
+          "MLP19",
+          "L21H1"
+        ],
+        [
+          "MLP19",
+          "L21H12"
+        ],
+        [
+          "L24H6",
+          "MLP27"
+        ],
+        [
+          "L21H1",
+          "MLP22"
+        ],
+        [
+          "L24H6",
+          "MLP25"
+        ],
+        [
+          "L21H12",
+          "MLP22"
+        ],
+        [
+          "MLP22",
+          "L23H6"
+        ],
+        [
+          "MLP4",
+          "L13H11"
+        ]
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "size": 8,
+      "total_weight": 7.7667781056226755,
+      "nodes": [
+        "L6H0",
+        "MLP11",
+        "L12H14",
+        "L17H2",
+        "L17H8",
+        "MLP19",
+        "L20H5",
+        "L21H1",
+        "L21H12",
+        "MLP22",
+        "L23H6",
+        "L24H6",
+        "MLP25",
+        "MLP27"
+      ],
+      "edges": [
+        [
+          "L21H1",
+          "L24H6"
+        ],
+        [
+          "MLP11",
+          "L17H2"
+        ],
+        [
+          "L17H8",
+          "L20H5"
+        ],
+        [
+          "L17H2",
+          "MLP19"
+        ],
+        [
+          "L17H8",
+          "L21H1"
+        ],
+        [
+          "MLP27",
+          "Residual Output: <tool_call>"
+        ],
+        [
+          "L21H1",
+          "MLP22"
+        ],
+        [
+          "L24H6",
+          "MLP25"
+        ],
+        [
+          "L23H6",
+          "L24H6"
+        ],
+        [
+          "L17H8",
+          "L21H12"
+        ],
+        [
+          "MLP11",
+          "L17H8"
+        ],
+        [
+          "Input Embed",
+          "L6H0"
+        ],
+        [
+          "MLP19",
+          "L20H5"
+        ],
+        [
+          "L21H12",
+          "MLP27"
+        ],
+        [
+          "MLP11",
+          "L12H14"
+        ],
+        [
+          "L20H5",
+          "L21H1"
+        ],
+        [
+          "L21H12",
+          "L23H6"
+        ],
+        [
+          "L20H5",
+          "L21H12"
+        ],
+        [
+          "L21H12",
+          "L24H6"
+        ],
+        [
+          "MLP22",
+          "L23H6"
+        ],
+        [
+          "MLP25",
+          "Residual Output: <tool_call>"
+        ],
+        [
+          "L17H8",
+          "MLP19"
+        ],
+        [
+          "L21H1",
+          "MLP27"
+        ],
+        [
+          "L21H12",
+          "MLP22"
+        ],
+        [
+          "L24H6",
+          "Residual Output: <tool_call>"
+        ],
+        [
+          "L6H0",
+          "MLP11"
+        ],
+        [
+          "L21H1",
+          "MLP25"
+        ],
+        [
+          "L21H1",
+          "L23H6"
+        ],
+        [
+          "L23H6",
+          "Residual Output: <tool_call>"
+        ],
+        [
+          "L21H12",
+          "MLP25"
+        ],
+        [
+          "L24H6",
+          "MLP27"
+        ],
+        [
+          "MLP22",
+          "L24H6"
+        ],
+        [
+          "L12H14",
+          "L17H8"
+        ]
+      ]
+    }
+  ],
+  "replay_summary": {
+    "ran_samples": 0,
+    "global_suff_ratio_median": null,
+    "global_nec_ratio_median": null,
+    "random_suff_ratio_mean_median": null,
+    "global_minus_random_median": null
+  },
+  "artifacts": {
+    "node_support_csv": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_aggregate_clusterth_0.55/node_support.csv",
+    "edge_support_csv": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_aggregate_clusterth_0.55/edge_support.csv",
+    "sample_weights_csv": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_aggregate_clusterth_0.55/sample_weights.csv",
+    "cluster_assignments_csv": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_aggregate_clusterth_0.55/cluster_assignments.csv",
+    "global_core_png": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_aggregate_clusterth_0.55/final_circuit_global_core.png",
+    "global_relaxed_png": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_aggregate_clusterth_0.55/final_circuit_global_relaxed.png",
+    "global_replay_json": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_aggregate_clusterth_0.55/global_core_replay.json"
+  }
+}

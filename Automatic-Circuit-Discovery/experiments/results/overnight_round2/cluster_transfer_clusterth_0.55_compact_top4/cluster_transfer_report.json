@@ -1,0 +1,145 @@
+{
+  "input_root": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164",
+  "aggregate_summary": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_aggregate_clusterth_0.55/global_core_summary.json",
+  "cluster_assignments": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_aggregate_clusterth_0.55/cluster_assignments.csv",
+  "gap_min": 0.5,
+  "min_cluster_size": 8,
+  "min_target_samples": 6,
+  "source_mode": "compact_support",
+  "compact_params": {
+    "node_th": 0.7,
+    "edge_th": 0.5,
+    "min_nodes": 4,
+    "max_nodes": 8,
+    "min_edges": 6,
+    "topk_nodes": 4
+  },
+  "n_random": 1,
+  "seed": 123,
+  "n_records_filtered": 139,
+  "n_records_processed": 139,
+  "skipped_q_indices": [],
+  "sources": [
+    {
+      "name": "cluster_2",
+      "source_cluster_id": 2,
+      "cluster_size": 12,
+      "build_mode": "compact_support",
+      "n_nodes": 4,
+      "n_edges": 6
+    },
+    {
+      "name": "cluster_10",
+      "source_cluster_id": 10,
+      "cluster_size": 11,
+      "build_mode": "compact_support",
+      "n_nodes": 4,
+      "n_edges": 6
+    },
+    {
+      "name": "cluster_0",
+      "source_cluster_id": 0,
+      "cluster_size": 10,
+      "build_mode": "compact_support",
+      "n_nodes": 4,
+      "n_edges": 6
+    },
+    {
+      "name": "cluster_1",
+      "source_cluster_id": 1,
+      "cluster_size": 8,
+      "build_mode": "compact_support",
+      "n_nodes": 4,
+      "n_edges": 6
+    },
+    {
+      "name": "global_core",
+      "source_cluster_id": null,
+      "cluster_size": 10,
+      "build_mode": "global_aggregate",
+      "n_nodes": 10,
+      "n_edges": 23
+    }
+  ],
+  "targets": [
+    {
+      "label": "cluster_2",
+      "n_samples": 12
+    },
+    {
+      "label": "cluster_10",
+      "n_samples": 11
+    },
+    {
+      "label": "cluster_0",
+      "n_samples": 10
+    },
+    {
+      "label": "cluster_1",
+      "n_samples": 8
+    },
+    {
+      "label": "all_valid",
+      "n_samples": 139
+    }
+  ],
+  "decay_rows": [
+    {
+      "source": "cluster_2",
+      "within_suff_median": 0.8698945981554678,
+      "cross_suff_median_mean": 0.805863374144867,
+      "cross_over_within_suff": 0.9263919742157577,
+      "within_delta_median": 0.7655677655677655,
+      "cross_delta_median_mean": 0.6971949336117955,
+      "cross_over_within_delta": 0.9106900328996181
+    },
+    {
+      "source": "cluster_10",
+      "within_suff_median": 0.8297872340425532,
+      "cross_suff_median_mean": 0.8192324955158385,
+      "cross_over_within_suff": 0.9872801869037029,
+      "within_delta_median": 0.6712328767123288,
+      "cross_delta_median_mean": 0.7409360279364362,
+      "cross_over_within_delta": 1.1038434701910171
+    },
+    {
+      "source": "cluster_0",
+      "within_suff_median": 0.8108798114689709,
+      "cross_suff_median_mean": 0.8255349697070327,
+      "cross_over_within_suff": 1.0180731571199346,
+      "within_delta_median": 0.6737500000000001,
+      "cross_delta_median_mean": 0.765313547730562,
+      "cross_over_within_delta": 1.1359013695444333
+    },
+    {
+      "source": "cluster_1",
+      "within_suff_median": 0.7769230769230769,
+      "cross_suff_median_mean": 0.8368538812223306,
+      "cross_over_within_suff": 1.0771386589990395,
+      "within_delta_median": 0.6909090909090909,
+      "cross_delta_median_mean": 0.783934428710548,
+      "cross_over_within_delta": 1.1346419362915825
+    }
+  ],
+  "overlap_correlation": {
+    "n_pairs": 12,
+    "pearson_jaccard_vs_suff_within_ratio": NaN,
+    "spearman_jaccard_vs_suff_within_ratio": NaN,
+    "pearson_jaccard_vs_delta_within_ratio": NaN,
+    "spearman_jaccard_vs_delta_within_ratio": NaN
+  },
+  "artifacts": {
+    "per_sample_csv": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_clusterth_0.55_compact_top4/cluster_transfer_per_sample.csv",
+    "summary_csv": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_clusterth_0.55_compact_top4/cluster_transfer_summary.csv",
+    "decay_csv": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_clusterth_0.55_compact_top4/cluster_transfer_decay.csv",
+    "sources_json": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_clusterth_0.55_compact_top4/cluster_transfer_sources.json",
+    "source_overlap_csv": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_clusterth_0.55_compact_top4/cluster_source_overlap.csv",
+    "source_overlap_heatmap_png": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_clusterth_0.55_compact_top4/cluster_source_overlap_heatmap.png",
+    "overlap_pairs_csv": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_clusterth_0.55_compact_top4/cluster_transfer_overlap_pairs.csv",
+    "overlap_correlation_json": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_clusterth_0.55_compact_top4/cluster_transfer_overlap_correlation.json",
+    "overlap_scatter_png": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_clusterth_0.55_compact_top4/cluster_transfer_overlap_scatter.png",
+    "suff_heatmap_png": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_clusterth_0.55_compact_top4/cluster_transfer_suff_heatmap.png",
+    "delta_heatmap_png": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_clusterth_0.55_compact_top4/cluster_transfer_delta_heatmap.png",
+    "relative_suff_heatmap_png": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_clusterth_0.55_compact_top4/cluster_transfer_relative_suff_heatmap.png"
+  }
+}

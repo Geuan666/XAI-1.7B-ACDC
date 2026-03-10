@@ -1,0 +1,2 @@
+source_a,source_b,source_a_nodes,source_b_nodes,intersection,union,jaccard
+global_core,global_core,8,8,8,8,1.0

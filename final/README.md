@@ -365,3 +365,115 @@ python experiments/path_patch_toolcall_edges.py \
 
 ## 7. 一句话结论
 当前结果已经形成“跨样本一致 + 节点语义 + 组级因果 + 边级中介”的完整证据链，最终是 `L20/L21/L24` 头主干与 `MLP27` 写侧协同决定 `<tool_call>`，而不是单 MLP 退化。
+
+## 8. 2026-03-09 夜间迭代更新（新增）
+
+### 8.1 新增核心证据：held-out cross-validation
+- 目的：消除“同一批样本既用于发现又用于验证”的数据泄漏疑虑。
+- 结果（`reports/crossval_report_baseline.json`）：
+  - `test_suff_median_mean = 0.9330`
+  - `test_nec_median_mean = 0.9514`
+  - `test_delta_vs_random_mean = 0.8006`
+- 图与表：
+  - `figures/cv_test_boxplot_baseline.png`
+  - `figures/cv_tradeoff_threshold_sweep.png`
+  - `tables/cv_threshold_sweep_summary.csv`
+
+### 8.2 扩展 core 对比（10-node vs 12-node）
+- 12-node（阈值 `node=0.40`, `edge=0.25`）在 replay 上更高：
+  - 10-node：`suff=0.9074`, `nec=0.9241`, `global-random=0.5833`
+  - 12-node：`suff=0.9661`, `nec=0.9747`, `global-random=0.6742`
+- 对应摘要：
+  - `context/global_core_summary_n0.40_e0.25.json`
+- 为提升可读性，新增稳定边 Top-20 热图：
+  - `figures/path_patch_edge_heatmap_trimmed_top20_clipped.png`
+
+### 8.3 手工消融确认
+- `reports/manual_core_ablation.json` 显示：
+  - 12-node 指标最高；
+  - 去掉 `MLP19` 或 `MLP25` 都会掉点；
+  - 去掉二者后退回原 10-node 水平。
+
+### 8.4 compact vs extended 总览
+- 对比表：`tables/compact_vs_extended_summary.csv`
+- 总览图：`figures/compact_vs_extended_overview.png`
+
+## 9. 2026-03-09 Round2（best config + 稳定性修剪）
+
+### 9.1 best config 全流程补齐（含 contrast tracing）
+- overnight round2 选出的 best 阈值：`node=0.55`, `edge=0.40`。
+- 关键工件：
+  - `context/global_core_summary_best_n0.55_e0.4.json`
+  - `context/final_circuit_global_core_best_n0.55_e0.4.png`
+  - `reports/role_group_report_best_n0.55_e0.4.json`
+  - `tables/role_group_summary_best_n0.55_e0.4.csv`
+  - `reports/path_patch_edge_report_best_n0.55_e0.4.json`
+  - `tables/path_patch_edge_summary_trimmed_best_n0.55_e0.4.csv`
+  - `reports/contrast_token_trace_report_best_n0.55_e0.4.json`
+  - `figures/contrast_token_trace_best_n0.55_e0.4.png`
+
+### 9.2 P1 边稳定性修剪（负结果，保留）
+- 新增可复现实验脚本：
+  - `Automatic-Circuit-Discovery/experiments/prune_toolcall_core_by_path_stability.py`
+- 规则：`edge_ratio_median > 0.03` 且 `positive_frac >= 0.90`（trimmed path-patch 统计）。
+- 在 Input->Output 路径约束下，core 从 `8 nodes / 20 edges` 变成 `7 nodes / 17 edges`：
+  - 删除节点：`L20H5`
+  - 删除边：`L17H8->L20H5`, `L20H5->L21H12`, `L20H5->L21H1`
+- 关键工件：
+  - `context/global_core_summary_pruned_stability_n0.55_e0.4.json`
+  - `reports/global_core_replay_pruned_stability_n0.55_e0.4.json`
+  - `tables/path_stability_edge_decisions_n0.55_e0.4.csv`
+  - `reports/role_group_report_pruned_stability_n0.55_e0.4.json`
+  - `tables/role_group_summary_pruned_stability_n0.55_e0.4.csv`
+  - `figures/role_group_causal_heatmap_pruned_stability_n0.55_e0.4.png`
+  - `context/global_core_summary_pruned_stability_n0.55_e0.4_er0.05.json`
+  - `reports/global_core_replay_pruned_stability_n0.55_e0.4_er0.05.json`
+  - `tables/path_stability_edge_decisions_n0.55_e0.4_er0.05.csv`
+
+### 9.3 结论（best 8-node vs pruned 7-node）
+- replay（随机对照）：
+  - best 8-node: `suff=0.9036`, `nec=0.9241`, `global-random=0.6825`
+  - pruned 7-node: `suff=0.8615`, `nec=0.8667`, `global-random=0.6389`
+- 更严格阈值（`edge_ratio_min=0.05`）的 6-node 版本进一步下降：
+  - `suff=0.8491`, `nec=0.8525`, `global-random=0.6534`
+- role-group full-core：
+  - best 8-node: `suff=0.9070`, `nec=0.9206`
+  - pruned 7-node: `suff=0.8644`, `nec=0.8679`
+- 解释：该稳定性修剪虽然简化了图结构，但损失了明显因果恢复能力，当前不建议替代 best 8-node 主结果。
+- 汇总表：`tables/core_tradeoff_with_pruning.csv`
+- 结构阈值扫描：`tables/stability_threshold_structural_sweep.csv`
+
+## 10. 2026-03-09 Round2-P2（cluster transfer 边界）
+
+### 10.1 方法强化（重跑 + 重构 source circuits）
+- 新增脚本：`Automatic-Circuit-Discovery/experiments/evaluate_toolcall_cluster_transfer.py`
+  - 新能力：
+    - `source_mode=compact_support`（按每簇 support 重建更紧凑 source core）；
+    - 输出 source overlap（node Jaccard）矩阵；
+    - 输出 overlap-vs-transfer 相关性与散点图；
+    - 固定 top-k tie-break（按 support/layer/name）保证可复现。
+- 关键产物：
+  - `tables/cluster_transfer_overlap_confound_summary.csv`
+  - `tables/cluster_transfer_low_overlap_probe.csv`
+  - `tables/cluster_transfer_pair_extremes_best_top2.csv`
+  - `figures/cluster_transfer_overlap_boundary.png`
+  - `figures/cluster_transfer_overlap_scatter_best_summary.png`
+  - `figures/cluster_transfer_overlap_scatter_best_top2.png`
+
+### 10.2 主结果（best aggregate: `n0.55/e0.4`）
+- baseline（cluster summary sources）：
+  - source 平均重叠：`Jaccard_mean=0.561`
+  - `cross/within suff median=0.985`
+- compact top-2（更低重叠探针）：
+  - source 平均重叠：`Jaccard_mean=0.444`（最小可到 `0.0`）
+  - `cross/within suff median=0.957`
+  - 低重叠子集（`J<=0.34`, `n=30`）：`suff_vs_within_median=0.978`, `mean=0.991`
+- overlap 与 transfer 的相关性在 best 分区下接近 0（弱相关）：
+  - top-2: `pearson(jaccard, suff_within_ratio)=0.104`, `spearman=0.070`
+
+### 10.3 边界解读（保留正负两面）
+- 正面：即使在更低 overlap 的 source 构造下，跨簇 transfer 的整体保真仍接近簇内（多数聚合指标约 `0.96~1.00`）。
+- 负面/边界：pair 级别存在明显波动（top-2 中 `suff_vs_within_ratio` 最低约 `0.666`、最高约 `1.445`），说明“完全单一机制”仍不可直接下结论。
+- 当前更稳妥表述：
+  - 存在强共享主干机制（global transfer 不显著衰减）；
+  - 同时存在簇对簇的方向性差异（局部专化/冗余并存）。

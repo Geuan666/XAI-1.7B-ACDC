@@ -1,0 +1,12 @@
+{
+  "source_runs": [
+    "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_best_n0.55_e0.4_v2",
+    "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_best_n0.55_e0.4_compact_top4_det",
+    "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_best_n0.55_e0.4_compact_top2_det",
+    "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_clusterth_0.55_v2",
+    "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_clusterth_0.55_compact_top4_det"
+  ],
+  "summary_table": "/root/data/XAI-1.7B-ACDCcopy/final/tables/cluster_transfer_overlap_confound_summary.csv",
+  "low_overlap_table": "/root/data/XAI-1.7B-ACDCcopy/final/tables/cluster_transfer_low_overlap_probe.csv",
+  "figure": "/root/data/XAI-1.7B-ACDCcopy/final/figures/cluster_transfer_overlap_boundary.png"
+}

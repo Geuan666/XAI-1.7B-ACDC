@@ -1,0 +1,3 @@
+q_index,source,source_build_mode,source_cluster_id,source_cluster_size,target,source_nodes,suff_ratio,nec_ratio,random_suff_mean,delta_vs_random,gap
+1,global_core,global_aggregate,,8,all_valid,8,0.8157894736842105,1.131578947368421,nan,nan,4.75
+2,global_core,global_aggregate,,8,all_valid,8,0.8305084745762712,1.1016949152542372,nan,nan,7.375

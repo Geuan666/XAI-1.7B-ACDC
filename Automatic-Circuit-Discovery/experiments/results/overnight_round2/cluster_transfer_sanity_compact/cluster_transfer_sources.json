@@ -1,0 +1,102 @@
+[
+  {
+    "name": "global_core",
+    "source_cluster_id": null,
+    "cluster_size": 8,
+    "build_mode": "global_aggregate",
+    "n_nodes": 8,
+    "n_edges": 20,
+    "nodes": [
+      "L17H8",
+      "L20H5",
+      "L21H1",
+      "L21H12",
+      "MLP22",
+      "L23H6",
+      "L24H6",
+      "MLP27"
+    ],
+    "edges": [
+      [
+        "L23H6",
+        "L24H6"
+      ],
+      [
+        "L21H1",
+        "L24H6"
+      ],
+      [
+        "L24H6",
+        "Residual Output: <tool_call>"
+      ],
+      [
+        "L21H12",
+        "MLP27"
+      ],
+      [
+        "L21H1",
+        "L23H6"
+      ],
+      [
+        "L21H12",
+        "L24H6"
+      ],
+      [
+        "L17H8",
+        "L20H5"
+      ],
+      [
+        "L20H5",
+        "L21H12"
+      ],
+      [
+        "MLP27",
+        "Residual Output: <tool_call>"
+      ],
+      [
+        "L17H8",
+        "L21H12"
+      ],
+      [
+        "L20H5",
+        "L21H1"
+      ],
+      [
+        "L17H8",
+        "L21H1"
+      ],
+      [
+        "L21H1",
+        "MLP27"
+      ],
+      [
+        "L21H12",
+        "L23H6"
+      ],
+      [
+        "L21H1",
+        "MLP22"
+      ],
+      [
+        "L21H12",
+        "MLP22"
+      ],
+      [
+        "MLP22",
+        "L24H6"
+      ],
+      [
+        "L24H6",
+        "MLP27"
+      ],
+      [
+        "L23H6",
+        "Residual Output: <tool_call>"
+      ],
+      [
+        "Input Embed",
+        "L17H8"
+      ]
+    ]
+  }
+]

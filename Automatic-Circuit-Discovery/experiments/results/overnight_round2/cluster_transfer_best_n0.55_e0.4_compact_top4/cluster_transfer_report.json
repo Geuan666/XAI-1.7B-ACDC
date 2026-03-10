@@ -1,0 +1,208 @@
+{
+  "input_root": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164",
+  "aggregate_summary": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/aggregate_best_n0.55_e0.4/global_core_summary.json",
+  "cluster_assignments": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/aggregate_best_n0.55_e0.4/cluster_assignments.csv",
+  "gap_min": 0.5,
+  "min_cluster_size": 8,
+  "min_target_samples": 6,
+  "source_mode": "compact_support",
+  "compact_params": {
+    "node_th": 0.7,
+    "edge_th": 0.5,
+    "min_nodes": 4,
+    "max_nodes": 8,
+    "min_edges": 6,
+    "topk_nodes": 4
+  },
+  "n_random": 1,
+  "seed": 123,
+  "n_records_filtered": 139,
+  "n_records_processed": 139,
+  "skipped_q_indices": [],
+  "sources": [
+    {
+      "name": "cluster_0",
+      "source_cluster_id": 0,
+      "cluster_size": 57,
+      "build_mode": "compact_support",
+      "n_nodes": 4,
+      "n_edges": 6
+    },
+    {
+      "name": "cluster_6",
+      "source_cluster_id": 6,
+      "cluster_size": 15,
+      "build_mode": "compact_support",
+      "n_nodes": 4,
+      "n_edges": 6
+    },
+    {
+      "name": "cluster_12",
+      "source_cluster_id": 12,
+      "cluster_size": 12,
+      "build_mode": "compact_support",
+      "n_nodes": 4,
+      "n_edges": 8
+    },
+    {
+      "name": "cluster_8",
+      "source_cluster_id": 8,
+      "cluster_size": 11,
+      "build_mode": "compact_support",
+      "n_nodes": 4,
+      "n_edges": 8
+    },
+    {
+      "name": "cluster_2",
+      "source_cluster_id": 2,
+      "cluster_size": 9,
+      "build_mode": "compact_support",
+      "n_nodes": 4,
+      "n_edges": 8
+    },
+    {
+      "name": "cluster_10",
+      "source_cluster_id": 10,
+      "cluster_size": 8,
+      "build_mode": "compact_support",
+      "n_nodes": 4,
+      "n_edges": 6
+    },
+    {
+      "name": "cluster_1",
+      "source_cluster_id": 1,
+      "cluster_size": 8,
+      "build_mode": "compact_support",
+      "n_nodes": 4,
+      "n_edges": 7
+    },
+    {
+      "name": "global_core",
+      "source_cluster_id": null,
+      "cluster_size": 8,
+      "build_mode": "global_aggregate",
+      "n_nodes": 8,
+      "n_edges": 20
+    }
+  ],
+  "targets": [
+    {
+      "label": "cluster_0",
+      "n_samples": 57
+    },
+    {
+      "label": "cluster_6",
+      "n_samples": 15
+    },
+    {
+      "label": "cluster_12",
+      "n_samples": 12
+    },
+    {
+      "label": "cluster_8",
+      "n_samples": 11
+    },
+    {
+      "label": "cluster_2",
+      "n_samples": 9
+    },
+    {
+      "label": "cluster_10",
+      "n_samples": 8
+    },
+    {
+      "label": "cluster_1",
+      "n_samples": 8
+    },
+    {
+      "label": "all_valid",
+      "n_samples": 139
+    }
+  ],
+  "decay_rows": [
+    {
+      "source": "cluster_0",
+      "within_suff_median": 0.7954545454545454,
+      "cross_suff_median_mean": 0.8139797789754916,
+      "cross_over_within_suff": 1.023288864997761,
+      "within_delta_median": 0.7636363636363637,
+      "cross_delta_median_mean": 0.7024945480500085,
+      "cross_over_within_delta": 0.919933336732154
+    },
+    {
+      "source": "cluster_6",
+      "within_suff_median": 0.8840579710144928,
+      "cross_suff_median_mean": 0.8289554399200831,
+      "cross_over_within_suff": 0.9376709074505858,
+      "within_delta_median": 0.6956521739130436,
+      "cross_delta_median_mean": 0.6909425311349656,
+      "cross_over_within_delta": 0.993229888506513
+    },
+    {
+      "source": "cluster_12",
+      "within_suff_median": 0.8040313549832027,
+      "cross_suff_median_mean": 0.7550212551850316,
+      "cross_over_within_suff": 0.9390445416159238,
+      "within_delta_median": 0.7156862745098038,
+      "cross_delta_median_mean": 0.6520719127499137,
+      "cross_over_within_delta": 0.9111141794587837
+    },
+    {
+      "source": "cluster_8",
+      "within_suff_median": 0.8493150684931506,
+      "cross_suff_median_mean": 0.8073435312129847,
+      "cross_over_within_suff": 0.9505818996539982,
+      "within_delta_median": 0.72,
+      "cross_delta_median_mean": 0.7431913344726597,
+      "cross_over_within_delta": 1.032210186767583
+    },
+    {
+      "source": "cluster_2",
+      "within_suff_median": 0.7924528301886793,
+      "cross_suff_median_mean": 0.9315708472283166,
+      "cross_over_within_suff": 1.1755536881690662,
+      "within_delta_median": 0.7192982456140351,
+      "cross_delta_median_mean": 0.8428939017743865,
+      "cross_over_within_delta": 1.1718281073448789
+    },
+    {
+      "source": "cluster_10",
+      "within_suff_median": 0.6941256830601092,
+      "cross_suff_median_mean": 0.8606108212458138,
+      "cross_over_within_suff": 1.2398486934696629,
+      "within_delta_median": 0.6946946946946947,
+      "cross_delta_median_mean": 0.7956156513933594,
+      "cross_over_within_delta": 1.1452738267175304
+    },
+    {
+      "source": "cluster_1",
+      "within_suff_median": 0.8768942770547334,
+      "cross_suff_median_mean": 0.8423854976798119,
+      "cross_over_within_suff": 0.9606465907260475,
+      "within_delta_median": 0.7389244558258643,
+      "cross_delta_median_mean": 0.7680727079592353,
+      "cross_over_within_delta": 1.039446863483214
+    }
+  ],
+  "overlap_correlation": {
+    "n_pairs": 42,
+    "pearson_jaccard_vs_suff_within_ratio": -0.02116236866654295,
+    "spearman_jaccard_vs_suff_within_ratio": -0.045601840347383994,
+    "pearson_jaccard_vs_delta_within_ratio": -0.10827796422489641,
+    "spearman_jaccard_vs_delta_within_ratio": -0.08366618642247312
+  },
+  "artifacts": {
+    "per_sample_csv": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_best_n0.55_e0.4_compact_top4/cluster_transfer_per_sample.csv",
+    "summary_csv": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_best_n0.55_e0.4_compact_top4/cluster_transfer_summary.csv",
+    "decay_csv": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_best_n0.55_e0.4_compact_top4/cluster_transfer_decay.csv",
+    "sources_json": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_best_n0.55_e0.4_compact_top4/cluster_transfer_sources.json",
+    "source_overlap_csv": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_best_n0.55_e0.4_compact_top4/cluster_source_overlap.csv",
+    "source_overlap_heatmap_png": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_best_n0.55_e0.4_compact_top4/cluster_source_overlap_heatmap.png",
+    "overlap_pairs_csv": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_best_n0.55_e0.4_compact_top4/cluster_transfer_overlap_pairs.csv",
+    "overlap_correlation_json": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_best_n0.55_e0.4_compact_top4/cluster_transfer_overlap_correlation.json",
+    "overlap_scatter_png": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_best_n0.55_e0.4_compact_top4/cluster_transfer_overlap_scatter.png",
+    "suff_heatmap_png": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_best_n0.55_e0.4_compact_top4/cluster_transfer_suff_heatmap.png",
+    "delta_heatmap_png": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_best_n0.55_e0.4_compact_top4/cluster_transfer_delta_heatmap.png",
+    "relative_suff_heatmap_png": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_best_n0.55_e0.4_compact_top4/cluster_transfer_relative_suff_heatmap.png"
+  }
+}

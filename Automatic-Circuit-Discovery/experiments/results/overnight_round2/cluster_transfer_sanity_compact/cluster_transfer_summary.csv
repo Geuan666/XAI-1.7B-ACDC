@@ -1,0 +1,2 @@
+source,source_build_mode,source_cluster_id,source_cluster_size,target,n_samples,source_nodes,suff_median,suff_mean,nec_median,nec_mean,random_suff_median,delta_vs_random_median,delta_vs_random_mean,suff_vs_within_ratio,delta_vs_within_ratio
+global_core,global_aggregate,,8,all_valid,2,8,0.8231489741302409,0.8231489741302409,1.1166369313113291,1.1166369313113291,nan,nan,nan,nan,nan

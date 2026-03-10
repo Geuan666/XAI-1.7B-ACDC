@@ -1,0 +1,8 @@
+edge_ratio_min,positive_frac_min,n_nodes,n_edges,dropped_nodes
+0.02,0.9,7,17,L20H5
+0.03,0.9,7,17,L20H5
+0.04,0.9,7,17,L20H5
+0.05,0.9,6,14,L20H5|MLP22
+0.06,0.9,6,14,L20H5|MLP22
+0.08,0.9,6,13,L20H5|MLP22
+0.1,0.9,4,7,L20H5|L21H12|MLP22|L23H6

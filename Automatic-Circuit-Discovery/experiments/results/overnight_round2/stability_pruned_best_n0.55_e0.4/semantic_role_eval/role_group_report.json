@@ -1,0 +1,586 @@
+{
+  "n_input_samples": 139,
+  "n_analyzed_samples": 139,
+  "analyzed_q_indices": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    25,
+    26,
+    27,
+    28,
+    30,
+    31,
+    32,
+    33,
+    36,
+    37,
+    38,
+    39,
+    41,
+    42,
+    43,
+    44,
+    46,
+    47,
+    48,
+    49,
+    50,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    67,
+    68,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    81,
+    82,
+    83,
+    84,
+    85,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    94,
+    95,
+    96,
+    97,
+    98,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    111,
+    112,
+    113,
+    115,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    126,
+    129,
+    130,
+    131,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    155,
+    156,
+    157,
+    158,
+    159,
+    161,
+    162,
+    163,
+    164
+  ],
+  "skipped_q_indices": [],
+  "gap_min": 0.5,
+  "bootstrap": 1000,
+  "seed": 123,
+  "core_nodes": [
+    "L17H8",
+    "L21H1",
+    "L21H12",
+    "MLP22",
+    "L23H6",
+    "L24H6",
+    "MLP27"
+  ],
+  "aggregate_summary_path": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/stability_pruned_best_n0.55_e0.4/global_core_summary_pruned.json",
+  "core_edges_raw": [
+    [
+      "L23H6",
+      "L24H6"
+    ],
+    [
+      "L21H1",
+      "L24H6"
+    ],
+    [
+      "L24H6",
+      "Residual Output: <tool_call>"
+    ],
+    [
+      "L21H12",
+      "MLP27"
+    ],
+    [
+      "L21H1",
+      "L23H6"
+    ],
+    [
+      "L21H12",
+      "L24H6"
+    ],
+    [
+      "MLP27",
+      "Residual Output: <tool_call>"
+    ],
+    [
+      "L17H8",
+      "L21H12"
+    ],
+    [
+      "L17H8",
+      "L21H1"
+    ],
+    [
+      "L21H1",
+      "MLP27"
+    ],
+    [
+      "L21H12",
+      "L23H6"
+    ],
+    [
+      "L21H1",
+      "MLP22"
+    ],
+    [
+      "L21H12",
+      "MLP22"
+    ],
+    [
+      "MLP22",
+      "L24H6"
+    ],
+    [
+      "L24H6",
+      "MLP27"
+    ],
+    [
+      "L23H6",
+      "Residual Output: <tool_call>"
+    ],
+    [
+      "Input Embed",
+      "L17H8"
+    ]
+  ],
+  "core_edges": [
+    [
+      "L23H6",
+      "L24H6"
+    ],
+    [
+      "L21H1",
+      "L24H6"
+    ],
+    [
+      "L24H6",
+      "Residual Output: <tool_call>"
+    ],
+    [
+      "L21H12",
+      "MLP27"
+    ],
+    [
+      "L21H1",
+      "L23H6"
+    ],
+    [
+      "L21H12",
+      "L24H6"
+    ],
+    [
+      "MLP27",
+      "Residual Output: <tool_call>"
+    ],
+    [
+      "L17H8",
+      "L21H12"
+    ],
+    [
+      "L17H8",
+      "L21H1"
+    ],
+    [
+      "L21H1",
+      "MLP27"
+    ],
+    [
+      "L21H12",
+      "L23H6"
+    ],
+    [
+      "L21H1",
+      "MLP22"
+    ],
+    [
+      "L21H12",
+      "MLP22"
+    ],
+    [
+      "MLP22",
+      "L24H6"
+    ],
+    [
+      "L24H6",
+      "MLP27"
+    ],
+    [
+      "L23H6",
+      "Residual Output: <tool_call>"
+    ],
+    [
+      "Input Embed",
+      "L17H8"
+    ]
+  ],
+  "primary_groups": {
+    "tool_tag_reader": [
+      "L24H6"
+    ],
+    "format_router": [
+      "L17H8",
+      "L21H1",
+      "L21H12",
+      "L23H6"
+    ],
+    "primary_writer_mlp": [
+      "MLP27"
+    ],
+    "support_mlp": [
+      "MLP22"
+    ]
+  },
+  "extended_groups": {
+    "tool_tag_reader": [
+      "L24H6"
+    ],
+    "format_router": [
+      "L17H8",
+      "L21H1",
+      "L21H12",
+      "L23H6"
+    ],
+    "primary_writer_mlp": [
+      "MLP27"
+    ],
+    "support_mlp": [
+      "MLP22"
+    ],
+    "all_heads": [
+      "L17H8",
+      "L21H1",
+      "L21H12",
+      "L23H6",
+      "L24H6"
+    ],
+    "all_mlps": [
+      "MLP22",
+      "MLP27"
+    ]
+  },
+  "summary_rows": [
+    {
+      "group": "full_core",
+      "n_samples": 139,
+      "n_nodes": 7,
+      "suff_median": 0.864406779661017,
+      "suff_mean": 0.8661510008637832,
+      "suff_median_ci": {
+        "mean": 0.8628790989771278,
+        "lo": 0.8524590163934426,
+        "hi": 0.8734177215189873
+      },
+      "nec_median": 0.8679245283018868,
+      "nec_mean": 0.8794484901483917,
+      "nec_median_ci": {
+        "mean": 0.8689906627535122,
+        "lo": 0.8518518518518519,
+        "hi": 0.8787878787878788
+      },
+      "suff_minus_median": NaN,
+      "nec_minus_median": NaN,
+      "drop_full_suff_median": 0.0,
+      "drop_full_suff_ci": {
+        "mean": 0.0,
+        "lo": 0.0,
+        "hi": 0.0
+      },
+      "drop_full_nec_median": 0.0,
+      "drop_full_nec_ci": {
+        "mean": 0.0,
+        "lo": 0.0,
+        "hi": 0.0
+      }
+    },
+    {
+      "group": "tool_tag_reader",
+      "n_samples": 139,
+      "n_nodes": 1,
+      "suff_median": 0.36619718309859156,
+      "suff_mean": 0.3691019763751535,
+      "suff_median_ci": {
+        "mean": 0.3627852860147118,
+        "lo": 0.32894736842105265,
+        "hi": 0.39344262295081966
+      },
+      "nec_median": 0.25,
+      "nec_mean": 0.25908281301048947,
+      "nec_median_ci": {
+        "mean": 0.25100712237931594,
+        "lo": 0.22950819672131148,
+        "hi": 0.2711864406779661
+      },
+      "suff_minus_median": 0.868421052631579,
+      "nec_minus_median": 0.8923076923076924,
+      "drop_full_suff_median": 0.0,
+      "drop_full_suff_ci": {
+        "mean": 0.0,
+        "lo": 0.0,
+        "hi": 0.0
+      },
+      "drop_full_nec_median": -0.025316455696202556,
+      "drop_full_nec_ci": {
+        "mean": -0.026184897434008557,
+        "lo": -0.03508771929824561,
+        "hi": -0.016949152542372836
+      }
+    },
+    {
+      "group": "format_router",
+      "n_samples": 139,
+      "n_nodes": 4,
+      "suff_median": 0.8902439024390244,
+      "suff_mean": 0.9136686493635001,
+      "suff_median_ci": {
+        "mean": 0.888743872596044,
+        "lo": 0.8679245283018868,
+        "hi": 0.9041095890410958
+      },
+      "nec_median": 0.9620253164556962,
+      "nec_mean": 0.9862399449450773,
+      "nec_median_ci": {
+        "mean": 0.9623702403948802,
+        "lo": 0.9215686274509803,
+        "hi": 1.0136986301369864
+      },
+      "suff_minus_median": 0.5789473684210527,
+      "nec_minus_median": 0.48863636363636365,
+      "drop_full_suff_median": 0.2777777777777778,
+      "drop_full_suff_ci": {
+        "mean": 0.2785851222654273,
+        "lo": 0.2692307692307693,
+        "hi": 0.29032258064516125
+      },
+      "drop_full_nec_median": 0.3894736842105263,
+      "drop_full_nec_ci": {
+        "mean": 0.3894330769017286,
+        "lo": 0.38181818181818183,
+        "hi": 0.39999999999999997
+      }
+    },
+    {
+      "group": "primary_writer_mlp",
+      "n_samples": 139,
+      "n_nodes": 1,
+      "suff_median": 0.3793103448275862,
+      "suff_mean": 0.3793592126603045,
+      "suff_median_ci": {
+        "mean": 0.37837930041362505,
+        "lo": 0.36065573770491804,
+        "hi": 0.3939393939393939
+      },
+      "nec_median": 0.30357142857142855,
+      "nec_mean": 0.30269516759916903,
+      "nec_median_ci": {
+        "mean": 0.3033917198219823,
+        "lo": 0.2962962962962963,
+        "hi": 0.3111111111111111
+      },
+      "suff_minus_median": 0.890625,
+      "nec_minus_median": 0.9361702127659575,
+      "drop_full_suff_median": -0.026315789473684292,
+      "drop_full_suff_ci": {
+        "mean": -0.027800601793673538,
+        "lo": -0.04225352112676062,
+        "hi": -0.01754385964912275
+      },
+      "drop_full_nec_median": -0.06578947368421051,
+      "drop_full_nec_ci": {
+        "mean": -0.06602919435935543,
+        "lo": -0.08333333333333337,
+        "hi": -0.049180327868852514
+      }
+    },
+    {
+      "group": "support_mlp",
+      "n_samples": 139,
+      "n_nodes": 1,
+      "suff_median": 0.21818181818181817,
+      "suff_mean": 0.21229565342714526,
+      "suff_median_ci": {
+        "mean": 0.21554490004879934,
+        "lo": 0.2,
+        "hi": 0.23376623376623376
+      },
+      "nec_median": 0.0821917808219178,
+      "nec_mean": 0.09093431490479209,
+      "nec_median_ci": {
+        "mean": 0.08412147575606022,
+        "lo": 0.07407407407407407,
+        "hi": 0.1
+      },
+      "suff_minus_median": 0.8461538461538461,
+      "nec_minus_median": 0.8536585365853658,
+      "drop_full_suff_median": 0.014705882352941124,
+      "drop_full_suff_ci": {
+        "mean": 0.013365165255175277,
+        "lo": 0.0,
+        "hi": 0.016949152542372947
+      },
+      "drop_full_nec_median": 0.011363636363636354,
+      "drop_full_nec_ci": {
+        "mean": 0.007547051934836222,
+        "lo": 0.0,
+        "hi": 0.016949152542372836
+      }
+    },
+    {
+      "group": "all_heads",
+      "n_samples": 139,
+      "n_nodes": 5,
+      "suff_median": 0.881578947368421,
+      "suff_mean": 0.9047584213532872,
+      "suff_median_ci": {
+        "mean": 0.8824617872669426,
+        "lo": 0.8636363636363636,
+        "hi": 0.8983050847457628
+      },
+      "nec_median": 0.9361702127659575,
+      "nec_mean": 0.9499372426628593,
+      "nec_median_ci": {
+        "mean": 0.9354838751090931,
+        "lo": 0.8979591836734694,
+        "hi": 0.9558823529411765
+      },
+      "suff_minus_median": 0.47540983606557374,
+      "nec_minus_median": 0.36134453781512604,
+      "drop_full_suff_median": 0.38,
+      "drop_full_suff_ci": {
+        "mean": 0.3802271645015764,
+        "lo": 0.3709677419354839,
+        "hi": 0.3898305084745763
+      },
+      "drop_full_nec_median": 0.5076923076923077,
+      "drop_full_nec_ci": {
+        "mean": 0.5062654322547426,
+        "lo": 0.49230769230769234,
+        "hi": 0.5223880597014925
+      }
+    },
+    {
+      "group": "all_mlps",
+      "n_samples": 139,
+      "n_nodes": 2,
+      "suff_median": 0.47540983606557374,
+      "suff_mean": 0.4745972752235703,
+      "suff_median_ci": {
+        "mean": 0.47650724391773747,
+        "lo": 0.46153846153846156,
+        "hi": 0.49122807017543857
+      },
+      "nec_median": 0.36134453781512604,
+      "nec_mean": 0.36257988048734024,
+      "nec_median_ci": {
+        "mean": 0.3621823532216288,
+        "lo": 0.35185185185185186,
+        "hi": 0.375
+      },
+      "suff_minus_median": 0.881578947368421,
+      "nec_minus_median": 0.9361702127659575,
+      "drop_full_suff_median": -0.020000000000000018,
+      "drop_full_suff_ci": {
+        "mean": -0.021544487335512424,
+        "lo": -0.03157894736842104,
+        "hi": -0.016129032258064613
+      },
+      "drop_full_nec_median": -0.05555555555555558,
+      "drop_full_nec_ci": {
+        "mean": -0.0568415232436707,
+        "lo": -0.08196721311475408,
+        "hi": -0.04255319148936165
+      }
+    }
+  ],
+  "artifacts": {
+    "role_group_per_sample_csv": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/stability_pruned_best_n0.55_e0.4/semantic_role_eval/role_group_per_sample.csv",
+    "role_group_summary_csv": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/stability_pruned_best_n0.55_e0.4/semantic_role_eval/role_group_summary.csv",
+    "role_group_sufficiency_png": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/stability_pruned_best_n0.55_e0.4/semantic_role_eval/role_group_sufficiency.png",
+    "role_group_necessity_drop_png": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/stability_pruned_best_n0.55_e0.4/semantic_role_eval/role_group_necessity_drop.png",
+    "role_group_causal_heatmap_png": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/stability_pruned_best_n0.55_e0.4/semantic_role_eval/role_group_causal_heatmap.png",
+    "final_circuit_png": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/stability_pruned_best_n0.55_e0.4/semantic_role_eval/final_circuit.png",
+    "final_circuit_coarse_png": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/stability_pruned_best_n0.55_e0.4/semantic_role_eval/final_circuit_coarse.png"
+  }
+}

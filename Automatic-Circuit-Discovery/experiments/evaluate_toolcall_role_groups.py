@@ -354,6 +354,12 @@ def main() -> None:
         type=str,
         default="experiments/results/toolcall_q1_q164_semantic_roles_v2/semantic_roles_report.json",
     )
+    parser.add_argument(
+        "--aggregate-summary",
+        type=str,
+        default="",
+        help="Optional path to aggregate global_core_summary.json; if empty, use auto-discovery.",
+    )
     parser.add_argument("--model-path", type=str, default="/root/data/Qwen/Qwen3-1.7B")
     parser.add_argument("--output-root", type=str, default="experiments/results/toolcall_q1_q164_semantic_roles_v3")
     parser.add_argument("--device", type=str, default="cuda")
@@ -375,10 +381,19 @@ def main() -> None:
     if not core_nodes:
         raise ValueError("No core_nodes found in semantic report.")
 
-    agg_candidates = [
-        input_root.parent / "toolcall_q1_q164_aggregate" / "global_core_summary.json",
-        Path("experiments/results/toolcall_q1_q164_aggregate/global_core_summary.json").resolve(),
-    ]
+    sem_report_path = Path(args.semantic_report).resolve()
+    sem_dir = sem_report_path.parent
+    derived_agg_from_sem = sem_dir.parent / sem_dir.name.replace("semantic_", "aggregate_", 1) / "global_core_summary.json"
+    agg_candidates = []
+    if args.aggregate_summary.strip():
+        agg_candidates.append(Path(args.aggregate_summary).resolve())
+    agg_candidates.extend(
+        [
+            derived_agg_from_sem,
+            input_root.parent / "toolcall_q1_q164_aggregate" / "global_core_summary.json",
+            Path("experiments/results/toolcall_q1_q164_aggregate/global_core_summary.json").resolve(),
+        ]
+    )
     agg_summary = None
     for p in agg_candidates:
         if p.exists():
@@ -386,7 +401,16 @@ def main() -> None:
             break
     if agg_summary is None:
         raise FileNotFoundError("Could not find aggregate global_core_summary.json.")
-    core_edges = [tuple(e) for e in agg_summary.get("core_edges", [])]
+    raw_core_edges = [tuple(e) for e in agg_summary.get("core_edges", [])]
+    input_node = "Input Embed"
+    output_node = "Residual Output: <tool_call>"
+    core_set = set(core_nodes)
+    core_edges = [
+        (s, t)
+        for (s, t) in raw_core_edges
+        if (s == input_node and t in core_set)
+        or (s in core_set and (t in core_set or t == output_node))
+    ]
 
     primary_groups, extended_groups = build_role_groups(core_nodes, node_summary)
     if not primary_groups:
@@ -730,6 +754,8 @@ def main() -> None:
         "bootstrap": args.bootstrap,
         "seed": args.seed,
         "core_nodes": core_nodes,
+        "aggregate_summary_path": str(p),
+        "core_edges_raw": raw_core_edges,
         "core_edges": core_edges,
         "primary_groups": primary_groups,
         "extended_groups": extended_groups,
@@ -753,4 +779,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

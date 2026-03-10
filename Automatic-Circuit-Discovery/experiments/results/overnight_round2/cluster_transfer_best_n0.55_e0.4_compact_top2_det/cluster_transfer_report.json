@@ -1,0 +1,208 @@
+{
+  "input_root": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164",
+  "aggregate_summary": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/aggregate_best_n0.55_e0.4/global_core_summary.json",
+  "cluster_assignments": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/aggregate_best_n0.55_e0.4/cluster_assignments.csv",
+  "gap_min": 0.5,
+  "min_cluster_size": 8,
+  "min_target_samples": 6,
+  "source_mode": "compact_support",
+  "compact_params": {
+    "node_th": 0.7,
+    "edge_th": 0.5,
+    "min_nodes": 2,
+    "max_nodes": 8,
+    "min_edges": 2,
+    "topk_nodes": 2
+  },
+  "n_random": 1,
+  "seed": 123,
+  "n_records_filtered": 139,
+  "n_records_processed": 139,
+  "skipped_q_indices": [],
+  "sources": [
+    {
+      "name": "cluster_0",
+      "source_cluster_id": 0,
+      "cluster_size": 57,
+      "build_mode": "compact_support",
+      "n_nodes": 2,
+      "n_edges": 4
+    },
+    {
+      "name": "cluster_6",
+      "source_cluster_id": 6,
+      "cluster_size": 15,
+      "build_mode": "compact_support",
+      "n_nodes": 2,
+      "n_edges": 4
+    },
+    {
+      "name": "cluster_12",
+      "source_cluster_id": 12,
+      "cluster_size": 12,
+      "build_mode": "compact_support",
+      "n_nodes": 2,
+      "n_edges": 4
+    },
+    {
+      "name": "cluster_8",
+      "source_cluster_id": 8,
+      "cluster_size": 11,
+      "build_mode": "compact_support",
+      "n_nodes": 2,
+      "n_edges": 4
+    },
+    {
+      "name": "cluster_2",
+      "source_cluster_id": 2,
+      "cluster_size": 9,
+      "build_mode": "compact_support",
+      "n_nodes": 2,
+      "n_edges": 4
+    },
+    {
+      "name": "cluster_10",
+      "source_cluster_id": 10,
+      "cluster_size": 8,
+      "build_mode": "compact_support",
+      "n_nodes": 2,
+      "n_edges": 4
+    },
+    {
+      "name": "cluster_1",
+      "source_cluster_id": 1,
+      "cluster_size": 8,
+      "build_mode": "compact_support",
+      "n_nodes": 2,
+      "n_edges": 4
+    },
+    {
+      "name": "global_core",
+      "source_cluster_id": null,
+      "cluster_size": 8,
+      "build_mode": "global_aggregate",
+      "n_nodes": 8,
+      "n_edges": 20
+    }
+  ],
+  "targets": [
+    {
+      "label": "cluster_0",
+      "n_samples": 57
+    },
+    {
+      "label": "cluster_6",
+      "n_samples": 15
+    },
+    {
+      "label": "cluster_12",
+      "n_samples": 12
+    },
+    {
+      "label": "cluster_8",
+      "n_samples": 11
+    },
+    {
+      "label": "cluster_2",
+      "n_samples": 9
+    },
+    {
+      "label": "cluster_10",
+      "n_samples": 8
+    },
+    {
+      "label": "cluster_1",
+      "n_samples": 8
+    },
+    {
+      "label": "all_valid",
+      "n_samples": 139
+    }
+  ],
+  "decay_rows": [
+    {
+      "source": "cluster_0",
+      "within_suff_median": 0.5909090909090909,
+      "cross_suff_median_mean": 0.6468123993443409,
+      "cross_over_within_suff": 1.0946055988904229,
+      "within_delta_median": 0.5918367346938775,
+      "cross_delta_median_mean": 0.6051157788524483,
+      "cross_over_within_delta": 1.0224370056472403
+    },
+    {
+      "source": "cluster_6",
+      "within_suff_median": 0.7083333333333334,
+      "cross_suff_median_mean": 0.5784164054459993,
+      "cross_over_within_suff": 0.8165878665119989,
+      "within_delta_median": 0.5675675675675675,
+      "cross_delta_median_mean": 0.5361486698418364,
+      "cross_over_within_delta": 0.9446428944832356
+    },
+    {
+      "source": "cluster_12",
+      "within_suff_median": 0.7958333333333334,
+      "cross_suff_median_mean": 0.7077652683703747,
+      "cross_over_within_suff": 0.8893385571146069,
+      "within_delta_median": 0.753904951811233,
+      "cross_delta_median_mean": 0.666258296989602,
+      "cross_over_within_delta": 0.8837430970428533
+    },
+    {
+      "source": "cluster_8",
+      "within_suff_median": 0.62,
+      "cross_suff_median_mean": 0.5931386276682215,
+      "cross_over_within_suff": 0.9566752059164862,
+      "within_delta_median": 0.5384615384615385,
+      "cross_delta_median_mean": 0.5792683328103582,
+      "cross_over_within_delta": 1.075784046647808
+    },
+    {
+      "source": "cluster_2",
+      "within_suff_median": 0.49019607843137253,
+      "cross_suff_median_mean": 0.614772614596326,
+      "cross_over_within_suff": 1.2541361337765051,
+      "within_delta_median": 0.5,
+      "cross_delta_median_mean": 0.5541848655126306,
+      "cross_over_within_delta": 1.1083697310252612
+    },
+    {
+      "source": "cluster_10",
+      "within_suff_median": 0.5077956989247312,
+      "cross_suff_median_mean": 0.6118393445140996,
+      "cross_over_within_suff": 1.2048927271532295,
+      "within_delta_median": 0.5192307692307692,
+      "cross_delta_median_mean": 0.5729779232916052,
+      "cross_over_within_delta": 1.1035130374504991
+    },
+    {
+      "source": "cluster_1",
+      "within_suff_median": 0.5298507462686567,
+      "cross_suff_median_mean": 0.4237773342086977,
+      "cross_over_within_suff": 0.7998051096333167,
+      "within_delta_median": 0.44369063772048845,
+      "cross_delta_median_mean": 0.36309361865686585,
+      "cross_over_within_delta": 0.8183486145263307
+    }
+  ],
+  "overlap_correlation": {
+    "n_pairs": 42,
+    "pearson_jaccard_vs_suff_within_ratio": 0.10391265019841384,
+    "spearman_jaccard_vs_suff_within_ratio": 0.07042857697954097,
+    "pearson_jaccard_vs_delta_within_ratio": 0.04090764523344444,
+    "spearman_jaccard_vs_delta_within_ratio": 0.05536176697894266
+  },
+  "artifacts": {
+    "per_sample_csv": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_best_n0.55_e0.4_compact_top2_det/cluster_transfer_per_sample.csv",
+    "summary_csv": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_best_n0.55_e0.4_compact_top2_det/cluster_transfer_summary.csv",
+    "decay_csv": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_best_n0.55_e0.4_compact_top2_det/cluster_transfer_decay.csv",
+    "sources_json": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_best_n0.55_e0.4_compact_top2_det/cluster_transfer_sources.json",
+    "source_overlap_csv": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_best_n0.55_e0.4_compact_top2_det/cluster_source_overlap.csv",
+    "source_overlap_heatmap_png": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_best_n0.55_e0.4_compact_top2_det/cluster_source_overlap_heatmap.png",
+    "overlap_pairs_csv": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_best_n0.55_e0.4_compact_top2_det/cluster_transfer_overlap_pairs.csv",
+    "overlap_correlation_json": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_best_n0.55_e0.4_compact_top2_det/cluster_transfer_overlap_correlation.json",
+    "overlap_scatter_png": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_best_n0.55_e0.4_compact_top2_det/cluster_transfer_overlap_scatter.png",
+    "suff_heatmap_png": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_best_n0.55_e0.4_compact_top2_det/cluster_transfer_suff_heatmap.png",
+    "delta_heatmap_png": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_best_n0.55_e0.4_compact_top2_det/cluster_transfer_delta_heatmap.png",
+    "relative_suff_heatmap_png": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_best_n0.55_e0.4_compact_top2_det/cluster_transfer_relative_suff_heatmap.png"
+  }
+}

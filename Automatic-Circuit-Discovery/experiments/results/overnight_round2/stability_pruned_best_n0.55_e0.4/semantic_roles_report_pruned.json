@@ -1,0 +1,753 @@
+{
+  "n_samples": 139,
+  "n_analyzed_samples": 139,
+  "analyzed_q_indices": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    25,
+    26,
+    27,
+    28,
+    30,
+    31,
+    32,
+    33,
+    36,
+    37,
+    38,
+    39,
+    41,
+    42,
+    43,
+    44,
+    46,
+    47,
+    48,
+    49,
+    50,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    67,
+    68,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    81,
+    82,
+    83,
+    84,
+    85,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    94,
+    95,
+    96,
+    97,
+    98,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    111,
+    112,
+    113,
+    115,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    126,
+    129,
+    130,
+    131,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    155,
+    156,
+    157,
+    158,
+    159,
+    161,
+    162,
+    163,
+    164
+  ],
+  "gap_min": 0.5,
+  "recompute_baseline": true,
+  "skipped_oom_q_indices": [],
+  "core_nodes": [
+    "L17H8",
+    "L21H1",
+    "L21H12",
+    "MLP22",
+    "L23H6",
+    "L24H6",
+    "MLP27"
+  ],
+  "head_nodes": [
+    "L17H8",
+    "L20H5",
+    "L21H1",
+    "L21H12",
+    "L23H6",
+    "L24H6"
+  ],
+  "mlp_nodes": [
+    "MLP22",
+    "MLP27"
+  ],
+  "node_summary": {
+    "L17H8": {
+      "full_ratio_median": 0.35714285714285715,
+      "full_ratio_mean": 0.3692549279930433,
+      "top1_ratio_median": 0.06329113924050633,
+      "top3_ratio_median": 0.1,
+      "contrast_ratio_median": 0.0392156862745098,
+      "tool_call_tags_ratio_median": 0.04411764705882353,
+      "tools_block_ratio_median": 0.0392156862745098,
+      "user_block_ratio_median": 0.025974025974025976,
+      "attn_contrast_clean_mean": 0.0026507045907846138,
+      "attn_tool_call_tags_clean_mean": 0.006876893363316818,
+      "attn_tools_block_clean_mean": 0.0,
+      "attn_user_block_clean_mean": 0.19935387571295388,
+      "attn_contrast_delta_mean": -0.008966947770878511,
+      "attn_tool_call_tags_delta_mean": 0.0034065903089069527,
+      "target_logit_delta_median": 1.0,
+      "distractor_logit_delta_median": -1.5,
+      "top_positive_tokens": [
+        "<tool_call>",
+        " either",
+        ".AnchorStyles",
+        "减持",
+        ".DateField",
+        " ●",
+        "周岁",
+        " letters"
+      ],
+      "top_positive_token_counts": {
+        "<tool_call>": 89,
+        " either": 84,
+        ".AnchorStyles": 80,
+        "减持": 43,
+        ".DateField": 32,
+        " ●": 30,
+        "周岁": 28,
+        " letters": 18
+      },
+      "top1_category_counts": {
+        "other": 139
+      },
+      "top1_token_counts": {
+        "<|im_start|>": 139
+      },
+      "role": "Format Router / Target+Suppressor"
+    },
+    "L20H5": {
+      "full_ratio_median": 0.2923076923076923,
+      "full_ratio_mean": 0.3036162449708352,
+      "top1_ratio_median": 0.1111111111111111,
+      "top3_ratio_median": 0.22580645161290322,
+      "contrast_ratio_median": 0.02040816326530612,
+      "tool_call_tags_ratio_median": 0.02702702702702703,
+      "tools_block_ratio_median": 0.021739130434782608,
+      "user_block_ratio_median": 0.18518518518518517,
+      "attn_contrast_clean_mean": 0.0001699393275930888,
+      "attn_tool_call_tags_clean_mean": 0.015784143135219596,
+      "attn_tools_block_clean_mean": 0.0,
+      "attn_user_block_clean_mean": 0.34912219922319593,
+      "attn_contrast_delta_mean": -8.756437539055998e-05,
+      "attn_tool_call_tags_delta_mean": 0.00619130619808281,
+      "target_logit_delta_median": 0.625,
+      "distractor_logit_delta_median": -1.375,
+      "top_positive_tokens": [
+        " charged",
+        " orally",
+        " oral",
+        " ++)\\n",
+        " striped",
+        "<tool_call>",
+        " crucial",
+        " Minority"
+      ],
+      "top_positive_token_counts": {
+        " charged": 122,
+        " orally": 94,
+        " oral": 74,
+        " ++)\\n": 29,
+        " striped": 28,
+        "<tool_call>": 21,
+        " crucial": 17,
+        " Minority": 17
+      },
+      "top1_category_counts": {
+        "user_block": 58,
+        "other": 81
+      },
+      "top1_token_counts": {
+        "></": 80,
+        ".py": 58,
+        "</think>": 1
+      },
+      "role": "Query Reader / Distractor Suppressor"
+    },
+    "L21H1": {
+      "full_ratio_median": 0.42,
+      "full_ratio_mean": 0.43937983330172636,
+      "top1_ratio_median": -0.06557377049180328,
+      "top3_ratio_median": 0.3387096774193548,
+      "contrast_ratio_median": -0.057971014492753624,
+      "tool_call_tags_ratio_median": 0.01639344262295082,
+      "tools_block_ratio_median": -0.06,
+      "user_block_ratio_median": -0.06,
+      "attn_contrast_clean_mean": 0.0017117832191857986,
+      "attn_tool_call_tags_clean_mean": 0.04828076782844049,
+      "attn_tools_block_clean_mean": 0.0,
+      "attn_user_block_clean_mean": 0.20577424164298627,
+      "attn_contrast_delta_mean": 0.001325532008614056,
+      "attn_tool_call_tags_delta_mean": 0.029900666004676613,
+      "target_logit_delta_median": 1.125,
+      "distractor_logit_delta_median": -1.75,
+      "top_positive_tokens": [
+        "<tool_call>",
+        " ●",
+        " RTWF",
+        " drilled",
+        " carried",
+        ".AnchorStyles",
+        " �",
+        "减持"
+      ],
+      "top_positive_token_counts": {
+        "<tool_call>": 81,
+        " ●": 69,
+        " RTWF": 48,
+        " drilled": 47,
+        " carried": 40,
+        ".AnchorStyles": 29,
+        " �": 27,
+        "减持": 27
+      },
+      "top1_category_counts": {
+        "other": 139
+      },
+      "top1_token_counts": {
+        "<|im_start|>": 139
+      },
+      "role": "Format Router / Target+Suppressor"
+    },
+    "L21H12": {
+      "full_ratio_median": 0.4230769230769231,
+      "full_ratio_mean": 0.43444909970689016,
+      "top1_ratio_median": 0.39344262295081966,
+      "top3_ratio_median": 0.3770491803278688,
+      "contrast_ratio_median": -0.0784313725490196,
+      "tool_call_tags_ratio_median": -0.0425531914893617,
+      "tools_block_ratio_median": -0.07017543859649122,
+      "user_block_ratio_median": -0.052083333333333336,
+      "attn_contrast_clean_mean": 0.003286617098664262,
+      "attn_tool_call_tags_clean_mean": 0.020093276399931463,
+      "attn_tools_block_clean_mean": 0.0,
+      "attn_user_block_clean_mean": 0.06797180450755916,
+      "attn_contrast_delta_mean": 0.0029933061307294484,
+      "attn_tool_call_tags_delta_mean": 0.00719308813953464,
+      "target_logit_delta_median": 1.125,
+      "distractor_logit_delta_median": -1.75,
+      "top_positive_tokens": [
+        "闪电",
+        "<tool_call>",
+        " ●",
+        " Carl",
+        ".Cursor",
+        ".AnchorStyles",
+        " τ",
+        "川"
+      ],
+      "top_positive_token_counts": {
+        "闪电": 94,
+        "<tool_call>": 74,
+        " ●": 61,
+        " Carl": 57,
+        ".Cursor": 47,
+        ".AnchorStyles": 44,
+        " τ": 31,
+        "川": 29
+      },
+      "top1_category_counts": {
+        "other": 139
+      },
+      "top1_token_counts": {
+        "\\n": 139
+      },
+      "role": "Format Router / Target+Suppressor"
+    },
+    "MLP22": {
+      "full_ratio_median": 0.21818181818181817,
+      "full_ratio_mean": 0.21229565342714526,
+      "top1_ratio_median": NaN,
+      "top3_ratio_median": NaN,
+      "contrast_ratio_median": NaN,
+      "tool_call_tags_ratio_median": NaN,
+      "tools_block_ratio_median": NaN,
+      "user_block_ratio_median": NaN,
+      "attn_contrast_clean_mean": NaN,
+      "attn_tool_call_tags_clean_mean": NaN,
+      "attn_tools_block_clean_mean": NaN,
+      "attn_user_block_clean_mean": NaN,
+      "attn_contrast_delta_mean": NaN,
+      "attn_tool_call_tags_delta_mean": NaN,
+      "target_logit_delta_median": 0.625,
+      "distractor_logit_delta_median": -0.875,
+      "top_positive_tokens": [
+        "产后",
+        ".Preference",
+        "情",
+        "mıştır",
+        "轾",
+        " youths",
+        "对孩子",
+        "atedRoute"
+      ],
+      "top_positive_token_counts": {
+        "产后": 50,
+        ".Preference": 46,
+        "情": 45,
+        "mıştır": 45,
+        "轾": 39,
+        " youths": 35,
+        "对孩子": 34,
+        "atedRoute": 32
+      },
+      "role": "Support Suppressor MLP"
+    },
+    "L23H6": {
+      "full_ratio_median": 0.2777777777777778,
+      "full_ratio_mean": 0.2810331741288821,
+      "top1_ratio_median": 0.2702702702702703,
+      "top3_ratio_median": 0.29508196721311475,
+      "contrast_ratio_median": -0.02531645569620253,
+      "tool_call_tags_ratio_median": -0.02531645569620253,
+      "tools_block_ratio_median": -0.02702702702702703,
+      "user_block_ratio_median": -0.05405405405405406,
+      "attn_contrast_clean_mean": 0.0006363341119349767,
+      "attn_tool_call_tags_clean_mean": 0.005530877074012332,
+      "attn_tools_block_clean_mean": 0.0,
+      "attn_user_block_clean_mean": 0.07491084667954513,
+      "attn_contrast_delta_mean": 0.00029187689961617636,
+      "attn_tool_call_tags_delta_mean": 0.000193724426333692,
+      "target_logit_delta_median": 0.75,
+      "distractor_logit_delta_median": -1.125,
+      "top_positive_tokens": [
+        ".AnchorStyles",
+        "<tool_call>",
+        ".Panel",
+        "MouseClicked",
+        "\\TestCase",
+        " lắm",
+        "川",
+        "(Float"
+      ],
+      "top_positive_token_counts": {
+        ".AnchorStyles": 112,
+        "<tool_call>": 72,
+        ".Panel": 65,
+        "MouseClicked": 35,
+        "\\TestCase": 35,
+        " lắm": 31,
+        "川": 22,
+        "(Float": 22
+      },
+      "top1_category_counts": {
+        "other": 139
+      },
+      "top1_token_counts": {
+        "\\n\\n": 85,
+        "<|im_start|>": 54
+      },
+      "role": "Format Router / Distractor Suppressor"
+    },
+    "L24H6": {
+      "full_ratio_median": 0.34545454545454546,
+      "full_ratio_mean": 0.344628009275302,
+      "top1_ratio_median": 0.4084507042253521,
+      "top3_ratio_median": 0.4406779661016949,
+      "contrast_ratio_median": -0.022222222222222223,
+      "tool_call_tags_ratio_median": 0.4426229508196721,
+      "tools_block_ratio_median": -0.018518518518518517,
+      "user_block_ratio_median": -0.0847457627118644,
+      "attn_contrast_clean_mean": 3.614594658279038e-05,
+      "attn_tool_call_tags_clean_mean": 0.8896563074571623,
+      "attn_tools_block_clean_mean": 0.0,
+      "attn_user_block_clean_mean": 0.021919436444588703,
+      "attn_contrast_delta_mean": -0.00023292975293711835,
+      "attn_tool_call_tags_delta_mean": 0.2338855622483672,
+      "target_logit_delta_median": 0.375,
+      "distractor_logit_delta_median": -1.875,
+      "top_positive_tokens": [
+        " �",
+        " Linux",
+        "间",
+        ".Arrays",
+        " track",
+        " Doors",
+        " ”\\n\\n",
+        " lắm"
+      ],
+      "top_positive_token_counts": {
+        " �": 154,
+        " Linux": 75,
+        "间": 66,
+        ".Arrays": 65,
+        " track": 51,
+        " Doors": 28,
+        " ”\\n\\n": 26,
+        " lắm": 26
+      },
+      "top1_category_counts": {
+        "tool_call_tags": 139
+      },
+      "top1_token_counts": {
+        "<tool_call>": 139
+      },
+      "role": "Tool-Tag Reader / Distractor Suppressor"
+    },
+    "MLP27": {
+      "full_ratio_median": 0.3793103448275862,
+      "full_ratio_mean": 0.3793592126603045,
+      "top1_ratio_median": NaN,
+      "top3_ratio_median": NaN,
+      "contrast_ratio_median": NaN,
+      "tool_call_tags_ratio_median": NaN,
+      "tools_block_ratio_median": NaN,
+      "user_block_ratio_median": NaN,
+      "attn_contrast_clean_mean": NaN,
+      "attn_tool_call_tags_clean_mean": NaN,
+      "attn_tools_block_clean_mean": NaN,
+      "attn_user_block_clean_mean": NaN,
+      "attn_contrast_delta_mean": NaN,
+      "attn_tool_call_tags_delta_mean": NaN,
+      "target_logit_delta_median": 1.125,
+      "distractor_logit_delta_median": -1.375,
+      "top_positive_tokens": [
+        ".Master",
+        "快三",
+        "错过",
+        "Ĩ",
+        "或者其他",
+        ".every",
+        " quarters",
+        "还可以"
+      ],
+      "top_positive_token_counts": {
+        ".Master": 90,
+        "快三": 58,
+        "错过": 55,
+        "Ĩ": 51,
+        "或者其他": 46,
+        ".every": 40,
+        " quarters": 38,
+        "还可以": 34
+      },
+      "role": "Primary Writer MLP"
+    }
+  },
+  "artifacts": {
+    "semantic_node_metrics_csv": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/semantic_best_n0.55_e0.4/semantic_node_metrics.csv",
+    "semantic_read_causal_heatmap": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/semantic_best_n0.55_e0.4/semantic_read_causal_heatmap.png",
+    "semantic_attention_delta_heatmap": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/semantic_best_n0.55_e0.4/semantic_attention_delta_heatmap.png",
+    "semantic_write_target_delta": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/semantic_best_n0.55_e0.4/semantic_write_target_delta.png",
+    "final_circuit_semantic": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/semantic_best_n0.55_e0.4/final_circuit_semantic.png",
+    "node_roles_csv": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/semantic_best_n0.55_e0.4/node_roles.csv"
+  },
+  "core_nodes_source": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/semantic_best_n0.55_e0.4/semantic_roles_report.json",
+  "path_stability_pruning": {
+    "aggregate_summary_path": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/aggregate_best_n0.55_e0.4/global_core_summary.json",
+    "path_patch_report_path": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/semantic_best_n0.55_e0.4/path_patch_edge_report.json",
+    "path_metrics_source": "edge_summary_trimmed",
+    "edge_ratio_min": 0.03,
+    "positive_frac_min": 0.9,
+    "enforce_input_output_path": true,
+    "core_nodes_before": [
+      "L17H8",
+      "L20H5",
+      "L21H1",
+      "L21H12",
+      "MLP22",
+      "L23H6",
+      "L24H6",
+      "MLP27"
+    ],
+    "core_nodes_after": [
+      "L17H8",
+      "L21H1",
+      "L21H12",
+      "MLP22",
+      "L23H6",
+      "L24H6",
+      "MLP27"
+    ],
+    "core_edges_before": [
+      [
+        "L23H6",
+        "L24H6"
+      ],
+      [
+        "L21H1",
+        "L24H6"
+      ],
+      [
+        "L24H6",
+        "Residual Output: <tool_call>"
+      ],
+      [
+        "L21H12",
+        "MLP27"
+      ],
+      [
+        "L21H1",
+        "L23H6"
+      ],
+      [
+        "L21H12",
+        "L24H6"
+      ],
+      [
+        "L17H8",
+        "L20H5"
+      ],
+      [
+        "L20H5",
+        "L21H12"
+      ],
+      [
+        "MLP27",
+        "Residual Output: <tool_call>"
+      ],
+      [
+        "L17H8",
+        "L21H12"
+      ],
+      [
+        "L20H5",
+        "L21H1"
+      ],
+      [
+        "L17H8",
+        "L21H1"
+      ],
+      [
+        "L21H1",
+        "MLP27"
+      ],
+      [
+        "L21H12",
+        "L23H6"
+      ],
+      [
+        "L21H1",
+        "MLP22"
+      ],
+      [
+        "L21H12",
+        "MLP22"
+      ],
+      [
+        "MLP22",
+        "L24H6"
+      ],
+      [
+        "L24H6",
+        "MLP27"
+      ],
+      [
+        "L23H6",
+        "Residual Output: <tool_call>"
+      ],
+      [
+        "Input Embed",
+        "L17H8"
+      ]
+    ],
+    "core_edges_after": [
+      [
+        "L23H6",
+        "L24H6"
+      ],
+      [
+        "L21H1",
+        "L24H6"
+      ],
+      [
+        "L24H6",
+        "Residual Output: <tool_call>"
+      ],
+      [
+        "L21H12",
+        "MLP27"
+      ],
+      [
+        "L21H1",
+        "L23H6"
+      ],
+      [
+        "L21H12",
+        "L24H6"
+      ],
+      [
+        "MLP27",
+        "Residual Output: <tool_call>"
+      ],
+      [
+        "L17H8",
+        "L21H12"
+      ],
+      [
+        "L17H8",
+        "L21H1"
+      ],
+      [
+        "L21H1",
+        "MLP27"
+      ],
+      [
+        "L21H12",
+        "L23H6"
+      ],
+      [
+        "L21H1",
+        "MLP22"
+      ],
+      [
+        "L21H12",
+        "MLP22"
+      ],
+      [
+        "MLP22",
+        "L24H6"
+      ],
+      [
+        "L24H6",
+        "MLP27"
+      ],
+      [
+        "L23H6",
+        "Residual Output: <tool_call>"
+      ],
+      [
+        "Input Embed",
+        "L17H8"
+      ]
+    ],
+    "dropped_nodes": [
+      "L20H5"
+    ],
+    "dropped_edges": [
+      [
+        "L17H8",
+        "L20H5"
+      ],
+      [
+        "L20H5",
+        "L21H12"
+      ],
+      [
+        "L20H5",
+        "L21H1"
+      ]
+    ],
+    "reachability": {
+      "reachable_from_input": [
+        "Input Embed",
+        "L17H8",
+        "L21H1",
+        "L21H12",
+        "L23H6",
+        "L24H6",
+        "MLP22",
+        "MLP27",
+        "Residual Output: <tool_call>"
+      ],
+      "can_reach_output": [
+        "Input Embed",
+        "L17H8",
+        "L20H5",
+        "L21H1",
+        "L21H12",
+        "L23H6",
+        "L24H6",
+        "MLP22",
+        "MLP27",
+        "Residual Output: <tool_call>"
+      ]
+    }
+  }
+}

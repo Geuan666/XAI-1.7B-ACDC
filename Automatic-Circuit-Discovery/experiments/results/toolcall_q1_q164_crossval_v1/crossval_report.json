@@ -1,0 +1,852 @@
+{
+  "config": {
+    "input_root": "experiments/results/toolcall_q1_q164",
+    "full_aggregate_summary": "experiments/results/toolcall_q1_q164_aggregate/global_core_summary.json",
+    "output_root": "experiments/results/toolcall_q1_q164_crossval_v1",
+    "model_path": "/root/data/Qwen/Qwen3-1.7B",
+    "device": "cuda",
+    "gap_min": 0.5,
+    "ap_discount": 0.7,
+    "core_node_th": 0.5,
+    "core_edge_th": 0.35,
+    "min_nodes": 8,
+    "max_core_nodes": 18,
+    "splits": 6,
+    "train_frac": 0.7,
+    "random_controls": 4,
+    "seed": 123,
+    "eval_train": false
+  },
+  "full_aggregate_summary": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_aggregate/global_core_summary.json",
+  "split_metrics": [
+    {
+      "split_id": 0,
+      "seed": 123,
+      "n_train": 96,
+      "n_test": 43,
+      "core_nodes": [
+        "MLP11",
+        "L17H8",
+        "MLP20",
+        "L20H5",
+        "L21H1",
+        "L21H12",
+        "MLP22",
+        "L23H6",
+        "L24H6",
+        "MLP25",
+        "MLP27"
+      ],
+      "core_edges": [
+        [
+          "L21H1",
+          "MLP27"
+        ],
+        [
+          "MLP27",
+          "Residual Output: <tool_call>"
+        ],
+        [
+          "L24H6",
+          "Residual Output: <tool_call>"
+        ],
+        [
+          "L21H12",
+          "MLP27"
+        ],
+        [
+          "L21H1",
+          "L24H6"
+        ],
+        [
+          "L17H8",
+          "L21H1"
+        ],
+        [
+          "L20H5",
+          "L21H1"
+        ],
+        [
+          "L21H1",
+          "L23H6"
+        ],
+        [
+          "MLP11",
+          "L17H8"
+        ],
+        [
+          "L21H12",
+          "L24H6"
+        ],
+        [
+          "L21H12",
+          "MLP25"
+        ],
+        [
+          "L21H12",
+          "L23H6"
+        ],
+        [
+          "L23H6",
+          "L24H6"
+        ],
+        [
+          "L17H8",
+          "L20H5"
+        ],
+        [
+          "MLP25",
+          "Residual Output: <tool_call>"
+        ],
+        [
+          "L17H8",
+          "L21H12"
+        ],
+        [
+          "L20H5",
+          "L21H12"
+        ],
+        [
+          "L21H1",
+          "MLP22"
+        ],
+        [
+          "L21H12",
+          "MLP22"
+        ],
+        [
+          "L24H6",
+          "MLP27"
+        ],
+        [
+          "MLP22",
+          "L24H6"
+        ],
+        [
+          "L17H8",
+          "MLP20"
+        ],
+        [
+          "L23H6",
+          "Residual Output: <tool_call>"
+        ],
+        [
+          "MLP20",
+          "L21H1"
+        ],
+        [
+          "Input Embed",
+          "MLP11"
+        ]
+      ],
+      "core_size": 11,
+      "jaccard_vs_full_core": 0.9090909090909091,
+      "train": {
+        "n_samples": 96,
+        "suff_median": NaN,
+        "nec_median": NaN,
+        "rand_suff_mean_median": NaN,
+        "global_minus_random_median": NaN
+      },
+      "test": {
+        "n_samples": 43,
+        "suff_median": 0.9322033898305084,
+        "suff_mean": 0.9352943273185201,
+        "nec_median": 0.9436619718309859,
+        "nec_mean": 0.9599919231126416,
+        "min_median": 0.9230769230769231,
+        "harmonic_median": 0.9322033898305084,
+        "rand_suff_mean_median": 0.10416666666666666,
+        "global_minus_random_median": 0.8280367231638418
+      }
+    },
+    {
+      "split_id": 1,
+      "seed": 1123,
+      "n_train": 96,
+      "n_test": 43,
+      "core_nodes": [
+        "MLP11",
+        "L17H8",
+        "L20H5",
+        "L21H1",
+        "L21H12",
+        "MLP22",
+        "L23H6",
+        "L24H6",
+        "MLP27"
+      ],
+      "core_edges": [
+        [
+          "L21H1",
+          "MLP27"
+        ],
+        [
+          "L21H1",
+          "MLP22"
+        ],
+        [
+          "MLP27",
+          "Residual Output: <tool_call>"
+        ],
+        [
+          "L24H6",
+          "Residual Output: <tool_call>"
+        ],
+        [
+          "L21H12",
+          "MLP27"
+        ],
+        [
+          "L21H12",
+          "MLP22"
+        ],
+        [
+          "L21H1",
+          "L24H6"
+        ],
+        [
+          "L17H8",
+          "L21H1"
+        ],
+        [
+          "L20H5",
+          "L21H1"
+        ],
+        [
+          "L21H1",
+          "L23H6"
+        ],
+        [
+          "MLP11",
+          "L17H8"
+        ],
+        [
+          "L21H12",
+          "L24H6"
+        ],
+        [
+          "L21H12",
+          "L23H6"
+        ],
+        [
+          "L23H6",
+          "L24H6"
+        ],
+        [
+          "L17H8",
+          "L20H5"
+        ],
+        [
+          "L17H8",
+          "L21H12"
+        ],
+        [
+          "L20H5",
+          "L21H12"
+        ],
+        [
+          "L24H6",
+          "MLP27"
+        ],
+        [
+          "MLP22",
+          "L24H6"
+        ],
+        [
+          "L23H6",
+          "Residual Output: <tool_call>"
+        ],
+        [
+          "Input Embed",
+          "MLP11"
+        ]
+      ],
+      "core_size": 9,
+      "jaccard_vs_full_core": 0.9,
+      "train": {
+        "n_samples": 96,
+        "suff_median": NaN,
+        "nec_median": NaN,
+        "rand_suff_mean_median": NaN,
+        "global_minus_random_median": NaN
+      },
+      "test": {
+        "n_samples": 43,
+        "suff_median": 0.9464285714285714,
+        "suff_mean": 0.9640671032048733,
+        "nec_median": 0.9672131147540983,
+        "nec_mean": 0.98593158418098,
+        "min_median": 0.9459459459459459,
+        "harmonic_median": 0.9620253164556962,
+        "rand_suff_mean_median": 0.125,
+        "global_minus_random_median": 0.8214285714285714
+      }
+    },
+    {
+      "split_id": 2,
+      "seed": 2123,
+      "n_train": 96,
+      "n_test": 43,
+      "core_nodes": [
+        "MLP11",
+        "L17H8",
+        "MLP20",
+        "L20H5",
+        "L21H1",
+        "L21H12",
+        "MLP22",
+        "L23H6",
+        "L24H6",
+        "MLP25",
+        "MLP27"
+      ],
+      "core_edges": [
+        [
+          "L21H1",
+          "MLP27"
+        ],
+        [
+          "L21H1",
+          "MLP22"
+        ],
+        [
+          "MLP27",
+          "Residual Output: <tool_call>"
+        ],
+        [
+          "L24H6",
+          "Residual Output: <tool_call>"
+        ],
+        [
+          "L21H12",
+          "MLP27"
+        ],
+        [
+          "L21H12",
+          "MLP22"
+        ],
+        [
+          "L21H1",
+          "L24H6"
+        ],
+        [
+          "L17H8",
+          "L21H1"
+        ],
+        [
+          "L20H5",
+          "L21H1"
+        ],
+        [
+          "L21H1",
+          "L23H6"
+        ],
+        [
+          "MLP11",
+          "L17H8"
+        ],
+        [
+          "L21H12",
+          "L24H6"
+        ],
+        [
+          "L21H12",
+          "L23H6"
+        ],
+        [
+          "L24H6",
+          "MLP25"
+        ],
+        [
+          "L23H6",
+          "L24H6"
+        ],
+        [
+          "L17H8",
+          "L20H5"
+        ],
+        [
+          "MLP25",
+          "Residual Output: <tool_call>"
+        ],
+        [
+          "L17H8",
+          "L21H12"
+        ],
+        [
+          "L20H5",
+          "L21H12"
+        ],
+        [
+          "L17H8",
+          "MLP20"
+        ],
+        [
+          "MLP20",
+          "L21H1"
+        ],
+        [
+          "L24H6",
+          "MLP27"
+        ],
+        [
+          "MLP22",
+          "L24H6"
+        ],
+        [
+          "L23H6",
+          "Residual Output: <tool_call>"
+        ],
+        [
+          "Input Embed",
+          "MLP11"
+        ]
+      ],
+      "core_size": 11,
+      "jaccard_vs_full_core": 0.9090909090909091,
+      "train": {
+        "n_samples": 96,
+        "suff_median": NaN,
+        "nec_median": NaN,
+        "rand_suff_mean_median": NaN,
+        "global_minus_random_median": NaN
+      },
+      "test": {
+        "n_samples": 43,
+        "suff_median": 0.9245283018867925,
+        "suff_mean": 0.9418477905870596,
+        "nec_median": 0.9538461538461539,
+        "nec_mean": 0.9697650850496471,
+        "min_median": 0.9230769230769231,
+        "harmonic_median": 0.939149560117302,
+        "rand_suff_mean_median": 0.14240506329113925,
+        "global_minus_random_median": 0.7821232385956532
+      }
+    },
+    {
+      "split_id": 3,
+      "seed": 3123,
+      "n_train": 96,
+      "n_test": 43,
+      "core_nodes": [
+        "MLP11",
+        "L17H8",
+        "L20H5",
+        "L21H1",
+        "L21H12",
+        "MLP22",
+        "L23H6",
+        "L24H6",
+        "MLP25",
+        "MLP27"
+      ],
+      "core_edges": [
+        [
+          "L21H1",
+          "MLP27"
+        ],
+        [
+          "L21H1",
+          "MLP22"
+        ],
+        [
+          "MLP27",
+          "Residual Output: <tool_call>"
+        ],
+        [
+          "L24H6",
+          "Residual Output: <tool_call>"
+        ],
+        [
+          "L21H12",
+          "MLP27"
+        ],
+        [
+          "L21H12",
+          "MLP22"
+        ],
+        [
+          "L21H1",
+          "L24H6"
+        ],
+        [
+          "L17H8",
+          "L21H1"
+        ],
+        [
+          "L20H5",
+          "L21H1"
+        ],
+        [
+          "L21H1",
+          "L23H6"
+        ],
+        [
+          "MLP11",
+          "L17H8"
+        ],
+        [
+          "L21H12",
+          "L24H6"
+        ],
+        [
+          "L21H12",
+          "L23H6"
+        ],
+        [
+          "L24H6",
+          "MLP25"
+        ],
+        [
+          "L23H6",
+          "L24H6"
+        ],
+        [
+          "L17H8",
+          "L20H5"
+        ],
+        [
+          "MLP25",
+          "Residual Output: <tool_call>"
+        ],
+        [
+          "L17H8",
+          "L21H12"
+        ],
+        [
+          "L20H5",
+          "L21H12"
+        ],
+        [
+          "L24H6",
+          "MLP27"
+        ],
+        [
+          "MLP22",
+          "L24H6"
+        ],
+        [
+          "L21H12",
+          "MLP25"
+        ],
+        [
+          "L23H6",
+          "Residual Output: <tool_call>"
+        ],
+        [
+          "Input Embed",
+          "MLP11"
+        ]
+      ],
+      "core_size": 10,
+      "jaccard_vs_full_core": 0.8181818181818182,
+      "train": {
+        "n_samples": 96,
+        "suff_median": NaN,
+        "nec_median": NaN,
+        "rand_suff_mean_median": NaN,
+        "global_minus_random_median": NaN
+      },
+      "test": {
+        "n_samples": 43,
+        "suff_median": 0.9411764705882353,
+        "suff_mean": 0.9549370378122706,
+        "nec_median": 0.9590163934426229,
+        "nec_mean": 0.9738417806370729,
+        "min_median": 0.9318181818181818,
+        "harmonic_median": 0.9528535980148883,
+        "rand_suff_mean_median": 0.13043478260869568,
+        "global_minus_random_median": 0.8107416879795396
+      }
+    },
+    {
+      "split_id": 4,
+      "seed": 4123,
+      "n_train": 96,
+      "n_test": 43,
+      "core_nodes": [
+        "MLP11",
+        "L17H8",
+        "MLP20",
+        "L20H5",
+        "L21H1",
+        "L21H12",
+        "MLP22",
+        "L23H6",
+        "L24H6",
+        "MLP27"
+      ],
+      "core_edges": [
+        [
+          "L21H1",
+          "MLP27"
+        ],
+        [
+          "L21H1",
+          "MLP22"
+        ],
+        [
+          "MLP27",
+          "Residual Output: <tool_call>"
+        ],
+        [
+          "L24H6",
+          "Residual Output: <tool_call>"
+        ],
+        [
+          "L21H12",
+          "MLP27"
+        ],
+        [
+          "L21H12",
+          "MLP22"
+        ],
+        [
+          "L21H1",
+          "L24H6"
+        ],
+        [
+          "L17H8",
+          "L21H1"
+        ],
+        [
+          "L20H5",
+          "L21H1"
+        ],
+        [
+          "L21H1",
+          "L23H6"
+        ],
+        [
+          "MLP11",
+          "L17H8"
+        ],
+        [
+          "L21H12",
+          "L24H6"
+        ],
+        [
+          "L21H12",
+          "L23H6"
+        ],
+        [
+          "L23H6",
+          "L24H6"
+        ],
+        [
+          "L17H8",
+          "L20H5"
+        ],
+        [
+          "L17H8",
+          "L21H12"
+        ],
+        [
+          "L20H5",
+          "L21H12"
+        ],
+        [
+          "L17H8",
+          "MLP20"
+        ],
+        [
+          "MLP20",
+          "L21H1"
+        ],
+        [
+          "L24H6",
+          "MLP27"
+        ],
+        [
+          "MLP22",
+          "L24H6"
+        ],
+        [
+          "L23H6",
+          "Residual Output: <tool_call>"
+        ],
+        [
+          "Input Embed",
+          "MLP11"
+        ]
+      ],
+      "core_size": 10,
+      "jaccard_vs_full_core": 1.0,
+      "train": {
+        "n_samples": 96,
+        "suff_median": NaN,
+        "nec_median": NaN,
+        "rand_suff_mean_median": NaN,
+        "global_minus_random_median": NaN
+      },
+      "test": {
+        "n_samples": 43,
+        "suff_median": 0.9076923076923077,
+        "suff_mean": 0.9293684824751178,
+        "nec_median": 0.9148936170212766,
+        "nec_mean": 0.9466858841581474,
+        "min_median": 0.9069767441860465,
+        "harmonic_median": 0.9195561719833564,
+        "rand_suff_mean_median": 0.13053097345132741,
+        "global_minus_random_median": 0.7771613342409802
+      }
+    },
+    {
+      "split_id": 5,
+      "seed": 5123,
+      "n_train": 96,
+      "n_test": 43,
+      "core_nodes": [
+        "MLP11",
+        "L17H8",
+        "L20H5",
+        "L21H1",
+        "L21H12",
+        "MLP22",
+        "L23H6",
+        "L24H6",
+        "MLP25",
+        "MLP27"
+      ],
+      "core_edges": [
+        [
+          "L21H1",
+          "MLP27"
+        ],
+        [
+          "MLP27",
+          "Residual Output: <tool_call>"
+        ],
+        [
+          "L24H6",
+          "Residual Output: <tool_call>"
+        ],
+        [
+          "L21H12",
+          "MLP27"
+        ],
+        [
+          "L21H1",
+          "L24H6"
+        ],
+        [
+          "L17H8",
+          "L21H1"
+        ],
+        [
+          "L20H5",
+          "L21H1"
+        ],
+        [
+          "L21H1",
+          "L23H6"
+        ],
+        [
+          "MLP11",
+          "L17H8"
+        ],
+        [
+          "L21H12",
+          "L24H6"
+        ],
+        [
+          "L21H12",
+          "L23H6"
+        ],
+        [
+          "L23H6",
+          "L24H6"
+        ],
+        [
+          "L17H8",
+          "L20H5"
+        ],
+        [
+          "MLP25",
+          "Residual Output: <tool_call>"
+        ],
+        [
+          "L17H8",
+          "L21H12"
+        ],
+        [
+          "L20H5",
+          "L21H12"
+        ],
+        [
+          "L21H1",
+          "MLP22"
+        ],
+        [
+          "L24H6",
+          "MLP27"
+        ],
+        [
+          "MLP22",
+          "L24H6"
+        ],
+        [
+          "L21H12",
+          "MLP22"
+        ],
+        [
+          "L24H6",
+          "MLP25"
+        ],
+        [
+          "L23H6",
+          "Residual Output: <tool_call>"
+        ],
+        [
+          "Input Embed",
+          "MLP11"
+        ]
+      ],
+      "core_size": 10,
+      "jaccard_vs_full_core": 0.8181818181818182,
+      "train": {
+        "n_samples": 96,
+        "suff_median": NaN,
+        "nec_median": NaN,
+        "rand_suff_mean_median": NaN,
+        "global_minus_random_median": NaN
+      },
+      "test": {
+        "n_samples": 43,
+        "suff_median": 0.9459459459459459,
+        "suff_mean": 0.9707611184688433,
+        "nec_median": 0.9696969696969697,
+        "nec_mean": 0.9941785246121458,
+        "min_median": 0.9459459459459459,
+        "harmonic_median": 0.9589463359955163,
+        "rand_suff_mean_median": 0.16193181818181818,
+        "global_minus_random_median": 0.7840141277641277
+      }
+    }
+  ],
+  "aggregate_summary": {
+    "n_records_total": 139,
+    "n_splits": 6,
+    "core_size_median": 10.0,
+    "core_pairwise_jaccard_mean": 0.895151515151515,
+    "core_pairwise_jaccard_median": 0.9090909090909091,
+    "jaccard_vs_full_core_mean": 0.8924242424242426,
+    "test_suff_median_mean": 0.9329958312287269,
+    "test_nec_median_mean": 0.9513880367653513,
+    "test_delta_vs_random_mean": 0.8005842805287857,
+    "node_frequency": {
+      "L17H8": 6,
+      "L20H5": 6,
+      "L21H1": 6,
+      "L21H12": 6,
+      "L23H6": 6,
+      "L24H6": 6,
+      "MLP11": 6,
+      "MLP22": 6,
+      "MLP27": 6,
+      "MLP25": 4,
+      "MLP20": 3
+    }
+  }
+}

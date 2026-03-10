@@ -1,0 +1,162 @@
+{
+  "input_root": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164",
+  "aggregate_summary": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/aggregate_best_n0.55_e0.4/global_core_summary.json",
+  "cluster_assignments": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/aggregate_best_n0.55_e0.4/cluster_assignments.csv",
+  "gap_min": 0.5,
+  "min_cluster_size": 8,
+  "min_target_samples": 6,
+  "n_random": 1,
+  "seed": 123,
+  "n_records_filtered": 139,
+  "n_records_processed": 139,
+  "skipped_q_indices": [],
+  "sources": [
+    {
+      "name": "cluster_0",
+      "source_cluster_id": 0,
+      "n_nodes": 14
+    },
+    {
+      "name": "cluster_6",
+      "source_cluster_id": 6,
+      "n_nodes": 12
+    },
+    {
+      "name": "cluster_12",
+      "source_cluster_id": 12,
+      "n_nodes": 14
+    },
+    {
+      "name": "cluster_8",
+      "source_cluster_id": 8,
+      "n_nodes": 12
+    },
+    {
+      "name": "cluster_2",
+      "source_cluster_id": 2,
+      "n_nodes": 12
+    },
+    {
+      "name": "cluster_1",
+      "source_cluster_id": 1,
+      "n_nodes": 13
+    },
+    {
+      "name": "cluster_10",
+      "source_cluster_id": 10,
+      "n_nodes": 14
+    },
+    {
+      "name": "global_core",
+      "source_cluster_id": null,
+      "n_nodes": 8
+    }
+  ],
+  "targets": [
+    {
+      "label": "cluster_0",
+      "n_samples": 57
+    },
+    {
+      "label": "cluster_6",
+      "n_samples": 15
+    },
+    {
+      "label": "cluster_12",
+      "n_samples": 12
+    },
+    {
+      "label": "cluster_8",
+      "n_samples": 11
+    },
+    {
+      "label": "cluster_2",
+      "n_samples": 9
+    },
+    {
+      "label": "cluster_1",
+      "n_samples": 8
+    },
+    {
+      "label": "cluster_10",
+      "n_samples": 8
+    },
+    {
+      "label": "all_valid",
+      "n_samples": 139
+    }
+  ],
+  "decay_rows": [
+    {
+      "source": "cluster_0",
+      "within_suff_median": 1.0,
+      "cross_suff_median_mean": 0.9852576433097676,
+      "cross_over_within_suff": 0.9852576433097676,
+      "within_delta_median": 0.6428571428571429,
+      "cross_delta_median_mean": 0.6401830872636817,
+      "cross_over_within_delta": 0.995840357965727
+    },
+    {
+      "source": "cluster_6",
+      "within_suff_median": 0.9166666666666666,
+      "cross_suff_median_mean": 0.9073553632420818,
+      "cross_over_within_suff": 0.9898422144459075,
+      "within_delta_median": 0.5588235294117647,
+      "cross_delta_median_mean": 0.596406048728269,
+      "cross_over_within_delta": 1.067252929303218
+    },
+    {
+      "source": "cluster_12",
+      "within_suff_median": 0.9505543901708121,
+      "cross_suff_median_mean": 0.9216898826307739,
+      "cross_over_within_suff": 0.9696340284801048,
+      "within_delta_median": 0.7065727699530517,
+      "cross_delta_median_mean": 0.5624367623874117,
+      "cross_over_within_delta": 0.79600684643534
+    },
+    {
+      "source": "cluster_8",
+      "within_suff_median": 0.9620253164556962,
+      "cross_suff_median_mean": 0.9113988374042116,
+      "cross_over_within_suff": 0.9473751073017462,
+      "within_delta_median": 0.5663716814159292,
+      "cross_delta_median_mean": 0.5297289803029356,
+      "cross_over_within_delta": 0.9353027308473707
+    },
+    {
+      "source": "cluster_2",
+      "within_suff_median": 0.9285714285714286,
+      "cross_suff_median_mean": 0.9874079744466623,
+      "cross_over_within_suff": 1.0633624340194825,
+      "within_delta_median": 0.6818181818181818,
+      "cross_delta_median_mean": 0.6705502657183647,
+      "cross_over_within_delta": 0.9834737230536017
+    },
+    {
+      "source": "cluster_1",
+      "within_suff_median": 0.9398893360160966,
+      "cross_suff_median_mean": 0.9016391193335913,
+      "cross_over_within_suff": 0.9593034890207008,
+      "within_delta_median": 0.5363556078893141,
+      "cross_delta_median_mean": 0.5557344740697651,
+      "cross_over_within_delta": 1.0361306303046058
+    },
+    {
+      "source": "cluster_10",
+      "within_suff_median": 0.9338797814207651,
+      "cross_suff_median_mean": 0.9703916709886861,
+      "cross_over_within_suff": 1.0390969911698626,
+      "within_delta_median": 0.4363067807768269,
+      "cross_delta_median_mean": 0.5846551779935634,
+      "cross_over_within_delta": 1.3400093781549947
+    }
+  ],
+  "artifacts": {
+    "per_sample_csv": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_best_n0.55_e0.4/cluster_transfer_per_sample.csv",
+    "summary_csv": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_best_n0.55_e0.4/cluster_transfer_summary.csv",
+    "decay_csv": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_best_n0.55_e0.4/cluster_transfer_decay.csv",
+    "suff_heatmap_png": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_best_n0.55_e0.4/cluster_transfer_suff_heatmap.png",
+    "delta_heatmap_png": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_best_n0.55_e0.4/cluster_transfer_delta_heatmap.png",
+    "relative_suff_heatmap_png": "/root/data/XAI-1.7B-ACDCcopy/Automatic-Circuit-Discovery/experiments/results/overnight_round2/cluster_transfer_best_n0.55_e0.4/cluster_transfer_relative_suff_heatmap.png"
+  }
+}
