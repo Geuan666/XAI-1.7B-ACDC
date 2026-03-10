@@ -158,6 +158,6 @@
     0.0
   ],
   "artifacts": {
-    "trace_png": "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_semantic_roles_v3/contrast_token_trace.png"
+    "trace_png": "/root/data/XAI-1.7B-ACDCcopy2/final/figures/contrast_token_trace.png"
   }
 }

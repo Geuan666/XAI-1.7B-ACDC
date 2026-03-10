@@ -226,6 +226,32 @@ def build_role_groups(core_nodes: Sequence[str], node_summary: Dict[str, Dict[st
     return primary, extended
 
 
+def build_custom_groups(
+    core_nodes: Sequence[str],
+    group_map: Dict[str, Sequence[str]],
+    include_all_heads_mlps: bool = True,
+) -> Tuple[Dict[str, List[str]], Dict[str, List[str]]]:
+    core_set = set(core_nodes)
+    primary: Dict[str, List[str]] = {}
+    for g, members in group_map.items():
+        valid = sorted(
+            [str(n) for n in members if str(n) in core_set],
+            key=parse_layer,
+        )
+        if valid:
+            primary[str(g)] = valid
+
+    extended: Dict[str, List[str]] = dict(primary)
+    if include_all_heads_mlps:
+        heads_all = sorted([n for n in core_nodes if n.startswith("L")], key=parse_layer)
+        mlps_all = sorted([n for n in core_nodes if n.startswith("MLP")], key=parse_layer)
+        if heads_all:
+            extended["all_heads"] = heads_all
+        if mlps_all:
+            extended["all_mlps"] = mlps_all
+    return primary, extended
+
+
 def role_label_for_node(node: str, primary_groups: Dict[str, List[str]]) -> str:
     for g, members in primary_groups.items():
         if node in set(members):
@@ -363,6 +389,18 @@ def main() -> None:
     parser.add_argument("--q-end", type=int, default=10_000)
     parser.add_argument("--bootstrap", type=int, default=1000)
     parser.add_argument("--seed", type=int, default=123)
+    parser.add_argument(
+        "--group-json",
+        type=str,
+        default="",
+        help="Optional JSON path for custom groups: {group_name: [node,...], ...}",
+    )
+    parser.add_argument(
+        "--include-all-heads-mlps",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help="When using --group-json, append all_heads/all_mlps composite groups.",
+    )
     args = parser.parse_args()
 
     input_root = Path(args.input_root).resolve()
@@ -388,7 +426,17 @@ def main() -> None:
         raise FileNotFoundError("Could not find aggregate global_core_summary.json.")
     core_edges = [tuple(e) for e in agg_summary.get("core_edges", [])]
 
-    primary_groups, extended_groups = build_role_groups(core_nodes, node_summary)
+    if args.group_json:
+        custom_groups = json.loads(Path(args.group_json).resolve().read_text(encoding="utf-8"))
+        if not isinstance(custom_groups, dict):
+            raise ValueError("--group-json must point to a JSON object: {group_name: [nodes]}.")
+        primary_groups, extended_groups = build_custom_groups(
+            core_nodes=core_nodes,
+            group_map={str(k): list(v) for k, v in custom_groups.items()},
+            include_all_heads_mlps=bool(args.include_all_heads_mlps),
+        )
+    else:
+        primary_groups, extended_groups = build_role_groups(core_nodes, node_summary)
     if not primary_groups:
         raise ValueError("No non-empty semantic role groups were built.")
 
@@ -753,4 +801,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

@@ -1,0 +1,18 @@
+{
+  "contextual_supporter": [
+    "MLP11",
+    "L20H5",
+    "L23H6",
+    "L24H6"
+  ],
+  "essential_backbone": [
+    "L17H8",
+    "L21H1",
+    "L21H12"
+  ],
+  "redundant_or_interfering": [
+    "MLP20",
+    "MLP22",
+    "MLP27"
+  ]
+}

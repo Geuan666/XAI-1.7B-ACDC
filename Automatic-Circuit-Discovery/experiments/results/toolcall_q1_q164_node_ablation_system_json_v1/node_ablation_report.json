@@ -1,0 +1,542 @@
+{
+  "n_input_samples": 139,
+  "n_analyzed_samples": 139,
+  "analyzed_q_indices": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    25,
+    26,
+    27,
+    28,
+    30,
+    31,
+    32,
+    33,
+    36,
+    37,
+    38,
+    39,
+    41,
+    42,
+    43,
+    44,
+    46,
+    47,
+    48,
+    49,
+    50,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    67,
+    68,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    81,
+    82,
+    83,
+    84,
+    85,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    94,
+    95,
+    96,
+    97,
+    98,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    111,
+    112,
+    113,
+    115,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    126,
+    129,
+    130,
+    131,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    155,
+    156,
+    157,
+    158,
+    159,
+    161,
+    162,
+    163,
+    164
+  ],
+  "skipped_q_indices": [],
+  "gap_min": 0.5,
+  "augment_mode": "system_json_pad",
+  "gap_min_aug": 0.5,
+  "bootstrap": 1000,
+  "seed": 123,
+  "core_nodes": [
+    "MLP11",
+    "L17H8",
+    "MLP20",
+    "L20H5",
+    "L21H1",
+    "L21H12",
+    "MLP22",
+    "L23H6",
+    "L24H6",
+    "MLP27"
+  ],
+  "summary_rows": [
+    {
+      "node": "MLP11",
+      "node_role": "Aux MLP",
+      "n_samples": 139,
+      "node_suff_median": 0.20588235294117646,
+      "node_suff_mean": 0.20798187461192572,
+      "node_suff_ci": {
+        "mean": 0.20897710378983383,
+        "lo": 0.1935483870967742,
+        "hi": 0.23529411764705882
+      },
+      "node_nec_median": 0.1875,
+      "node_nec_mean": 0.19243175526239503,
+      "node_nec_ci": {
+        "mean": 0.18795599975197155,
+        "lo": 0.17307692307692307,
+        "hi": 0.2
+      },
+      "minus_node_suff_median": 0.9402985074626866,
+      "minus_node_nec_median": 0.9591836734693877,
+      "drop_full_suff_median": 0.02564102564102566,
+      "drop_full_suff_ci": {
+        "mean": 0.025749000265508134,
+        "lo": 0.020408163265306034,
+        "hi": 0.030927835051546504
+      },
+      "drop_full_nec_median": 0.02857142857142858,
+      "drop_full_nec_ci": {
+        "mean": 0.026842109796079712,
+        "lo": 0.01754385964912275,
+        "hi": 0.03389830508474567
+      },
+      "rank_drop_full_nec": 4,
+      "rank_node_suff": 9
+    },
+    {
+      "node": "L17H8",
+      "node_role": "Format Router / Target+Suppressor",
+      "n_samples": 139,
+      "node_suff_median": 0.3333333333333333,
+      "node_suff_mean": 0.34882269423473855,
+      "node_suff_ci": {
+        "mean": 0.3371996524736006,
+        "lo": 0.3235294117647059,
+        "hi": 0.3492063492063492
+      },
+      "node_nec_median": 0.2413793103448276,
+      "node_nec_mean": 0.26105316251345256,
+      "node_nec_ci": {
+        "mean": 0.2394646523952942,
+        "lo": 0.22807017543859648,
+        "hi": 0.25
+      },
+      "minus_node_suff_median": 0.9318181818181818,
+      "minus_node_nec_median": 0.9523809523809523,
+      "drop_full_suff_median": 0.02941176470588236,
+      "drop_full_suff_ci": {
+        "mean": 0.028867617867789835,
+        "lo": 0.02547770700636942,
+        "hi": 0.03125
+      },
+      "drop_full_nec_median": 0.03125,
+      "drop_full_nec_ci": {
+        "mean": 0.031171537271495305,
+        "lo": 0.02857142857142858,
+        "hi": 0.0357142857142857
+      },
+      "rank_drop_full_nec": 2,
+      "rank_node_suff": 5
+    },
+    {
+      "node": "MLP20",
+      "node_role": "Aux MLP",
+      "n_samples": 139,
+      "node_suff_median": 0.23684210526315788,
+      "node_suff_mean": 0.2540839703852772,
+      "node_suff_ci": {
+        "mean": 0.23802136233306784,
+        "lo": 0.21875,
+        "hi": 0.25925925925925924
+      },
+      "node_nec_median": 0.13636363636363635,
+      "node_nec_mean": 0.1490160562765778,
+      "node_nec_ci": {
+        "mean": 0.13630129639272387,
+        "lo": 0.1232876712328767,
+        "hi": 0.15
+      },
+      "minus_node_suff_median": 0.9622641509433962,
+      "minus_node_nec_median": 0.9722222222222222,
+      "drop_full_suff_median": 0.0,
+      "drop_full_suff_ci": {
+        "mean": 0.0005689067651927845,
+        "lo": 0.0,
+        "hi": 0.010869565217391353
+      },
+      "drop_full_nec_median": 0.0,
+      "drop_full_nec_ci": {
+        "mean": 0.0057957184313662214,
+        "lo": 0.0,
+        "hi": 0.016129032258064502
+      },
+      "rank_drop_full_nec": 6,
+      "rank_node_suff": 8
+    },
+    {
+      "node": "L20H5",
+      "node_role": "Query Reader / Distractor Suppressor",
+      "n_samples": 139,
+      "node_suff_median": 0.265625,
+      "node_suff_mean": 0.27469862309152643,
+      "node_suff_ci": {
+        "mean": 0.26631106951773686,
+        "lo": 0.25,
+        "hi": 0.2777777777777778
+      },
+      "node_nec_median": 0.16666666666666666,
+      "node_nec_mean": 0.1739246190990852,
+      "node_nec_ci": {
+        "mean": 0.1669169280983424,
+        "lo": 0.15625,
+        "hi": 0.17647058823529413
+      },
+      "minus_node_suff_median": 0.9552238805970149,
+      "minus_node_nec_median": 0.98,
+      "drop_full_suff_median": 0.0,
+      "drop_full_suff_ci": {
+        "mean": 0.0018219034753927212,
+        "lo": 0.0,
+        "hi": 0.012820512820512886
+      },
+      "drop_full_nec_median": 0.0,
+      "drop_full_nec_ci": {
+        "mean": 0.004204322090110765,
+        "lo": 0.0,
+        "hi": 0.014285714285714346
+      },
+      "rank_drop_full_nec": 7,
+      "rank_node_suff": 7
+    },
+    {
+      "node": "L21H1",
+      "node_role": "Format Router / Target+Suppressor",
+      "n_samples": 139,
+      "node_suff_median": 0.390625,
+      "node_suff_mean": 0.39208803541424614,
+      "node_suff_ci": {
+        "mean": 0.3898718853611666,
+        "lo": 0.38,
+        "hi": 0.4
+      },
+      "node_nec_median": 0.16,
+      "node_nec_mean": 0.16925503248730045,
+      "node_nec_ci": {
+        "mean": 0.1603866429518455,
+        "lo": 0.15625,
+        "hi": 0.16666666666666666
+      },
+      "minus_node_suff_median": 0.9423076923076923,
+      "minus_node_nec_median": 0.9552238805970149,
+      "drop_full_suff_median": 0.02564102564102555,
+      "drop_full_suff_ci": {
+        "mean": 0.02561524066801954,
+        "lo": 0.021739130434782705,
+        "hi": 0.02941176470588236
+      },
+      "drop_full_nec_median": 0.02941176470588225,
+      "drop_full_nec_ci": {
+        "mean": 0.02960045436660569,
+        "lo": 0.0273972602739726,
+        "hi": 0.033333333333333326
+      },
+      "rank_drop_full_nec": 3,
+      "rank_node_suff": 3
+    },
+    {
+      "node": "L21H12",
+      "node_role": "Format Router / Target+Suppressor",
+      "n_samples": 139,
+      "node_suff_median": 0.5074626865671642,
+      "node_suff_mean": 0.5267283281683998,
+      "node_suff_ci": {
+        "mean": 0.5075704405712782,
+        "lo": 0.49504950495049505,
+        "hi": 0.5192307692307693
+      },
+      "node_nec_median": 0.25773195876288657,
+      "node_nec_mean": 0.2849562387192493,
+      "node_nec_ci": {
+        "mean": 0.2579859220657238,
+        "lo": 0.25,
+        "hi": 0.2682926829268293
+      },
+      "minus_node_suff_median": 0.9166666666666666,
+      "minus_node_nec_median": 0.9126984126984127,
+      "drop_full_suff_median": 0.046511627906976716,
+      "drop_full_suff_ci": {
+        "mean": 0.04687787736465754,
+        "lo": 0.0434782608695653,
+        "hi": 0.050000000000000044
+      },
+      "drop_full_nec_median": 0.0674157303370787,
+      "drop_full_nec_ci": {
+        "mean": 0.06671546453716651,
+        "lo": 0.061224489795918435,
+        "hi": 0.07317073170731714
+      },
+      "rank_drop_full_nec": 1,
+      "rank_node_suff": 1
+    },
+    {
+      "node": "MLP22",
+      "node_role": "Support Suppressor MLP",
+      "n_samples": 139,
+      "node_suff_median": 0.17647058823529413,
+      "node_suff_mean": 0.180783399754938,
+      "node_suff_ci": {
+        "mean": 0.17565524883377515,
+        "lo": 0.1590909090909091,
+        "hi": 0.1864406779661017
+      },
+      "node_nec_median": 0.0821917808219178,
+      "node_nec_mean": 0.08785898422787401,
+      "node_nec_ci": {
+        "mean": 0.08256494645707835,
+        "lo": 0.07575757575757576,
+        "hi": 0.08917197452229299
+      },
+      "minus_node_suff_median": 0.9615384615384616,
+      "minus_node_nec_median": 0.9833333333333333,
+      "drop_full_suff_median": 0.0,
+      "drop_full_suff_ci": {
+        "mean": 0.0,
+        "lo": 0.0,
+        "hi": 0.0
+      },
+      "drop_full_nec_median": 0.0,
+      "drop_full_nec_ci": {
+        "mean": 0.0,
+        "lo": 0.0,
+        "hi": 0.0
+      },
+      "rank_drop_full_nec": 8,
+      "rank_node_suff": 10
+    },
+    {
+      "node": "L23H6",
+      "node_role": "Format Router / Distractor Suppressor",
+      "n_samples": 139,
+      "node_suff_median": 0.3333333333333333,
+      "node_suff_mean": 0.3319663033030897,
+      "node_suff_ci": {
+        "mean": 0.331866724562942,
+        "lo": 0.3181818181818182,
+        "hi": 0.3392857142857143
+      },
+      "node_nec_median": 0.1568627450980392,
+      "node_nec_mean": 0.16957124388124847,
+      "node_nec_ci": {
+        "mean": 0.15675843033846434,
+        "lo": 0.1509433962264151,
+        "hi": 0.16326530612244897
+      },
+      "minus_node_suff_median": 0.9487179487179487,
+      "minus_node_nec_median": 0.96875,
+      "drop_full_suff_median": 0.013157894736842146,
+      "drop_full_suff_ci": {
+        "mean": 0.012350536999998453,
+        "lo": 0.0,
+        "hi": 0.015625
+      },
+      "drop_full_nec_median": 0.01666666666666672,
+      "drop_full_nec_ci": {
+        "mean": 0.016122415979396565,
+        "lo": 0.013698630136986245,
+        "hi": 0.018018018018017945
+      },
+      "rank_drop_full_nec": 5,
+      "rank_node_suff": 6
+    },
+    {
+      "node": "L24H6",
+      "node_role": "Tool-Tag Reader / Distractor Suppressor",
+      "n_samples": 139,
+      "node_suff_median": 0.35714285714285715,
+      "node_suff_mean": 0.37220509083784054,
+      "node_suff_ci": {
+        "mean": 0.3570731708292263,
+        "lo": 0.3409090909090909,
+        "hi": 0.373134328358209
+      },
+      "node_nec_median": 0.23880597014925373,
+      "node_nec_mean": 0.25507017964473533,
+      "node_nec_ci": {
+        "mean": 0.24049355471411257,
+        "lo": 0.22448979591836735,
+        "hi": 0.2558139534883721
+      },
+      "minus_node_suff_median": 0.9615384615384616,
+      "minus_node_nec_median": 0.9850746268656716,
+      "drop_full_suff_median": 0.0,
+      "drop_full_suff_ci": {
+        "mean": 0.0,
+        "lo": 0.0,
+        "hi": 0.0
+      },
+      "drop_full_nec_median": 0.0,
+      "drop_full_nec_ci": {
+        "mean": 5.3071558391207805e-05,
+        "lo": 0.0,
+        "hi": 0.0
+      },
+      "rank_drop_full_nec": 9,
+      "rank_node_suff": 4
+    },
+    {
+      "node": "MLP27",
+      "node_role": "Primary Writer MLP",
+      "n_samples": 139,
+      "node_suff_median": 0.42857142857142855,
+      "node_suff_mean": 0.42075380469435975,
+      "node_suff_ci": {
+        "mean": 0.42542386890486156,
+        "lo": 0.4142857142857143,
+        "hi": 0.4367816091954023
+      },
+      "node_nec_median": 0.35,
+      "node_nec_mean": 0.3479805034177098,
+      "node_nec_ci": {
+        "mean": 0.3497327591912317,
+        "lo": 0.3392857142857143,
+        "hi": 0.359375
+      },
+      "minus_node_suff_median": 0.9636363636363636,
+      "minus_node_nec_median": 0.9863013698630136,
+      "drop_full_suff_median": 0.0,
+      "drop_full_suff_ci": {
+        "mean": -0.0006156972023670435,
+        "lo": -0.010869565217391242,
+        "hi": 0.0
+      },
+      "drop_full_nec_median": -0.010869565217391353,
+      "drop_full_nec_ci": {
+        "mean": -0.007285043538206867,
+        "lo": -0.015873015873015817,
+        "hi": 0.0
+      },
+      "rank_drop_full_nec": 10,
+      "rank_node_suff": 2
+    }
+  ],
+  "proposed_groups_data_driven": {
+    "contextual_supporter": [
+      "MLP11",
+      "L23H6"
+    ],
+    "essential_backbone": [
+      "L17H8",
+      "L21H1",
+      "L21H12"
+    ],
+    "redundant_or_interfering": [
+      "MLP20",
+      "L20H5",
+      "MLP22",
+      "L24H6"
+    ],
+    "parallel_writer_redundant_in_full": [
+      "MLP27"
+    ]
+  },
+  "artifacts": {
+    "per_sample_csv": "/root/data/XAI-1.7B-ACDCcopy2/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_node_ablation_system_json_v1/node_ablation_per_sample.csv",
+    "summary_csv": "/root/data/XAI-1.7B-ACDCcopy2/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_node_ablation_system_json_v1/node_ablation_summary.csv",
+    "heatmap_png": "/root/data/XAI-1.7B-ACDCcopy2/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_node_ablation_system_json_v1/node_ablation_heatmap.png",
+    "drop_full_nec_png": "/root/data/XAI-1.7B-ACDCcopy2/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_node_ablation_system_json_v1/node_drop_full_nec.png",
+    "node_alone_suff_png": "/root/data/XAI-1.7B-ACDCcopy2/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_node_ablation_system_json_v1/node_alone_suff.png"
+  }
+}

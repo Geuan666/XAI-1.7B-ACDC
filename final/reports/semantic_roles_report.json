@@ -604,11 +604,11 @@
     }
   },
   "artifacts": {
-    "semantic_node_metrics_csv": "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_semantic_roles_v3/semantic_node_metrics.csv",
-    "semantic_read_causal_heatmap": "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_semantic_roles_v3/semantic_read_causal_heatmap.png",
-    "semantic_attention_delta_heatmap": "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_semantic_roles_v3/semantic_attention_delta_heatmap.png",
-    "semantic_write_target_delta": "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_semantic_roles_v3/semantic_write_target_delta.png",
-    "final_circuit_semantic": "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_semantic_roles_v3/final_circuit_semantic.png",
-    "node_roles_csv": "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_semantic_roles_v3/node_roles.csv"
+    "semantic_node_metrics_csv": "/root/data/XAI-1.7B-ACDCcopy2/final/tables/semantic_node_metrics.csv",
+    "semantic_read_causal_heatmap": "/root/data/XAI-1.7B-ACDCcopy2/final/figures/semantic_read_causal_heatmap.png",
+    "semantic_attention_delta_heatmap": "/root/data/XAI-1.7B-ACDCcopy2/final/figures/semantic_attention_delta_heatmap.png",
+    "semantic_write_target_delta": "/root/data/XAI-1.7B-ACDCcopy2/final/figures/semantic_write_target_delta.png",
+    "final_circuit_semantic": "/root/data/XAI-1.7B-ACDCcopy2/final/figures/final_circuit_semantic.png",
+    "node_roles_csv": "/root/data/XAI-1.7B-ACDCcopy2/final/tables/node_roles.csv"
   }
 }

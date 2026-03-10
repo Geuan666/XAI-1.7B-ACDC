@@ -1,0 +1,29 @@
+{
+  "stable_freq_th": 0.7,
+  "necessary_drop_th": 0.02,
+  "n_nodes": 10,
+  "strata": {
+    "stable_but_weak_or_redundant": [
+      "L17H8",
+      "L21H1",
+      "L21H12",
+      "L20H5",
+      "MLP22",
+      "L24H6"
+    ],
+    "stable_necessary_backbone": [
+      "MLP27",
+      "L23H6"
+    ],
+    "unstable_but_necessary": [
+      "MLP20"
+    ],
+    "unstable_weak": [
+      "MLP11"
+    ]
+  },
+  "artifacts": {
+    "node_stratification_csv": "/root/data/XAI-1.7B-ACDCcopy2/final/tables/node_stratification.csv",
+    "node_stratification_scatter_png": "/root/data/XAI-1.7B-ACDCcopy2/final/figures/node_stratification_scatter.png"
+  }
+}

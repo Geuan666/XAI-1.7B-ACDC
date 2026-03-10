@@ -908,13 +908,13 @@
     }
   ],
   "artifacts": {
-    "per_sample_csv": "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_semantic_roles_v3/path_patch_edge_per_sample.csv",
-    "summary_full_csv": "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_semantic_roles_v3/path_patch_edge_summary_full.csv",
-    "summary_trimmed_csv": "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_semantic_roles_v3/path_patch_edge_summary_trimmed.csv",
-    "heatmap_full_png": "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_semantic_roles_v3/path_patch_edge_heatmap_full.png",
-    "heatmap_trimmed_png": "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_semantic_roles_v3/path_patch_edge_heatmap_trimmed.png",
-    "bar_full_png": "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_semantic_roles_v3/path_patch_edge_bar_full.png",
-    "bar_trimmed_png": "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_semantic_roles_v3/path_patch_edge_bar_trimmed.png",
-    "final_circuit_edge_path_patching_png": "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_semantic_roles_v3/final_circuit_edge_path_patching.png"
+    "per_sample_csv": "/root/data/XAI-1.7B-ACDCcopy2/final/tables/path_patch_edge_per_sample.csv",
+    "summary_full_csv": "/root/data/XAI-1.7B-ACDCcopy2/final/tables/path_patch_edge_summary_full.csv",
+    "summary_trimmed_csv": "/root/data/XAI-1.7B-ACDCcopy2/final/tables/path_patch_edge_summary_trimmed.csv",
+    "heatmap_full_png": "/root/data/XAI-1.7B-ACDCcopy2/final/figures/path_patch_edge_heatmap_full.png",
+    "heatmap_trimmed_png": "/root/data/XAI-1.7B-ACDCcopy2/final/figures/path_patch_edge_heatmap_trimmed.png",
+    "bar_full_png": "/root/data/XAI-1.7B-ACDCcopy2/final/figures/path_patch_edge_bar_full.png",
+    "bar_trimmed_png": "/root/data/XAI-1.7B-ACDCcopy2/final/figures/path_patch_edge_bar_trimmed.png",
+    "final_circuit_edge_path_patching_png": "/root/data/XAI-1.7B-ACDCcopy2/final/figures/final_circuit_edge_path_patching.png"
   }
 }

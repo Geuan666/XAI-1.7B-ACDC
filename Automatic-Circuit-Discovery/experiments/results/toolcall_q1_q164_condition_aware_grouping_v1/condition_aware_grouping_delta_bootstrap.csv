@@ -1,0 +1,9 @@
+comparison,mode,metric,delta_median_boot_mean,ci_lo,ci_hi,n
+useraware_vs_static@user_json_pad,user_json_pad,drop_full_nec,0.037511290411667474,0.01219512195121951,0.06060606060606072,139
+useraware_vs_static@user_json_pad,user_json_pad,drop_full_suff,0.025095614325345038,0.011363636363636395,0.0365853658536586,139
+useraware_vs_static@orig,orig,drop_full_nec,-0.2365944003542322,-0.2622950819672131,-0.2222222222222222,139
+useraware_vs_static@orig,orig,drop_full_suff,-0.18607133129531647,-0.1964285714285715,-0.17241379310344832,139
+systemaware_vs_static@system_json_pad,system_json_pad,drop_full_nec,-0.04065587621425057,-0.0454545454545454,-0.03636363636363629,139
+systemaware_vs_static@system_json_pad,system_json_pad,drop_full_suff,-0.031045192100983308,-0.03571428571428571,-0.027027027027027098,139
+systemaware_vs_static@orig,orig,drop_full_nec,-0.06258231327117737,-0.06666666666666682,-0.060000000000000026,139
+systemaware_vs_static@orig,orig,drop_full_suff,-0.04987389721379236,-0.054054054054054,-0.046875,139

@@ -614,12 +614,12 @@
     }
   ],
   "artifacts": {
-    "role_group_per_sample_csv": "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_semantic_roles_v3/role_group_per_sample.csv",
-    "role_group_summary_csv": "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_semantic_roles_v3/role_group_summary.csv",
-    "role_group_sufficiency_png": "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_semantic_roles_v3/role_group_sufficiency.png",
-    "role_group_necessity_drop_png": "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_semantic_roles_v3/role_group_necessity_drop.png",
-    "role_group_causal_heatmap_png": "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_semantic_roles_v3/role_group_causal_heatmap.png",
-    "final_circuit_png": "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_semantic_roles_v3/final_circuit.png",
-    "final_circuit_coarse_png": "/root/data/XAI-1.7B-ACDC/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_semantic_roles_v3/final_circuit_coarse.png"
+    "role_group_per_sample_csv": "/root/data/XAI-1.7B-ACDCcopy2/final/tables/role_group_per_sample.csv",
+    "role_group_summary_csv": "/root/data/XAI-1.7B-ACDCcopy2/final/tables/role_group_summary.csv",
+    "role_group_sufficiency_png": "/root/data/XAI-1.7B-ACDCcopy2/final/figures/role_group_sufficiency.png",
+    "role_group_necessity_drop_png": "/root/data/XAI-1.7B-ACDCcopy2/final/figures/role_group_necessity_drop.png",
+    "role_group_causal_heatmap_png": "/root/data/XAI-1.7B-ACDCcopy2/final/figures/role_group_causal_heatmap.png",
+    "final_circuit_png": "/root/data/XAI-1.7B-ACDCcopy2/final/figures/final_circuit.png",
+    "final_circuit_coarse_png": "/root/data/XAI-1.7B-ACDCcopy2/final/figures/final_circuit_coarse.png"
   }
 }

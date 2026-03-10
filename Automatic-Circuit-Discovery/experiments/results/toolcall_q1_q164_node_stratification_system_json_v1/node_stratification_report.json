@@ -1,0 +1,29 @@
+{
+  "stable_freq_th": 0.7,
+  "necessary_drop_th": 0.02,
+  "n_nodes": 10,
+  "strata": {
+    "stable_but_weak_or_redundant": [
+      "L23H6",
+      "L20H5",
+      "MLP22",
+      "L24H6",
+      "MLP27"
+    ],
+    "stable_necessary_backbone": [
+      "L21H12",
+      "L17H8",
+      "L21H1"
+    ],
+    "unstable_but_necessary": [
+      "MLP11"
+    ],
+    "unstable_weak": [
+      "MLP20"
+    ]
+  },
+  "artifacts": {
+    "node_stratification_csv": "/root/data/XAI-1.7B-ACDCcopy2/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_node_stratification_system_json_v1/node_stratification.csv",
+    "node_stratification_scatter_png": "/root/data/XAI-1.7B-ACDCcopy2/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_node_stratification_system_json_v1/node_stratification_scatter.png"
+  }
+}

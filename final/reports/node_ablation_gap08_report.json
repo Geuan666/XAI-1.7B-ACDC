@@ -1,0 +1,541 @@
+{
+  "n_input_samples": 139,
+  "n_analyzed_samples": 138,
+  "analyzed_q_indices": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    25,
+    26,
+    27,
+    28,
+    30,
+    31,
+    32,
+    33,
+    36,
+    37,
+    38,
+    39,
+    41,
+    42,
+    43,
+    44,
+    46,
+    48,
+    49,
+    50,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    67,
+    68,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    81,
+    82,
+    83,
+    84,
+    85,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    94,
+    95,
+    96,
+    97,
+    98,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    111,
+    112,
+    113,
+    115,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    126,
+    129,
+    130,
+    131,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    155,
+    156,
+    157,
+    158,
+    159,
+    161,
+    162,
+    163,
+    164
+  ],
+  "skipped_q_indices": [
+    47
+  ],
+  "gap_min": 0.8,
+  "bootstrap": 1000,
+  "seed": 123,
+  "core_nodes": [
+    "MLP11",
+    "L17H8",
+    "MLP20",
+    "L20H5",
+    "L21H1",
+    "L21H12",
+    "MLP22",
+    "L23H6",
+    "L24H6",
+    "MLP27"
+  ],
+  "summary_rows": [
+    {
+      "node": "MLP11",
+      "node_role": "Aux MLP",
+      "n_samples": 138,
+      "node_suff_median": 0.1,
+      "node_suff_mean": 0.08525515346614787,
+      "node_suff_ci": {
+        "mean": 0.09918458083401789,
+        "lo": 0.07894736842105263,
+        "hi": 0.13114754098360656
+      },
+      "node_nec_median": 0.11010101010101009,
+      "node_nec_mean": 0.11193794220516771,
+      "node_nec_ci": {
+        "mean": 0.11395436905021514,
+        "lo": 0.1000277854959711,
+        "hi": 0.1323529411764706
+      },
+      "minus_node_suff_median": 0.896780303030303,
+      "minus_node_nec_median": 0.9111111111111111,
+      "drop_full_suff_median": 0.015038444142921714,
+      "drop_full_suff_ci": {
+        "mean": 0.014455974832055836,
+        "lo": 0.005208333333333315,
+        "hi": 0.018518518518518545
+      },
+      "drop_full_nec_median": 0.014822134387351749,
+      "drop_full_nec_ci": {
+        "mean": 0.013324239542173167,
+        "lo": 0.0,
+        "hi": 0.0185185185185186
+      },
+      "rank_drop_full_nec": 6,
+      "rank_node_suff": 10
+    },
+    {
+      "node": "L17H8",
+      "node_role": "Format Router / Target+Suppressor",
+      "n_samples": 138,
+      "node_suff_median": 0.3792673571154584,
+      "node_suff_mean": 0.3847036866964574,
+      "node_suff_ci": {
+        "mean": 0.37951806922052006,
+        "lo": 0.36875503626107975,
+        "hi": 0.3910077264507644
+      },
+      "node_nec_median": 0.2945998071359691,
+      "node_nec_mean": 0.3074162131612503,
+      "node_nec_ci": {
+        "mean": 0.2941934682709297,
+        "lo": 0.2817910447761194,
+        "hi": 0.3063885267275098
+      },
+      "minus_node_suff_median": 0.8727272727272727,
+      "minus_node_nec_median": 0.8834841628959276,
+      "drop_full_suff_median": 0.03540100250626571,
+      "drop_full_suff_ci": {
+        "mean": 0.034766279472731684,
+        "lo": 0.027027027027027084,
+        "hi": 0.039215686274509776
+      },
+      "drop_full_nec_median": 0.040000000000000036,
+      "drop_full_nec_ci": {
+        "mean": 0.039985514581794335,
+        "lo": 0.03658536585365857,
+        "hi": 0.04477611940298509
+      },
+      "rank_drop_full_nec": 2,
+      "rank_node_suff": 4
+    },
+    {
+      "node": "MLP20",
+      "node_role": "Aux MLP",
+      "n_samples": 138,
+      "node_suff_median": 0.11506935687263556,
+      "node_suff_mean": 0.11783971603423632,
+      "node_suff_ci": {
+        "mean": 0.11721045033960349,
+        "lo": 0.10336538461538461,
+        "hi": 0.1303885853066181
+      },
+      "node_nec_median": 0.05676328502415459,
+      "node_nec_mean": 0.05870437570425241,
+      "node_nec_ci": {
+        "mean": 0.05779028477310008,
+        "lo": 0.044444444444444446,
+        "hi": 0.06996086105675146
+      },
+      "minus_node_suff_median": 0.9459459459459459,
+      "minus_node_nec_median": 0.9584531339850488,
+      "drop_full_suff_median": -0.03278688524590162,
+      "drop_full_suff_ci": {
+        "mean": -0.03301192457650973,
+        "lo": -0.04040816326530616,
+        "hi": -0.025000000000000133
+      },
+      "drop_full_nec_median": -0.03703703703703698,
+      "drop_full_nec_ci": {
+        "mean": -0.03591523286524321,
+        "lo": -0.04255319148936165,
+        "hi": -0.027212143650499787
+      },
+      "rank_drop_full_nec": 10,
+      "rank_node_suff": 9
+    },
+    {
+      "node": "L20H5",
+      "node_role": "Query Reader / Distractor Suppressor",
+      "n_samples": 138,
+      "node_suff_median": 0.2867965367965368,
+      "node_suff_mean": 0.3017421311735699,
+      "node_suff_ci": {
+        "mean": 0.2882614505612128,
+        "lo": 0.2797058823529412,
+        "hi": 0.30395962732919257
+      },
+      "node_nec_median": 0.19378911892152142,
+      "node_nec_mean": 0.20931294084314456,
+      "node_nec_ci": {
+        "mean": 0.1939057949559716,
+        "lo": 0.18518518518518517,
+        "hi": 0.20168067226890757
+      },
+      "minus_node_suff_median": 0.8888888888888888,
+      "minus_node_nec_median": 0.9035359801488834,
+      "drop_full_suff_median": 0.01724650609574785,
+      "drop_full_suff_ci": {
+        "mean": 0.01686190662492299,
+        "lo": 0.014084507042253502,
+        "hi": 0.019049346879535578
+      },
+      "drop_full_nec_median": 0.018181818181818188,
+      "drop_full_nec_ci": {
+        "mean": 0.018102002477755272,
+        "lo": 0.014925373134328401,
+        "hi": 0.02020408163265308
+      },
+      "rank_drop_full_nec": 5,
+      "rank_node_suff": 7
+    },
+    {
+      "node": "L21H1",
+      "node_role": "Format Router / Target+Suppressor",
+      "n_samples": 138,
+      "node_suff_median": 0.4807407407407407,
+      "node_suff_mean": 0.49163223091979524,
+      "node_suff_ci": {
+        "mean": 0.47977304973141055,
+        "lo": 0.4626865671641791,
+        "hi": 0.5
+      },
+      "node_nec_median": 0.234375,
+      "node_nec_mean": 0.25259934231446524,
+      "node_nec_ci": {
+        "mean": 0.23549912830528177,
+        "lo": 0.22295321637426901,
+        "hi": 0.2459016393442623
+      },
+      "minus_node_suff_median": 0.8758561643835616,
+      "minus_node_nec_median": 0.8895663956639566,
+      "drop_full_suff_median": 0.02941176470588236,
+      "drop_full_suff_ci": {
+        "mean": 0.029371925797923956,
+        "lo": 0.025316455696202445,
+        "hi": 0.03292236824278555
+      },
+      "drop_full_nec_median": 0.03603896103896104,
+      "drop_full_nec_ci": {
+        "mean": 0.035565567315819904,
+        "lo": 0.02941176470588236,
+        "hi": 0.040816326530612235
+      },
+      "rank_drop_full_nec": 3,
+      "rank_node_suff": 2
+    },
+    {
+      "node": "L21H12",
+      "node_role": "Format Router / Target+Suppressor",
+      "n_samples": 138,
+      "node_suff_median": 0.48316498316498313,
+      "node_suff_mean": 0.48812399427412984,
+      "node_suff_ci": {
+        "mean": 0.4817155287567052,
+        "lo": 0.4634146341463415,
+        "hi": 0.4959016393442623
+      },
+      "node_nec_median": 0.23660287081339712,
+      "node_nec_mean": 0.2556001214132803,
+      "node_nec_ci": {
+        "mean": 0.23663976774184842,
+        "lo": 0.2225390156062425,
+        "hi": 0.2535211267605634
+      },
+      "minus_node_suff_median": 0.8512990602542841,
+      "minus_node_nec_median": 0.8359432346464399,
+      "drop_full_suff_median": 0.056470900876959884,
+      "drop_full_suff_ci": {
+        "mean": 0.05710390906356567,
+        "lo": 0.05263157894736836,
+        "hi": 0.061224489795918435
+      },
+      "drop_full_nec_median": 0.08276255707762559,
+      "drop_full_nec_ci": {
+        "mean": 0.08383856120737172,
+        "lo": 0.07928361960620017,
+        "hi": 0.09090909090909088
+      },
+      "rank_drop_full_nec": 1,
+      "rank_node_suff": 1
+    },
+    {
+      "node": "MLP22",
+      "node_role": "Support Suppressor MLP",
+      "n_samples": 138,
+      "node_suff_median": 0.21818181818181817,
+      "node_suff_mean": 0.21383402772734195,
+      "node_suff_ci": {
+        "mean": 0.21601519488823878,
+        "lo": 0.2,
+        "hi": 0.23376623376623376
+      },
+      "node_nec_median": 0.08207949696833594,
+      "node_nec_mean": 0.08797007080989928,
+      "node_nec_ci": {
+        "mean": 0.08343851486586122,
+        "lo": 0.07435046987285793,
+        "hi": 0.09547662416514875
+      },
+      "minus_node_suff_median": 0.9207535885167464,
+      "minus_node_nec_median": 0.9468984962406015,
+      "drop_full_suff_median": 0.0,
+      "drop_full_suff_ci": {
+        "mean": -0.003912834422280545,
+        "lo": -0.015045248868778338,
+        "hi": 0.0
+      },
+      "drop_full_nec_median": -0.019463340891912317,
+      "drop_full_nec_ci": {
+        "mean": -0.02019067647703121,
+        "lo": -0.0298773690078038,
+        "hi": -0.014705882352941124
+      },
+      "rank_drop_full_nec": 8,
+      "rank_node_suff": 8
+    },
+    {
+      "node": "L23H6",
+      "node_role": "Format Router / Distractor Suppressor",
+      "n_samples": 138,
+      "node_suff_median": 0.30242329489935504,
+      "node_suff_mean": 0.3055374085113774,
+      "node_suff_ci": {
+        "mean": 0.3030054325346129,
+        "lo": 0.2962962962962963,
+        "hi": 0.3125
+      },
+      "node_nec_median": 0.15034246575342464,
+      "node_nec_mean": 0.16293163650106388,
+      "node_nec_ci": {
+        "mean": 0.15108972973251236,
+        "lo": 0.1465040650406504,
+        "hi": 0.15954545454545455
+      },
+      "minus_node_suff_median": 0.8857463080168776,
+      "minus_node_nec_median": 0.8989795918367347,
+      "drop_full_suff_median": 0.020408163265306145,
+      "drop_full_suff_ci": {
+        "mean": 0.020713634957501958,
+        "lo": 0.018693221523410186,
+        "hi": 0.023431077007399326
+      },
+      "drop_full_nec_median": 0.0222222222222222,
+      "drop_full_nec_ci": {
+        "mean": 0.022356935315662844,
+        "lo": 0.020408163265306145,
+        "hi": 0.025487012987012947
+      },
+      "rank_drop_full_nec": 4,
+      "rank_node_suff": 6
+    },
+    {
+      "node": "L24H6",
+      "node_role": "Tool-Tag Reader / Distractor Suppressor",
+      "n_samples": 138,
+      "node_suff_median": 0.3667720609370509,
+      "node_suff_mean": 0.36936116944067393,
+      "node_suff_ci": {
+        "mean": 0.3643573871333432,
+        "lo": 0.3282667876588022,
+        "hi": 0.3982138487888427
+      },
+      "node_nec_median": 0.24795081967213115,
+      "node_nec_mean": 0.2549215773559761,
+      "node_nec_ci": {
+        "mean": 0.2504675379858302,
+        "lo": 0.23177537495640044,
+        "hi": 0.2711864406779661
+      },
+      "minus_node_suff_median": 0.9074357405140758,
+      "minus_node_nec_median": 0.911578555472822,
+      "drop_full_suff_median": 0.0,
+      "drop_full_suff_ci": {
+        "mean": 0.0,
+        "lo": 0.0,
+        "hi": 0.0
+      },
+      "drop_full_nec_median": 0.0,
+      "drop_full_nec_ci": {
+        "mean": 0.0024681580320861565,
+        "lo": 0.0,
+        "hi": 0.01470588235294118
+      },
+      "rank_drop_full_nec": 7,
+      "rank_node_suff": 5
+    },
+    {
+      "node": "MLP27",
+      "node_role": "Primary Writer MLP",
+      "n_samples": 138,
+      "node_suff_median": 0.3796551724137931,
+      "node_suff_mean": 0.38090046299359165,
+      "node_suff_ci": {
+        "mean": 0.378567651965635,
+        "lo": 0.3598150483396385,
+        "hi": 0.39373339584310046
+      },
+      "node_nec_median": 0.30357142857142855,
+      "node_nec_mean": 0.30368088137404226,
+      "node_nec_ci": {
+        "mean": 0.30372338146849426,
+        "lo": 0.2962962962962963,
+        "hi": 0.3111111111111111
+      },
+      "minus_node_suff_median": 0.8986424509264355,
+      "minus_node_nec_median": 0.9455757126990003,
+      "drop_full_suff_median": 0.0,
+      "drop_full_suff_ci": {
+        "mean": -5.0322392352667666e-05,
+        "lo": -0.012658227848101333,
+        "hi": 0.01449275362318847
+      },
+      "drop_full_nec_median": -0.02156771799628937,
+      "drop_full_nec_ci": {
+        "mean": -0.021799000119511334,
+        "lo": -0.032266458495966654,
+        "hi": -0.006172839506172867
+      },
+      "rank_drop_full_nec": 9,
+      "rank_node_suff": 3
+    }
+  ],
+  "proposed_groups_data_driven": {
+    "contextual_supporter": [
+      "MLP11",
+      "L20H5",
+      "L23H6",
+      "L24H6"
+    ],
+    "essential_backbone": [
+      "L17H8",
+      "L21H1",
+      "L21H12"
+    ],
+    "redundant_or_interfering": [
+      "MLP20",
+      "MLP22"
+    ],
+    "parallel_writer_redundant_in_full": [
+      "MLP27"
+    ]
+  },
+  "artifacts": {
+    "per_sample_csv": "/root/data/XAI-1.7B-ACDCcopy2/final/tables/node_ablation_per_sample.csv",
+    "summary_csv": "/root/data/XAI-1.7B-ACDCcopy2/final/tables/node_ablation_summary.csv",
+    "heatmap_png": "/root/data/XAI-1.7B-ACDCcopy2/final/figures/node_ablation_heatmap.png",
+    "drop_full_nec_png": "/root/data/XAI-1.7B-ACDCcopy2/final/figures/node_drop_full_nec.png",
+    "node_alone_suff_png": "/root/data/XAI-1.7B-ACDCcopy2/final/figures/node_alone_suff.png"
+  }
+}

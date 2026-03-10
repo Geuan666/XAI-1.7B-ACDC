@@ -1,0 +1,19 @@
+{
+  "labels": [
+    "orig",
+    "system_json_pad",
+    "user_json_pad"
+  ],
+  "n_nodes": 10,
+  "stratum_order": [
+    "stable_necessary_backbone",
+    "stable_but_weak_or_redundant",
+    "unstable_but_necessary",
+    "unstable_weak"
+  ],
+  "artifacts": {
+    "node_stratum_trajectories_csv": "/root/data/XAI-1.7B-ACDCcopy2/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_stratum_transition_v1/node_stratum_trajectories.csv",
+    "stratum_transition_counts_csv": "/root/data/XAI-1.7B-ACDCcopy2/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_stratum_transition_v1/stratum_transition_counts.csv",
+    "node_stratum_trajectories_heatmap_png": "/root/data/XAI-1.7B-ACDCcopy2/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164_stratum_transition_v1/node_stratum_trajectories_heatmap.png"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "input_root": "/root/data/XAI-1.7B-ACDCcopy2/Automatic-Circuit-Discovery/experiments/results/toolcall_q1_q164",
+  "grid": {
+    "gap_list": [
+      0.4,
+      0.5,
+      0.6
+    ],
+    "core_node_th_list": [
+      0.45,
+      0.5,
+      0.55
+    ],
+    "core_edge_th_list": [
+      0.3,
+      0.35,
+      0.4
+    ],
+    "ap_discount": 0.7,
+    "min_nodes": 8,
+    "max_core_nodes": 18
+  },
+  "n_variants": 27,
+  "pairwise_node_jaccard_mean": 0.8699300699300698,
+  "pairwise_node_jaccard_median": 0.9090909090909091,
+  "pairwise_edge_jaccard_mean": 0.8528377320685013,
+  "pairwise_edge_jaccard_median": 0.8518518518518519,
+  "stable_thresholds": {
+    "node_freq": 0.7,
+    "edge_freq": 0.7
+  },
+  "stable_nodes": [
+    "L17H8",
+    "L20H5",
+    "L21H1",
+    "L21H12",
+    "MLP22",
+    "L23H6",
+    "L24H6",
+    "MLP27"
+  ],
+  "stable_edges": [
+    "L17H8->L20H5",
+    "L17H8->L21H1",
+    "L17H8->L21H12",
+    "L20H5->L21H1",
+    "L20H5->L21H12",
+    "L21H1->L23H6",
+    "L21H1->L24H6",
+    "L21H1->MLP22",
+    "L21H1->MLP27",
+    "L21H12->L23H6",
+    "L21H12->L24H6",
+    "L21H12->MLP22",
+    "L21H12->MLP27",
+    "L23H6->L24H6",
+    "L23H6->Residual Output: <tool_call>",
+    "L24H6->MLP27",
+    "L24H6->Residual Output: <tool_call>",
+    "MLP22->L24H6",
+    "MLP27->Residual Output: <tool_call>"
+  ],
+  "artifacts": {
+    "variants_csv": "/root/data/XAI-1.7B-ACDCcopy2/final/tables/core_stability_variants.csv",
+    "pairwise_csv": "/root/data/XAI-1.7B-ACDCcopy2/final/tables/core_stability_pairwise.csv",
+    "node_frequency_csv": "/root/data/XAI-1.7B-ACDCcopy2/final/tables/core_stability_node_frequency.csv",
+    "edge_frequency_csv": "/root/data/XAI-1.7B-ACDCcopy2/final/tables/core_stability_edge_frequency.csv",
+    "node_frequency_png": "/root/data/XAI-1.7B-ACDCcopy2/final/figures/core_stability_node_frequency.png",
+    "edge_frequency_png": "/root/data/XAI-1.7B-ACDCcopy2/final/figures/core_stability_edge_frequency.png",
+    "node_jaccard_heatmap_png": "/root/data/XAI-1.7B-ACDCcopy2/final/figures/core_stability_node_jaccard_heatmap.png",
+    "edge_jaccard_heatmap_png": "/root/data/XAI-1.7B-ACDCcopy2/final/figures/core_stability_edge_jaccard_heatmap.png"
+  }
+}

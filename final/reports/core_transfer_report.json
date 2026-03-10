@@ -1,0 +1,107 @@
+{
+  "n_splits": 3,
+  "gap_min": 0.5,
+  "train_frac": 0.7,
+  "split_seeds": [
+    11,
+    22,
+    33
+  ],
+  "aggregate_params": {
+    "core_node_th": 0.5,
+    "core_edge_th": 0.35,
+    "min_nodes": 8,
+    "max_core_nodes": 18,
+    "ap_discount": 0.7
+  },
+  "summary_medians": {
+    "test_suff_median": 0.9433962264150944,
+    "test_nec_median": 0.9634687985787254,
+    "test_random_suff_median": 0.39609810479375696,
+    "test_global_minus_random_median": 0.48474446987032804,
+    "core_vs_reference_jaccard_median": 0.9
+  },
+  "splits": [
+    {
+      "split": "seed11",
+      "seed": 11,
+      "train_n": 97,
+      "test_n": 42,
+      "train_total_weight": 90.53355030411561,
+      "core_nodes": [
+        "MLP11",
+        "L17H8",
+        "L20H5",
+        "L21H1",
+        "L21H12",
+        "MLP22",
+        "L23H6",
+        "L24H6",
+        "MLP27"
+      ],
+      "core_node_count": 9,
+      "core_vs_reference_jaccard": 0.9,
+      "test_suff_median": 0.9510195921631347,
+      "test_nec_median": 0.9634687985787254,
+      "test_random_suff_median": 0.39609810479375696,
+      "test_global_minus_random_median": 0.48474446987032804,
+      "test_replay_samples": 42
+    },
+    {
+      "split": "seed22",
+      "seed": 22,
+      "train_n": 97,
+      "test_n": 42,
+      "train_total_weight": 90.82327675816093,
+      "core_nodes": [
+        "MLP11",
+        "L17H8",
+        "L20H5",
+        "L21H1",
+        "L21H12",
+        "MLP22",
+        "L23H6",
+        "L24H6",
+        "MLP25",
+        "MLP27"
+      ],
+      "core_node_count": 10,
+      "core_vs_reference_jaccard": 0.8181818181818182,
+      "test_suff_median": 0.9433962264150944,
+      "test_nec_median": 0.9665611028315946,
+      "test_random_suff_median": 0.3009433962264151,
+      "test_global_minus_random_median": 0.6683569979716024,
+      "test_replay_samples": 42
+    },
+    {
+      "split": "seed33",
+      "seed": 33,
+      "train_n": 97,
+      "test_n": 42,
+      "train_total_weight": 90.48843653648059,
+      "core_nodes": [
+        "MLP11",
+        "L17H8",
+        "MLP20",
+        "L20H5",
+        "L21H1",
+        "L21H12",
+        "MLP22",
+        "L23H6",
+        "L24H6",
+        "MLP27"
+      ],
+      "core_node_count": 10,
+      "core_vs_reference_jaccard": 1.0,
+      "test_suff_median": 0.9150739271547061,
+      "test_nec_median": 0.9235637779941578,
+      "test_random_suff_median": 0.47271599834642414,
+      "test_global_minus_random_median": 0.4831423895253682,
+      "test_replay_samples": 42
+    }
+  ],
+  "artifacts": {
+    "splits_csv": "/root/data/XAI-1.7B-ACDCcopy2/final/tables/core_transfer_splits.csv",
+    "splits_png": "/root/data/XAI-1.7B-ACDCcopy2/final/figures/core_transfer_splits.png"
+  }
+}

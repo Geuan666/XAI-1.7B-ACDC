@@ -363,5 +363,24 @@ python experiments/path_patch_toolcall_edges.py \
 - `global_core_summary.json`
 - `final_circuit_global_core.png`
 
+### 6.5 明细补全（2026-03-10，`final/` 同步增强）
+- 图（`figures/`）：
+  - `final_circuit_semantic.png`
+  - `shift_robustness_useraware_v1_nec_heatmap.png`
+  - `shift_robustness_useraware_v1_suff_heatmap.png`
+  - `shift_robustness_systemaware_v1_nec_heatmap.png`
+  - `shift_robustness_systemaware_v1_suff_heatmap.png`
+- 表（`tables/`）：
+  - `path_patch_edge_per_sample.csv`
+  - `role_group_per_sample.csv`
+  - `node_ablation_per_sample.csv`
+  - `node_ablation_gap08_per_sample.csv`
+  - `node_ablation_user_json_per_sample.csv`
+  - `node_ablation_system_json_per_sample.csv`
+  - `shift_robustness_useraware_v1_per_sample.csv`
+  - `shift_robustness_systemaware_v1_per_sample.csv`
+- 报告（`reports/`）：
+  - `proposed_groups_data_driven.json`
+
 ## 7. 一句话结论
 当前结果已经形成“跨样本一致 + 节点语义 + 组级因果 + 边级中介”的完整证据链，最终是 `L20/L21/L24` 头主干与 `MLP27` 写侧协同决定 `<tool_call>`，而不是单 MLP 退化。
